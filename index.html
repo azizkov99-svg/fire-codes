@@ -1,0 +1,1408 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="مرجع موحّد لأكواد الحريق والسلامة: NFPA، الكود السعودي، الدفاع المدني، أرامكو، HCIS، API، ISO، IEC، IEEE، OSHA، ILO، نظام العمل، NCA — مع خريطة ارتباطات ومراجعة مشاريع. تم بواسطة ABDULAZIZ ALYEMN.">
+<meta name="author" content="ABDULAZIZ ALYEMN">
+<meta name="theme-color" content="#b3261e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-family:system-ui,sans-serif;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>مرجع أكواد الحريق</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700&display=swap">
+<style>
+/* Layout: a reference desk. Home = search + four doors. Inner views share one sticky header; results are cards keyed by authority colour on the reading edge. */
+:root{
+  --bg:#f2f3f1; --surface:#ffffff; --sunk:#e8eae7; --line:#d4d8d3; --fg:#1a1e1c; --muted:#5a615d;
+  --accent:#b3261e; --accent-ink:#ffffff; --accent-soft:#f7e2df;
+  --ok:#1f7a45; --ok-soft:#dcefe3; --warn:#94600a; --warn-soft:#f6ead2; --bad:#b3261e; --bad-soft:#f7e2df; --info:#2a5d9f; --info-soft:#e0e9f5;
+  --a-nfpa:#b3261e; --a-sbc:#16794a; --a-cd:#5b4aa8; --a-aramco:#1f5aa6; --a-hcis:#a86a00; --a-api:#7a4b1e; --a-iso:#8a3c8f; --a-iec:#0f7c86; --a-osha:#c25400; --a-ilo:#6b6b1f; --a-mhrsd:#9d3f63; --a-nca:#3d4b5c; --a-other:#6b7280; --a-up:#4a5560;
+  --f-display:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131615; --surface:#1b1f1d; --sunk:#242927; --line:#353b38; --fg:#e8ebe9; --muted:#9ba49f;
+  --accent:#f07a6e; --accent-ink:#1a0d0b; --accent-soft:#3a1f1c;
+  --ok:#6fcf97; --ok-soft:#1d3527; --warn:#e6b45c; --warn-soft:#3a2f18; --bad:#f07a6e; --bad-soft:#3a1f1c; --info:#86b2ea; --info-soft:#1c2a3d;
+  --a-nfpa:#f07a6e; --a-sbc:#5fcf94; --a-cd:#b0a2f0; --a-aramco:#7fb0f0; --a-hcis:#e6b45c; --a-api:#d6a172; --a-iso:#dc8fe0; --a-iec:#5fcfd8; --a-osha:#f5a462; --a-ilo:#c9c96a; --a-mhrsd:#ea8fb0; --a-nca:#a9b6c6; --a-other:#a3aab5; --a-up:#aab5bf;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131615; --surface:#1b1f1d; --sunk:#242927; --line:#353b38; --fg:#e8ebe9; --muted:#9ba49f;
+  --accent:#f07a6e; --accent-ink:#1a0d0b; --accent-soft:#3a1f1c;
+  --ok:#6fcf97; --ok-soft:#1d3527; --warn:#e6b45c; --warn-soft:#3a2f18; --bad:#f07a6e; --bad-soft:#3a1f1c; --info:#86b2ea; --info-soft:#1c2a3d;
+  --a-nfpa:#f07a6e; --a-sbc:#5fcf94; --a-cd:#b0a2f0; --a-aramco:#7fb0f0; --a-hcis:#e6b45c; --a-api:#d6a172; --a-iso:#dc8fe0; --a-iec:#5fcfd8; --a-osha:#f5a462; --a-ilo:#c9c96a; --a-mhrsd:#ea8fb0; --a-nca:#a9b6c6; --a-other:#a3aab5; --a-up:#aab5bf;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.65;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:inherit}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;text-align:start}
+.brand b{font-family:var(--f-display);font-size:18px;display:block;line-height:1.2}
+.brand small{display:block;color:var(--muted);font-size:11.5px}
+nav.tabs{display:flex;gap:2px;margin-inline-start:auto;overflow-x:auto;max-width:100%;scrollbar-width:none}
+nav.tabs button{border:0;background:transparent;color:var(--muted);font:600 14px var(--f-body);padding:7px 12px;border-radius:8px;cursor:pointer;white-space:nowrap}
+nav.tabs button:hover{background:var(--sunk);color:var(--fg)}
+nav.tabs button[aria-current="page"]{background:var(--fg);color:var(--bg)}
+main{padding-block:22px 64px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+h2{font-size:22px}
+h3{font-size:16px}
+.lede{color:var(--muted);margin:4px 0 18px;max-width:72ch}
+.meta{color:var(--muted);font-size:13px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;min-width:0}
+.btn{border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.btn:hover{border-color:var(--fg)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.sm{padding:4px 10px;font-size:13px}
+.btn.ghost{border-color:transparent;background:transparent}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 11px;font-size:13px;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.chip:hover{color:var(--fg)}
+.chip[aria-pressed="true"]{border-color:var(--fg);color:var(--fg);background:var(--sunk);font-weight:600}
+.chip .n{font:500 11px var(--f-mono);color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none;background:var(--c)}
+.code{font:600 13px var(--f-mono);color:var(--c);direction:ltr;unicode-bidi:isolate}
+button.code{background:none;border:0;padding:0;cursor:pointer}
+.sec{font:500 12px var(--f-mono);background:var(--sunk);padding:1px 7px;border-radius:4px;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.flag{font-size:11.5px;padding:1px 8px;border-radius:999px;background:var(--warn-soft);color:var(--warn);font-weight:600;white-space:nowrap}
+.flag.up{background:var(--info-soft);color:var(--info)}
+mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;border-radius:2px;padding:0 1px}
+.empty{border:1.5px dashed var(--line);border-radius:var(--r);padding:24px;text-align:center;color:var(--muted)}
+.notice{background:var(--warn-soft);border-radius:var(--r);padding:10px 14px;font-size:13.5px}
+.notice b{color:var(--warn)}
+.view[hidden]{display:none}
+.sbox{display:flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:6px 6px 6px 10px}
+.sbox:focus-within{border-color:var(--accent)}
+.sbox svg{flex:none;color:var(--muted);margin-inline-start:6px}
+.sbox input{flex:1;min-width:0;border:0;background:transparent;padding:8px 4px;font-size:16px;outline:none}
+.sbox.big input{font-size:18px;padding:12px 4px}
+.hero{display:grid;gap:18px;padding-block:18px 8px;max-width:820px}
+.hero h1{font-size:clamp(26px,4.4vw,40px);line-height:1.2}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);margin:0;max-width:62ch}
+.stats{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--muted)}
+.stats b{font:700 20px var(--f-display);color:var(--fg);font-variant-numeric:tabular-nums;margin-inline-end:4px}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:26px}
+.door{display:flex;flex-direction:column;gap:6px;text-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;cursor:pointer;transition:border-color .15s, transform .15s}
+.door:hover{border-color:var(--fg);transform:translateY(-1px)}
+.door .ic{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.door b{font-family:var(--f-display);font-size:16px}
+.door span{color:var(--muted);font-size:13.5px}
+.band{margin-top:30px;display:grid;gap:10px}
+.band h3{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.authgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.auth{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px;cursor:pointer;text-align:start;border-inline-start:4px solid var(--c)}
+.auth:hover{border-color:var(--fg);border-inline-start-color:var(--c)}
+.auth b{display:block;font-size:13.5px}
+.auth small{color:var(--muted);font-size:12px}
+.searchtop{display:grid;gap:10px}
+.facets{display:flex;flex-wrap:wrap;gap:6px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.toolbar select{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:5px 8px;font-size:13.5px;max-width:100%}
+.scope{display:inline-flex;align-items:center;gap:6px;background:var(--info-soft);color:var(--info);border-radius:999px;padding:2px 4px 2px 10px;font-size:13px;font-weight:600}
+.scope button{border:0;background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1;padding:0 6px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:20px;align-items:start;margin-top:14px}
+@media (max-width:880px){.layout{grid-template-columns:minmax(0,1fr)}}
+.results{display:flex;flex-direction:column;gap:10px}
+.res{border-inline-start:4px solid var(--c)}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;font-size:12.5px;color:var(--muted)}
+.crumbs .sep{opacity:.5}
+.res h3{font-size:15.5px;margin-top:4px}
+.res p{margin:4px 0 0}
+.res .snip{white-space:pre-wrap;word-break:break-word;font-size:14px}
+.val{display:inline-block;margin-top:8px;font:500 13px var(--f-mono);background:var(--info-soft);color:var(--info);padding:2px 8px;border-radius:4px;direction:ltr;unicode-bidi:isolate}
+.res .acts{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.hint b{color:var(--fg)}
+.side{display:flex;flex-direction:column;gap:12px}
+.answer{white-space:pre-wrap;line-height:1.8}
+.lib{display:grid;grid-template-columns:220px minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:820px){.lib{grid-template-columns:minmax(0,1fr)}}
+.alist{display:flex;flex-direction:column;gap:2px;position:sticky;top:76px}
+@media (max-width:820px){.alist{position:static;flex-direction:row;flex-wrap:wrap;gap:6px}}
+.alist button{display:flex;align-items:center;gap:8px;border:0;background:transparent;padding:7px 10px;border-radius:8px;cursor:pointer;text-align:start;font-size:14px;color:var(--muted)}
+@media (max-width:820px){.alist button{border:1px solid var(--line);background:var(--surface);padding:3px 10px;font-size:13px}}
+.alist button:hover{color:var(--fg)}
+.alist button[aria-pressed="true"]{background:var(--sunk);color:var(--fg);font-weight:600}
+.alist .n{margin-inline-start:auto;font:500 11.5px var(--f-mono)}
+.docgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.doc{display:flex;flex-direction:column;gap:4px;border-inline-start:4px solid var(--c);text-align:start;cursor:pointer}
+.doc:hover{border-color:var(--fg);border-inline-start-color:var(--c)}
+.doc .t{font-weight:600;font-size:14px;line-height:1.45}
+.doc .badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.drop{display:block;border:2px dashed var(--line);border-radius:var(--r);padding:18px;text-align:center;background:var(--surface);cursor:pointer}
+.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop input{display:none}
+.uplist{display:flex;flex-direction:column;gap:8px}
+.uprow{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.uprow .name{font-weight:600;flex:1 1 200px;min-width:0;word-break:break-word}
+.uprow select{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:3px 6px;font-size:13px;max-width:100%}
+.progress{height:4px;background:var(--sunk);border-radius:2px;overflow:hidden;flex-basis:100%}
+.progress i{display:block;height:100%;background:var(--accent);width:0}
+details.box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+details.box>summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}
+details.box>summary::-webkit-details-marker{display:none}
+details.box>summary::after{content:"+";margin-inline-start:auto;font:600 18px var(--f-mono);color:var(--muted)}
+details.box[open]>summary::after{content:"−"}
+details.box .in{padding:0 16px 16px;display:grid;gap:12px}
+.rel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:820px){.rel{grid-template-columns:minmax(0,1fr)}}
+.rel .col{display:flex;flex-direction:column;gap:6px;min-width:0}
+.rel .col h3{font-size:13.5px;color:var(--muted);font-weight:600}
+.rel .center{border:2px solid var(--c);text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center}
+.relchip{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;text-align:start;font-size:13px;border-inline-start:3px solid var(--c);min-width:0;max-width:100%}
+.relchip:hover{border-color:var(--fg);border-inline-start-color:var(--c)}
+.relchip .code{font-size:12px;flex:none}
+.relchip span:last-child{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:start;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--sunk);font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.matrix{min-width:980px}
+.matrix td:first-child{font-weight:600;white-space:nowrap}
+.mlink{display:inline-block;font:500 12px var(--f-mono);color:var(--c);background:none;border:0;padding:1px 4px;margin:1px;cursor:pointer;border-radius:4px;direction:ltr}
+.mlink:hover{background:var(--sunk)}
+.steps{display:flex;flex-direction:column;gap:16px}
+fieldset{border:1px solid var(--line);border-radius:var(--r);padding:12px 16px 16px;margin:0;min-width:0;background:var(--surface)}
+legend{font-family:var(--f-display);font-weight:600;padding:0 6px}
+.form{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-size:13px;font-weight:600}
+.field input,.field select{border:1px solid var(--line);border-radius:6px;background:var(--bg);padding:7px 9px;min-width:0}
+.field .h{font-size:12px;color:var(--muted)}
+.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px 14px}
+.checks label{display:flex;gap:8px;align-items:center;font-size:14px;cursor:pointer}
+.checks .auto{font-size:11px;color:var(--info);background:var(--info-soft);padding:0 6px;border-radius:999px}
+.summary{display:flex;flex-wrap:wrap;gap:10px}
+.tile{flex:1 1 130px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:10px 14px}
+.tile b{display:block;font:700 26px var(--f-display);font-variant-numeric:tabular-nums}
+.tile.bad b{color:var(--bad)} .tile.warn b{color:var(--warn)} .tile.ok b{color:var(--ok)} .tile.info b{color:var(--info)}
+.rtable{min-width:760px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill.bad{background:var(--bad-soft);color:var(--bad)} .pill.warn{background:var(--warn-soft);color:var(--warn)} .pill.ok{background:var(--ok-soft);color:var(--ok)} .pill.info{background:var(--info-soft);color:var(--info)}
+.refs{font:500 12px var(--f-mono);color:var(--muted);direction:ltr;unicode-bidi:isolate;display:inline-block}
+.calc{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.calc div{background:var(--sunk);border-radius:6px;padding:8px 12px;font-size:13px}
+.calc div b{display:block;font:600 16px var(--f-mono);direction:ltr;text-align:start;font-variant-numeric:tabular-nums}
+.status{font-size:13px;color:var(--muted)}
+footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-block:16px}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);max-width:min(880px,94vw);width:100%;padding:0}
+dialog::backdrop{background:rgb(0 0 0 / .45)}
+dialog .dh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+dialog .db{padding:16px 18px;max-height:72vh;overflow:auto;display:grid;gap:14px}
+dialog .pre{white-space:pre-wrap;font-size:14px;direction:auto}
+.kbitem{border-top:1px solid var(--line);padding-top:10px}
+.kbitem:first-child{border-top:0;padding-top:0}
+.splash{position:fixed;inset:0;z-index:50;background:var(--bg);display:grid;place-items:center;padding:calc(24px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));transition:opacity .45s ease,visibility .45s}
+.splash.out{opacity:0;visibility:hidden}
+.splash .in{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;max-width:560px}
+.splash .logo{animation:spin-in .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes spin-in{from{transform:rotate(-90deg) scale(.6);opacity:0}to{transform:none;opacity:1}}
+.splash h1{font-size:clamp(30px,7vw,48px);line-height:1.15;animation:rise .7s .2s both}
+.splash p{color:var(--muted);margin:0;max-width:44ch;animation:rise .7s .3s both}
+.splash .by{display:flex;flex-direction:column;gap:2px;align-items:center;padding-top:14px;border-top:1px solid var(--line);animation:rise .7s .45s both}
+.splash .by small{color:var(--muted);font-size:12.5px}
+.splash .by b{font:600 17px var(--f-mono);letter-spacing:.08em;direction:ltr}
+.splash .btn{font-size:16px;padding:11px 34px;animation:rise .7s .6s both}
+@keyframes rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+body.locked{overflow:hidden}
+.credit{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate;color:var(--fg)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+</head>
+<body>
+<div dir="rtl" lang="ar">
+<div class="splash" id="splash" role="dialog" aria-modal="true" aria-labelledby="splashTitle">
+  <div class="in">
+    <svg class="logo" width="96" height="96" viewBox="0 0 34 34" aria-hidden="true"><g transform="rotate(45 17 17)"><rect x="6" y="6" width="11" height="11" fill="var(--a-aramco)"/><rect x="17" y="6" width="11" height="11" fill="var(--a-nfpa)"/><rect x="17" y="17" width="11" height="11" fill="var(--surface)" stroke="var(--line)"/><rect x="6" y="17" width="11" height="11" fill="var(--a-hcis)"/></g></svg>
+    <h1 id="splashTitle">مرجع أكواد الحريق</h1>
+    <p>الحريق · السلامة الصناعية · السلامة المهنية<br><bdi>NFPA</bdi> · <bdi>SBC</bdi> · الدفاع المدني · أرامكو · <bdi>HCIS</bdi> · <bdi>API</bdi> · <bdi>ISO</bdi> · <bdi>IEC</bdi> · <bdi>OSHA</bdi> · <bdi>ILO</bdi> · نظام العمل · <bdi>NCA</bdi></p>
+    <div class="by"><small>تم بواسطة</small><b>ABDULAZIZ ALYEMN</b></div>
+    <button class="btn primary" id="splashGo">ابدأ</button>
+  </div>
+</div>
+<header class="top">
+  <div class="wrap">
+    <button class="brand" data-go="home" aria-label="الرئيسية">
+      <svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><g transform="rotate(45 17 17)"><rect x="6" y="6" width="11" height="11" fill="var(--a-aramco)"/><rect x="17" y="6" width="11" height="11" fill="var(--a-nfpa)"/><rect x="17" y="17" width="11" height="11" fill="var(--surface)" stroke="var(--line)"/><rect x="6" y="17" width="11" height="11" fill="var(--a-hcis)"/></g></svg>
+      <span><b>مرجع أكواد الحريق</b><small>الحريق · السلامة الصناعية · السلامة المهنية</small></span>
+    </button>
+    <nav class="tabs" aria-label="الأقسام">
+      <button data-go="home">الرئيسية</button>
+      <button data-go="search">البحث</button>
+      <button data-go="library">المكتبة</button>
+      <button data-go="map">الارتباطات</button>
+      <button data-go="review">مراجعة مشروع</button>
+      <button data-settings aria-label="الإعدادات">الإعدادات</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="view" id="v-home">
+  <div class="hero">
+    <h1>كل اشتراطات <em>الحريق والسلامة</em> في مكان واحد</h1>
+    <p>ابحث في الكود السعودي وNFPA وأرامكو وHCIS وAPI وISO وIEC وOSHA وILO ونظام العمل ومتطلبات NCA، واعرف كيف يحيل كل معيار إلى الآخر، وراجع مشروعك لتكشف النواقص.</p>
+    <form class="sbox big" id="homeForm" role="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="homeQ" type="search" placeholder="مثال: مسافة الانتقال للمكاتب، NFPA 13 10.2.5، تصنيف المناطق الخطرة" autocomplete="off" aria-label="بحث">
+      <button class="btn primary" type="submit">بحث</button>
+    </form>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="doors">
+    <button class="door" data-go="search"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><b>البحث في الأكواد</b><span>بحث بالعربي والإنجليزي ورقم البند، مع تصفية حسب الجهة والموضوع.</span></button>
+    <button class="door" data-go="library"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h5v16H4zM10 4h5v16h-5zM16 5l4 1-3 15-4-1z"/></svg></span><b>المكتبة</b><span>تصفّح المعايير حسب الجهة، وارفع نسخك من الأكواد لتصبح قابلة للبحث.</span></button>
+    <button class="door" data-go="map"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.3 11 16.7 6M7.3 13l9.4 5"/></svg></span><b>الارتباطات</b><span>أي معيار يحيل إلى أي معيار، والمقابل بين الجهات لكل موضوع.</span></button>
+    <button class="door" data-go="review"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4h6l1 2h3v14H5V6h3z"/><path d="m9 13 2 2 4-4"/></svg></span><b>مراجعة مشروع</b><span>ارفع مستندات المشروع وأدخل بياناته لتحصل على قائمة النواقص ومراجعها.</span></button>
+  </div>
+  <div class="band"><h3>الجهات والمراجع</h3><div class="authgrid" id="homeAuth"></div></div>
+  <div class="band"><h3>مواضيع</h3><div class="facets" id="homeTopics"></div></div>
+</section>
+
+<section class="view" id="v-search" hidden>
+  <div class="searchtop">
+    <form class="sbox" id="searchForm" role="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" aria-label="بحث" placeholder="ابحث…">
+      <button class="btn sm primary" id="askBtn" type="button">اسأل Claude</button>
+    </form>
+    <div class="facets" id="authFacets"></div>
+    <div class="toolbar">
+      <select id="topicSel" aria-label="الموضوع"></select>
+      <span id="scopePill"></span>
+      <span class="meta" id="resMeta"></span>
+    </div>
+  </div>
+  <div class="layout">
+    <div>
+      <div id="aiAnswer" class="card" hidden style="margin-bottom:10px"></div>
+      <div class="results" id="results"></div>
+    </div>
+    <aside class="side">
+      <div class="card" style="display:grid;gap:8px">
+        <h3>طرق البحث</h3>
+        <p class="hint"><b>كلمات:</b> «رشاشات» تجد sprinkler تلقائياً.</p>
+        <p class="hint"><b>رمز معيار:</b> <a href="#" data-try="NFPA 72 pull station">NFPA 72 pull station</a> يحصر النتائج فيه.</p>
+        <p class="hint"><b>رقم بند:</b> <a href="#" data-try="903.2">903.2</a> أو <a href="#" data-try="1910.157">1910.157</a>.</p>
+        <p class="hint"><b>داخل ملفاتك:</b> ارفع نسخك في المكتبة فيبحث في نصها بنداً بنداً.</p>
+      </div>
+      <div class="notice"><b>تنبيه:</b> البطاقات المدمجة ملخّصات بصياغتنا للاسترشاد. «تحقق» تعني أن القيمة أو رقم البند يحتاج مطابقة مع نسختك المعتمدة.</div>
+    </aside>
+  </div>
+</section>
+
+<section class="view" id="v-library" hidden>
+  <h2>المكتبة</h2>
+  <p class="lede">المعايير مرتبة حسب الجهة. اضغط أي معيار لترى نطاقه وبنوده وما يحيل إليه. ارفع نسختك منه ليصبح نصه الكامل قابلاً للبحث.</p>
+  <details class="box" id="upBox">
+    <summary>ملفاتي المرفوعة <span class="meta" id="upCount"></span></summary>
+    <div class="in">
+      <label class="drop" id="libDrop" for="libFile"><input type="file" id="libFile" multiple accept=".pdf,.docx,.txt,.md,.csv"><b>اسحب ملفات الأكواد هنا أو اضغط للاختيار</b><br><span class="meta">PDF · DOCX · TXT. يُربط الملف بالمعيار تلقائياً من اسمه (مثل NFPA-13-2022.pdf أو SAES-B-017.pdf). الملفات تبقى في متصفحك فقط.</span></label>
+      <div class="uplist" id="libList"></div>
+    </div>
+  </details>
+  <div class="lib" style="margin-top:16px">
+    <div class="alist" id="authList"></div>
+    <div style="display:grid;gap:12px;min-width:0">
+      <div class="sbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="libFilter" type="search" placeholder="تصفية المعايير بالرمز أو الاسم" aria-label="تصفية"></div>
+      <div class="docgrid" id="docGrid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="view" id="v-map" hidden>
+  <h2>الارتباطات بين المراجع</h2>
+  <p class="lede">اختر معياراً لترى المراجع التي يحيل إليها والمراجع التي تحيل إليه ومقابله عند الجهات الأخرى. الجدول بالأسفل يجمع لكل موضوع المعايير الحاكمة عند كل جهة.</p>
+  <div class="toolbar" style="margin-bottom:14px"><label for="mapSel" class="meta">المعيار:</label><select id="mapSel"></select></div>
+  <div class="rel" id="relView"></div>
+  <h3 style="margin:28px 0 10px">مصفوفة المواضيع والجهات</h3>
+  <div class="tablewrap"><table class="matrix" id="matrix"></table></div>
+  <p class="meta">الارتباطات تمثل الإحالات المعيارية الشائعة بين الوثائق. راجع قسم «References» في الإصدار المعتمد لديك للتأكيد.</p>
+</section>
+
+<section class="view" id="v-review" hidden>
+  <h2>مراجعة مشروع</h2>
+  <p class="lede">ثلاث خطوات: ارفع المستندات، أكّد بيانات المبنى، ثم شغّل المراجعة. المثال المعبّأ لمبنى مكاتب، غيّره ببيانات مشروعك.</p>
+  <div class="steps">
+    <fieldset>
+      <legend>١ · مستندات المشروع</legend>
+      <label class="drop" id="prjDrop" for="prjFile"><input type="file" id="prjFile" multiple accept=".pdf,.docx,.txt,.md,.csv"><b>ارفع المواصفات أو تقرير التصميم أو جدول الكميات</b><br><span class="meta">يتعرّف على الأنظمة المذكورة فيها تلقائياً</span></label>
+      <div class="uplist" id="prjList" style="margin-top:10px"></div>
+    </fieldset>
+    <fieldset>
+      <legend>٢ · بيانات المبنى</legend>
+      <div class="form">
+        <div class="field"><label for="p-name">اسم المشروع</label><input id="p-name" value="مبنى مكاتب — مثال"></div>
+        <div class="field"><label for="p-juris">الجهة الحاكمة</label>
+          <select id="p-juris"><option value="sbc">SBC + الدفاع المدني</option><option value="aramco">Saudi Aramco (SAES)</option><option value="hcis">HCIS (منشأة صناعية)</option><option value="nfpa">NFPA فقط</option></select></div>
+        <div class="field"><label for="p-occ">نوع الإشغال</label>
+          <select id="p-occ">
+            <option value="A-1">A-1 تجمع (مسارح، سينما)</option><option value="A-2">A-2 تجمع (مطاعم، قاعات)</option><option value="A-3">A-3 تجمع (مساجد، صالات)</option>
+            <option value="B" selected>B أعمال (مكاتب)</option><option value="E">E تعليمي</option><option value="F-1">F-1 مصنع متوسط الخطورة</option>
+            <option value="H">H عالي الخطورة</option><option value="I-2">I-2 مستشفيات</option><option value="M">M تجاري</option>
+            <option value="R-1">R-1 فنادق</option><option value="R-2">R-2 سكني متعدد</option><option value="S-1">S-1 مستودع</option>
+            <option value="PLANT">منشأة معالجة / بترول وغاز</option></select></div>
+        <div class="field"><label for="p-hazard">خطورة الرشاشات</label>
+          <select id="p-hazard"><option value="LH" selected>خفيفة LH</option><option value="OH1">عادية OH-1</option><option value="OH2">عادية OH-2</option><option value="EH1">إضافية EH-1</option><option value="EH2">إضافية EH-2</option></select></div>
+        <div class="field"><label for="p-floors">الطوابق فوق الأرض</label><input id="p-floors" type="number" min="1" value="8"></div>
+        <div class="field"><label for="p-basements">طوابق القبو</label><input id="p-basements" type="number" min="0" value="1"></div>
+        <div class="field"><label for="p-height">ارتفاع أعلى طابق مشغول (م)</label><input id="p-height" type="number" min="0" step="0.1" value="28"><span class="h">من أدنى منسوب وصول للدفاع المدني</span></div>
+        <div class="field"><label for="p-area">مساحة الطابق (م²)</label><input id="p-area" type="number" min="0" value="1400"></div>
+        <div class="field"><label for="p-farea">أكبر منطقة حريق (م²)</label><input id="p-farea" type="number" min="0" value="1400"></div>
+        <div class="field"><label for="p-ol">حمل الإشغال للطابق</label><input id="p-ol" type="number" min="0" placeholder="تلقائي"><span class="h" id="olHint"></span></div>
+        <div class="field"><label for="p-exits">المخارج في الطابق</label><input id="p-exits" type="number" min="0" value="2"></div>
+        <div class="field"><label for="p-travel">أقصى مسافة انتقال (م)</label><input id="p-travel" type="number" min="0" value="70"></div>
+        <div class="field"><label for="p-stairw">عرض الدرج الصافي (مم)</label><input id="p-stairw" type="number" min="0" value="1200"></div>
+        <div class="field"><label for="p-doorw">عرض الأبواب مجتمعة (مم)</label><input id="p-doorw" type="number" min="0" value="1800"></div>
+      </div>
+      <p class="meta" style="margin:14px 0 6px">خصائص المشروع</p>
+      <div class="checks" id="featureChecks"></div>
+    </fieldset>
+    <fieldset>
+      <legend>٣ · الأنظمة الموجودة في التصميم</legend>
+      <p class="meta" style="margin:0 0 8px">ما يُذكر في المستندات يُعلَّم تلقائياً بوسم «من المستند». صحّح عند الحاجة.</p>
+      <div class="checks" id="sysChecks"></div>
+    </fieldset>
+    <div class="row">
+      <button class="btn primary" id="runReview">تشغيل المراجعة</button>
+      <button class="btn" id="aiReview">مراجعة معمّقة بـ Claude</button>
+      <button class="btn" id="saveReport">حفظ التقرير</button>
+      <span class="status" id="reviewStatus"></span>
+    </div>
+    <div id="reviewOut"></div>
+    <div id="aiOut"></div>
+  </div>
+</section>
+</main>
+<footer class="wrap">تم بواسطة <span class="credit">ABDULAZIZ ALYEMN</span> · أداة مساعدة للمهندس لا تغني عن النص الرسمي ولا عن اعتماد الجهة المختصة. نصوص NFPA وAPI وISO وIEC ومعايير أرامكو وتوجيهات HCIS محمية بحقوق النشر؛ المرجع المدمج يحوي ملخّصات بصياغتنا فقط، والنص الكامل يأتي من نسخك المرخّصة.</footer>
+
+<dialog id="setDlg"><div class="dh"><div><h2 style="font-size:18px">الإعدادات</h2><span class="ai-state flag"></span></div><button class="btn sm" data-close>إغلاق</button></div>
+<div class="db">
+  <p style="margin:0">البحث والمكتبة والارتباطات والمراجعة الآلية تعمل للجميع بدون أي مفتاح. «اسأل Claude» و«المراجعة المعمّقة» تحتاج مفتاح API من <bdi>Anthropic Console</bdi> باسمك، والتكلفة تُحسب على حسابك.</p>
+  <div class="field"><label for="setKey">مفتاح API</label><input id="setKey" type="password" autocomplete="off" dir="ltr" placeholder="sk-ant-..." style="font-family:var(--f-mono)"></div>
+  <div class="field"><label for="setModel">النموذج</label><select id="setModel"></select></div>
+  <div class="notice"><b>الخصوصية:</b> المفتاح يُحفظ في هذا المتصفح فقط ويُرسل مباشرة إلى <bdi>api.anthropic.com</bdi>. لا تحفظه على جهاز مشترك. ملفاتك المرفوعة تبقى في متصفحك، وما يُرسل لـ Claude هو المقاطع التي يبحث فيها فقط.</div>
+  <div class="row"><button class="btn primary" id="setSave">حفظ</button><button class="btn" id="setClear">حذف المفتاح</button><span class="status" id="setNote"></span></div>
+  <p class="meta" style="margin:0">تم بواسطة <span class="credit">ABDULAZIZ ALYEMN</span></p>
+</div></dialog>
+<dialog id="docDlg"><div class="dh"><div id="docDlgHead"></div><button class="btn sm" data-close>إغلاق</button></div><div class="db" id="docDlgBody"></div></dialog>
+<dialog id="pageDlg"><div class="dh"><b id="pageDlgTitle"></b><button class="btn sm" data-close>إغلاق</button></div><div class="db"><div class="pre" id="pageDlgBody"></div></div></dialog>
+</div>
+
+<script src="vendor/pdf.min.js"></script>
+<script>try{pdfjsLib.GlobalWorkerOptions.workerSrc="vendor/pdf.worker.min.js"}catch(e){}</script>
+<script src="vendor/mammoth.browser.min.js"></script>
+<script src="vendor/anthropic-sdk.js"></script>
+<script>
+"use strict";
+const AUTH={
+  nfpa:{n:"NFPA",ar:"الجمعية الوطنية للحماية من الحريق"},
+  sbc:{n:"SBC",ar:"كود البناء السعودي"},
+  cd:{n:"الدفاع المدني",ar:"المديرية العامة للدفاع المدني"},
+  aramco:{n:"Saudi Aramco",ar:"معايير أرامكو SAES / GI"},
+  hcis:{n:"HCIS",ar:"الهيئة العليا للأمن الصناعي"},
+  api:{n:"API",ar:"معهد البترول الأمريكي"},
+  iso:{n:"ISO",ar:"المنظمة الدولية للمعايير"},
+  iec:{n:"IEC",ar:"اللجنة الكهروتقنية الدولية"},
+  osha:{n:"OSHA",ar:"إدارة السلامة المهنية الأمريكية"},
+  ilo:{n:"ILO",ar:"منظمة العمل الدولية"},
+  mhrsd:{n:"نظام العمل",ar:"الموارد البشرية والسلامة المهنية"},
+  nca:{n:"NCA",ar:"الهيئة الوطنية للأمن السيبراني"},
+  other:{n:"IEEE · UL · FM · BS · SEC",ar:"مراجع اختبار ومعايير أخرى"},
+  up:{n:"ملفاتي",ar:"ملفات مرفوعة"}
+};
+const AC=a=>`var(--a-${a})`;
+const TOPICS={
+  sprinkler:"الرشاشات",standpipe:"الصواعد والخراطيم",pump:"مضخات الحريق",water:"مياه الحريق والحنفيات",alarm:"الإنذار والكشف والاتصال",
+  egress:"وسائل الهروب",lighting:"إنارة الطوارئ واللوحات",ext:"الطفايات",special:"أنظمة الإطفاء الخاصة",tanks:"السوائل والخزانات",
+  access:"وصول الدفاع المدني",itm:"الفحص والاختبار والصيانة",smoke:"التحكم بالدخان",construction:"الإنشاء والفصل والحماية الإنشائية",
+  plant:"تخطيط المنشآت الصناعية",hazarea:"المناطق الخطرة والكهرباء",sis:"السلامة الوظيفية والإيقاف الطارئ",ohs:"السلامة والصحة المهنية",
+  mgmt:"أنظمة الإدارة والطوارئ",cyber:"الأمن السيبراني للأنظمة التشغيلية",hv:"الجهد العالي والسلامة الكهربائية"
+};
+const DOCS={};
+function D(id,a,code,ed,ar,en,topics,refs,eq,scope){DOCS[id]={id,a,code,ed,ar,en,topics:topics.split(" ").filter(Boolean),refs:refs.split(" ").filter(Boolean),eq:eq.split(" ").filter(Boolean),scope}}
+D("n1","nfpa","NFPA 1","2024","كود الحريق","Fire Code","access itm construction tanks","n10 n13 n14 n20 n25 n30 n58 n72 n80 n96 n101 n400 n652 n855","sbc801","كود حريق شامل يغطي التشغيل والصيانة ووصول الدفاع المدني والمواد الخطرة، ويحيل إلى معايير الأنظمة.");
+D("n4","nfpa","NFPA 4","2024","الاختبار المتكامل لأنظمة الحماية من الحريق","Integrated Fire Protection and Life Safety System Testing","itm","n13 n14 n20 n72 n92 n110","","يحدد اختبار الترابط بين الأنظمة (الإنذار، الرشاشات، التحكم بالدخان، المصاعد، الأبواب) كمنظومة واحدة.");
+D("n10","nfpa","NFPA 10","2022","الطفايات اليدوية","Portable Fire Extinguishers","ext itm","","o157","اختيار وتوزيع وتركيب وفحص وصيانة الطفايات اليدوية.");
+D("n11","nfpa","NFPA 11","2021","الرغوة منخفضة ومتوسطة وعالية التمدد","Low-, Medium-, and High-Expansion Foam","special tanks","n15 n16 n25","a2021 b018","تصميم أنظمة الرغوة لحماية الخزانات وأحواض الاحتواء ومناطق السوائل.");
+D("n12","nfpa","NFPA 12","2022","أنظمة ثاني أكسيد الكربون","Carbon Dioxide Extinguishing Systems","special","n72","","أنظمة CO2 للغمر الكلي والتطبيق الموضعي مع متطلبات سلامة الأشخاص.");
+D("n13","nfpa","NFPA 13","2022","تركيب أنظمة الرشاشات","Installation of Sprinkler Systems","sprinkler","n20 n22 n24 n25 n14","o159","تصميم وتركيب أنظمة الرشاشات: تصنيف الخطورة، التباعد، الحساب الهيدروليكي، إمداد المياه، الاختبار.");
+D("n14","nfpa","NFPA 14","2019","أنظمة الصواعد والخراطيم","Standpipe and Hose Systems","standpipe","n13 n20 n24 n25","","تصميم الصواعد بفئاتها، مواقع الوصلات، الضغوط ومعدلات التدفق.");
+D("n15","nfpa","NFPA 15","2022","أنظمة رش المياه الثابتة","Water Spray Fixed Systems","special plant","n13 n20 n24 n25","a2030","رش المياه لحماية الأوعية والمحولات والمضخات والسيور من التعرض للحريق.");
+D("n16","nfpa","NFPA 16","2019","أنظمة الرغوة–الماء","Foam-Water Sprinkler and Spray Systems","special","n11 n13 n15","","أنظمة الرشاشات والرش بمحلول الرغوة للمناطق ذات السوائل القابلة للاشتعال.");
+D("n17","nfpa","NFPA 17","2024","أنظمة البودرة الكيميائية الجافة","Dry Chemical Extinguishing Systems","special","n72","","أنظمة الإطفاء الثابتة بالبودرة الجافة.");
+D("n17a","nfpa","NFPA 17A","2024","أنظمة الكيماويات الرطبة","Wet Chemical Extinguishing Systems","special","n96","ul300","أنظمة إطفاء شفاطات المطابخ بالكيماويات الرطبة.");
+D("n20","nfpa","NFPA 20","2022","تركيب مضخات الحريق الثابتة","Installation of Stationary Pumps for Fire Protection","pump","n13 n14 n24 n25 n70","","اختيار وتركيب مضخات الحريق الكهربائية والديزل وغرفها ووحدات التحكم واختبار القبول.");
+D("n22","nfpa","NFPA 22","2023","خزانات المياه للحماية من الحريق","Water Tanks for Private Fire Protection","water","n25","","تصميم وتركيب خزانات مياه الحريق وملحقاتها.");
+D("n24","nfpa","NFPA 24","2022","الشبكات الأرضية الخاصة وملحقاتها","Private Fire Service Mains","water","n13 n14 n20 n25","","الشبكات الأرضية والحنفيات الخاصة والصمامات واختبار الشبكة.");
+D("n25","nfpa","NFPA 25","2023","فحص واختبار وصيانة الأنظمة المائية","ITM of Water-Based Fire Protection Systems","itm","n13 n14 n15 n16 n20 n22 n24","b1781","جداول الفحص والاختبار والصيانة الدورية للرشاشات والصواعد والمضخات والخزانات.");
+D("n30","nfpa","NFPA 30","2021","كود السوائل القابلة للاشتعال","Flammable and Combustible Liquids Code","tanks","n11 n13 n15 n16 n497 n70 a650 a2000","b005 saf08","تخزين ومناولة السوائل: التصنيف، الخزانات، الأحواض، المسافات، غرف التخزين.");
+D("n58","nfpa","NFPA 58","2024","كود الغاز البترولي المسال","Liquefied Petroleum Gas Code","tanks","n15 n70","a2510","تخزين ومناولة الغاز المسال والمسافات وحماية الخزانات.");
+D("n59a","nfpa","NFPA 59A","2023","الغاز الطبيعي المسال","Production, Storage, and Handling of LNG","tanks plant","n15 n72","","منشآت الغاز الطبيعي المسال والمسافات وحماية الحريق.");
+D("n70","nfpa","NFPA 70 (NEC)","2023","الكود الكهربائي الوطني","National Electrical Code","hazarea hv","n497 n70e","sbc401 e60364","التمديدات الكهربائية: الجزء الثالث من المادة 110 للتمديدات فوق 1000 فولت، والمادة 450 للمحولات وغرفها، وفصول المناطق الخطرة 500–516.");
+D("n70e","nfpa","NFPA 70E","2024","السلامة الكهربائية في أماكن العمل","Electrical Safety in the Workplace","ohs hazarea hv","n70 n70b ieee1584","o147 o333","العمل الآمن على المعدات الكهربائية وتحليل القوس الكهربائي.");
+D("n70b","nfpa","NFPA 70B","2023","صيانة المعدات الكهربائية","Standard for Electrical Equipment Maintenance","hv itm","n70 n70e","","برنامج صيانة المعدات الكهربائية (EMP): تقييم حالة المعدات وتحديد دورات الفحص والاختبار، أصبح معياراً إلزامي الصياغة منذ 2023.");
+D("n72","nfpa","NFPA 72","2022","كود الإنذار والإشارات","National Fire Alarm and Signaling Code","alarm itm cyber","n70 n110","e_en54 e_bs5839 i7240","تصميم وتركيب واختبار أنظمة الإنذار والكشف والتنبيه والإخلاء الصوتي، والأمن السيبراني لأنظمة الإنذار (الفصل 11 والملحق J).");
+D("n75","nfpa","NFPA 75","2024","حماية معدات تقنية المعلومات","Fire Protection of IT Equipment","special","n13 n72 n2001","","حماية غرف الخوادم ومراكز البيانات.");
+D("n80","nfpa","NFPA 80","2022","الأبواب والفتحات المقاومة للحريق","Fire Doors and Other Opening Protectives","construction itm","","","تركيب وفحص الأبواب والستائر والنوافذ المقاومة للحريق.");
+D("n92","nfpa","NFPA 92","2021","أنظمة التحكم بالدخان","Smoke Control Systems","smoke","n72 n4","","تصميم واختبار أنظمة التحكم بالدخان وتضغيط الأدراج والأتريوم.");
+D("n96","nfpa","NFPA 96","2021","تهوية مطابخ الطهي التجارية","Ventilation Control and Fire Protection of Commercial Cooking","special itm","n17a n10","","الشفاطات والمداخن والتنظيف ونظام الإطفاء.");
+D("n101","nfpa","NFPA 101","2021","كود سلامة الأرواح","Life Safety Code","egress lighting construction","n13 n72 n80 n92 n110 n10 n25","sbc201","وسائل الهروب وحمل الإشغال وإنارة الطوارئ ومتطلبات كل نوع إشغال.");
+D("n110","nfpa","NFPA 110","2022","أنظمة الطاقة الطارئة والاحتياطية","Emergency and Standby Power Systems","lighting alarm","n70","","المولدات الاحتياطية وتصنيفها وزمن التحويل واختبارها.");
+D("n400","nfpa","NFPA 400","2022","كود المواد الخطرة","Hazardous Materials Code","tanks","n30 n13","","تخزين واستخدام المواد الخطرة وكمياتها القصوى.");
+D("n407","nfpa","NFPA 407","2022","تزويد الطائرات بالوقود","Aircraft Fuel Servicing","tanks","n30 n10","b070","سلامة عمليات تزويد الطائرات بالوقود.");
+D("n497","nfpa","NFPA 497","2024","تصنيف المواد لأغراض المناطق الخطرة","Classification of Flammable Liquids, Gases or Vapors for Electrical Installations","hazarea","n70 n30","a500 a505 e60079_10 b068","يساعد في تحديد امتداد المناطق الخطرة الكهربائية حول مصادر التسرب.");
+D("n600","nfpa","NFPA 600","2020","فرق الإطفاء في المنشآت","Facility Fire Brigades","mgmt ohs","n1","o156","تنظيم وتدريب وتجهيز فرق الإطفاء الداخلية.");
+D("n652","nfpa","NFPA 652","2019","أساسيات الغبار القابل للاحتراق","Fundamentals of Combustible Dust","plant ohs","n70","","تحليل مخاطر الغبار (DHA) وإجراءات منع الانفجار.");
+D("n750","nfpa","NFPA 750","2023","أنظمة رذاذ الماء","Water Mist Fire Protection Systems","special","n25","","تصميم أنظمة رذاذ الماء المعتمدة.");
+D("n850","nfpa","NFPA 850","2020","الحماية في محطات توليد الكهرباء","Fire Protection for Electric Generating Plants","plant special hv","n13 n15 n72 n70","ieee979","توصيات حماية محطات التوليد والمحولات والتوربينات.");
+D("n855","nfpa","NFPA 855","2023","أنظمة تخزين الطاقة","Installation of Stationary Energy Storage Systems","special","n13 n72","","حماية أنظمة البطاريات الثابتة من الحريق والانفجار.");
+D("n2001","nfpa","NFPA 2001","2022","أنظمة الغازات النظيفة","Clean Agent Fire Extinguishing Systems","special","n72","i14520","الهالوكربونات والغازات الخاملة: التركيز، زمن التفريغ، إحكام الغرفة.");
+D("sbc201","sbc","SBC 201","2018","كود البناء السعودي العام","Saudi Building Code – General","egress construction smoke lighting","sbc801 n80 n92 n72 n13 sbc401 sbc501","n101","التصنيف والإنشاء ومقاومة الحريق ووسائل الهروب (الفصل 10) والمباني الشاهقة.");
+D("sbc801","sbc","SBC 801","2018","كود الحماية من الحرائق السعودي","Saudi Fire Code","sprinkler standpipe alarm ext pump water access itm tanks","n10 n11 n13 n14 n15 n17a n20 n22 n24 n25 n30 n58 n72 n80 n92 n96 n110 n2001 n855 sbc201","n1","متى تلزم الأنظمة (الفصل 9)، وصول الدفاع المدني (5)، خطط الطوارئ (4)، المواد الخطرة (50–67).");
+D("sbc401","sbc","SBC 401","2018","الكود الكهربائي السعودي","Saudi Electrical Code","hazarea lighting hv","","n70 e60364","التمديدات الكهربائية والمناطق الخطرة وأنظمة الطوارئ.");
+D("sbc501","sbc","SBC 501","2018","الكود الميكانيكي السعودي","Saudi Mechanical Code","smoke special","n96","","أنظمة التكييف والتهوية والمخمدات وشفاطات المطابخ.");
+D("cd1","cd","اشتراطات الدفاع المدني","—","اشتراطات السلامة وسبل الحماية للمنشآت","Civil Defense Safety Requirements","itm egress mgmt","sbc201 sbc801","","اعتماد المخططات، شهادة السلامة، عقود الصيانة، خطط الإخلاء، مسؤول السلامة.");
+D("cd2","cd","نظام الدفاع المدني","—","نظام الدفاع المدني","Civil Defense Law","mgmt","cd1","","الإطار النظامي لصلاحيات الدفاع المدني والمخالفات والجزاءات.");
+D("b005","aramco","SAES-B-005","—","المسافات والأحواض لخزانات التخزين الجوية ومنخفضة الضغط","Spacing and Diking for Atmospheric and Low-Pressure Tanks","tanks plant","n30 a650 a2000","saf08","المسافات بين الخزانات وحولها، وأحواض الاحتواء.");
+D("b006","aramco","SAES-B-006","—","الحماية الإنشائية من الحريق في المصانع","Fireproofing for Plants","construction plant","a2218 ul1709","saf09","متى وأين تلزم مواد الحماية من الحريق للهياكل والدعامات.");
+D("b008","aramco","SAES-B-008","—","قيود استخدام الأقبية والحفر والخنادق","Restrictions to Use of Cellars, Pits, and Trenches","plant","","","منع تجمع الأبخرة والسوائل في الحفر بمناطق المعالجة.");
+D("b009","aramco","SAES-B-009","—","الحماية من الحريق للمنشآت البحرية","Fire Protection and Safety Requirements for Offshore Production Facilities","plant special","a14c a14g n15","i13702","حماية منصات الإنتاج البحرية.");
+D("b014","aramco","SAES-B-014","—","متطلبات السلامة لمباني المصانع ودعم العمليات","Safety Requirements for Plant and Operations Support Buildings","construction egress sprinkler alarm","n101 n13 n72 sbc201 a752","saf03","الحماية ووسائل الهروب لغرف التحكم والورش والمستودعات والمكاتب داخل المنشآت.");
+D("b017","aramco","SAES-B-017","—","تصميم نظام مياه الحريق","Fire Water System Design","water pump","n20 n24 n22 n15 n25 b019 b055","saf04 a2001","الطلب على مياه الحريق، المضخات، الشبكة الحلقية، الحنفيات والمدافع.");
+D("b018","aramco","SAES-B-018","—","أنظمة الرغوة الهوائية للخزانات","Air Foam Systems for Storage Tanks","special tanks","n11 a2021","saf08","حماية الخزانات بالرغوة حسب نوع السقف.");
+D("b019","aramco","SAES-B-019","—","معدات الإطفاء المحمولة والمتنقلة والثابتة الخاصة","Portable, Mobile and Special Fixed Firefighting Equipment","ext special","n10 n11 n12 n17 n17a n2001","saf04","الطفايات وبكرات الخراطيم وأنظمة الإطفاء الخاصة.");
+D("b054","aramco","SAES-B-054","—","الوصول والمخارج ومناولة المواد في المصانع","Access, Egress, and Materials Handling for Plant Facilities","egress plant","n101","saf06","السلالم والممرات ومخارج الهروب من المنصات والمعدات.");
+D("b055","aramco","SAES-B-055","—","تخطيط المصانع","Plant Layout","plant","a752 a753 b005","saf06","المسافات الدنيا بين الوحدات والمباني ومصادر الاشتعال.");
+D("b058","aramco","SAES-B-058","—","الإيقاف الطارئ والعزل وتخفيف الضغط","Emergency Shutdown, Isolation and Depressuring","sis plant","a521 e61511","","أنظمة ESD وصمامات العزل وتخفيف الضغط الطارئ.");
+D("b062","aramco","SAES-B-062","—","سلامة مواقع الآبار البرية","Onshore Wellsite Safety","plant","","saf07","المسافات والحماية في مواقع الآبار.");
+D("b064","aramco","SAES-B-064","—","سلامة خطوط الأنابيب البرية والقريبة من الشاطئ","Onshore and Nearshore Pipeline Safety","plant","","","تصنيف مواقع خطوط الأنابيب ومسافات الأمان.");
+D("b067","aramco","SAES-B-067","—","ألوان وعلامات السلامة","Safety Identification and Safety Colors","lighting ohs","","i3864 i7010","ألوان السلامة وعلامات التعريف في المنشآت.");
+D("b068","aramco","SAES-B-068","—","تصنيف المناطق الكهربائية","Electrical Area Classification","hazarea","a505 a500 n497 e60079_10","","تحديد المناطق الخطرة حول مصادر التسرب.");
+D("p100","aramco","SAES-P-100","—","أسس تصميم أنظمة القوى الكهربائية","Basic Power System Design Criteria","hv","n70","","معايير تصميم أنظمة التوزيع والجهود وحساب القصر والحماية في منشآت أرامكو (تحقق من العنوان في الفهرس الحالي).");
+D("p111","aramco","SAES-P-111","—","التأريض","Grounding","hv hazarea","","","تأريض المعدات والأنظمة والحماية من الصواعق (تحقق من العنوان في الفهرس الحالي).");
+D("p116","aramco","SAES-P-116","—","المفاتيح الكهربائية ومعدات التحكم","Switchgear and Control Equipment","hv","","","متطلبات لوحات ومفاتيح الجهد المتوسط والمنخفض (تحقق من العنوان في الفهرس الحالي).");
+D("p119","aramco","SAES-P-119","—","المحطات الفرعية البرية","Onshore Substations","hv construction","n850 ieee979 p121","","تخطيط المحطات الفرعية والمسافات والحماية من الحريق وفصل المحولات (تحقق من العنوان في الفهرس الحالي).");
+D("p121","aramco","SAES-P-121","—","المحولات والمفاعلات","Transformers and Reactors","hv","","","مواصفات وتركيب المحولات (تحقق من العنوان في الفهرس الحالي).");
+D("b069","aramco","SAES-B-069","—","غسالات العيون ودشات الطوارئ","Emergency Eyewashes and Showers","ohs","z358","","مواقع ومواصفات غسالات العيون والدشات.");
+D("b070","aramco","SAES-B-070","—","الحماية في مرافق التوزيع ووقود الطيران","Bulk Plants, Air Fueling Terminals and Sulfur Loading","tanks plant","n30 n407","","حماية محطات التعبئة ووقود الطائرات.");
+D("gi2100","aramco","GI 2.100","—","نظام تصاريح العمل","Work Permit System","ohs","","o146 o252 o147","تصاريح العمل الساخن والبارد ودخول الأماكن المحصورة.");
+D("b1781","aramco","GI 1781.001","—","فحص واختبار وصيانة معدات الحماية من الحريق","Inspection, Testing and Maintenance of Fire Protection Equipment","itm","n25 n10 n72","n25","جداول ومسؤوليات فحص أنظمة الحماية في أرامكو.");
+D("csm","aramco","CSM","—","دليل سلامة الإنشاءات","Construction Safety Manual","ohs","","o1926","متطلبات السلامة في مواقع الإنشاء لأرامكو ومقاوليها.");
+D("saf01","hcis","SAF-01","v2.0","المتطلبات العامة لتوجيهات السلامة والحماية من الحريق","General Requirements for Safety & Fire Protection Directives","plant mgmt","saf02 saf03 saf04 saf05 saf06 saf07 saf08 saf09","","تطبيق التوجيهات ونطاقها؛ الهيئة صاحبة السلطة النهائية في تفسيرها، وتعتمد معايير NFPA وAPI مرجعاً.");
+D("saf02","hcis","SAF-02","—","إدارة البيئة والصحة والسلامة","Environmental, Health & Safety (EHS) Management","mgmt ohs","i45001 i14001","","نظام إدارة EHS المطلوب لكل المنشآت الخاضعة.");
+D("saf03","hcis","SAF-03","—","مباني المنشآت الصناعية","Plant Buildings","construction egress","n101 a752 a753","b014","مباني التحكم والورش والمكاتب داخل المنشآت ومواقعها.");
+D("saf04","hcis","SAF-04","—","أنظمة ومعدات الحماية من الحريق","Fire Protection Systems and Equipment","water pump sprinkler special alarm ext","n13 n14 n15 n16 n20 n24 n25 n72 n11 n2001 a2001 a2030","b017 b019","شبكات مياه الحريق والمضخات وأنظمة الإطفاء والكشف.");
+D("saf05","hcis","SAF-05","—","الصرف الصناعي","Industrial Drainage","plant","","","تصميم الصرف الزيتي ومنع انتشار السوائل المشتعلة.");
+D("saf06","hcis","SAF-06","—","تخطيط المنشأة والمسافات والوصول","Plant Layout, Spacing and Access","plant access","a752 a753","b055 b054","المسافات بين الوحدات وطرق الوصول للطوارئ.");
+D("saf07","hcis","SAF-07","—","سلامة مواقع الآبار البرية والقريبة من الشاطئ","Onshore and Nearshore Wellsite Safety","plant","","b062","متطلبات مواقع الآبار.");
+D("saf08","hcis","SAF-08","—","خزانات وأوعية التخزين","Storage Tanks and Storage Vessels","tanks","n30 n11 a650 a2000 a2021","b005 b018","المسافات والأحواض والحماية للخزانات والأوعية.");
+D("saf09","hcis","SAF-09","—","الحماية الإنشائية من الحريق في المنشآت","Fireproofing in Plants","construction plant","a2218 ul1709","b006","تحديد منطقة تعرض الحريق ودرجة الحماية المطلوبة.");
+D("a2001","api","API RP 2001","—","الحماية من الحريق في المصافي","Fire Protection in Refineries","plant water","n15 n11 n20","saf04 b017","مبادئ تصميم الحماية والاستجابة في المصافي.");
+D("a2000","api","API Std 2000","—","تنفيس الخزانات الجوية ومنخفضة الضغط","Venting Atmospheric and Low-Pressure Storage Tanks","tanks","a650","","التنفيس العادي والطارئ للخزانات.");
+D("a2021","api","API RP 2021","—","إدارة حرائق الخزانات الجوية","Management of Atmospheric Storage Tank Fires","tanks special mgmt","n11","b018","الاستعداد والاستجابة لحرائق الخزانات ومعدلات الرغوة.");
+D("a2030","api","API Std 2030","—","رش المياه للحماية من الحريق في الصناعة البترولية","Application of Fixed Water Spray Systems for Fire Protection in the Petroleum and Petrochemical Industries","special plant","n15","n15","معدلات الرش للأوعية والمضخات والضواغط.");
+D("a2218","api","API RP 2218","—","ممارسات الحماية الإنشائية في المصانع","Fireproofing Practices in Petroleum and Petrochemical Processing Plants","construction plant","ul1709","b006 saf09","منطقة سيناريو الحريق واختيار مواد الحماية.");
+D("a650","api","API Std 650","—","الخزانات الفولاذية الملحومة","Welded Tanks for Oil Storage","tanks","a2000","","تصميم وتصنيع الخزانات ومنها وصلة السقف القابلة للانفصال.");
+D("a500","api","API RP 500","—","تصنيف المناطق (نظام القسم Division)","Classification of Locations for Electrical Installations – Class I Div 1 & 2","hazarea","n70 n497","a505","تصنيف المناطق الخطرة بنظام Division.");
+D("a505","api","API RP 505","—","تصنيف المناطق (نظام النطاق Zone)","Classification of Locations – Class I Zone 0, 1, 2","hazarea","n70 n497","e60079_10 b068","تصنيف المناطق الخطرة بنظام Zone.");
+D("a752","api","API RP 752","—","إدارة مخاطر المباني الدائمة في المصانع","Management of Hazards Associated with Location of Process Plant Permanent Buildings","plant construction","","b055 saf06","تقييم مخاطر الانفجار والحريق والسموم على المباني المأهولة.");
+D("a753","api","API RP 753","—","إدارة مخاطر المباني المتنقلة","Management of Hazards Associated with Location of Process Plant Portable Buildings","plant","a752","","مواقع المباني المؤقتة والمتنقلة في المصانع.");
+D("a521","api","API Std 521","—","أنظمة تخفيف الضغط والتنفيس","Pressure-relieving and Depressuring Systems","sis plant","","b058","حالات تخفيف الضغط والحرق الطارئ وتصميم الشعلة.");
+D("a2350","api","API Std 2350","—","حماية الخزانات من الامتلاء الزائد","Overfill Prevention for Storage Tanks","tanks sis","","","مستويات التحذير والإيقاف ونظام منع الامتلاء.");
+D("a2003","api","API RP 2003","—","الحماية من الكهرباء الساكنة والصواعق","Protection Against Ignitions Arising Out of Static, Lightning, and Stray Currents","hazarea tanks","","e62305","التأريض والربط ومنع الشرارات.");
+D("a14c","api","API RP 14C","—","أنظمة السلامة للمنصات البحرية","Safety Systems for Offshore Production Facilities","sis plant","","","تحليل وتصميم أجهزة السلامة على المنصات.");
+D("a14g","api","API RP 14G","—","الحماية من الحريق للمنصات البحرية الثابتة","Fire Prevention and Control on Fixed Open-type Offshore Platforms","plant special","","b009","منع ومكافحة الحريق على المنصات المفتوحة.");
+D("a754","api","API RP 754","—","مؤشرات أداء سلامة العمليات","Process Safety Performance Indicators","mgmt","","","تصنيف أحداث سلامة العمليات Tier 1–4.");
+D("a2510","api","API Std 2510","—","منشآت الغاز البترولي المسال","Design and Construction of LPG Installations","tanks","a2510a","n58","تصميم منشآت الغاز المسال وحمايتها.");
+D("a2510a","api","API Publ 2510A","—","الحماية من الحريق في منشآت الغاز المسال","Fire-Protection Considerations for LPG Storage Facilities","tanks special","n15","","تبريد الأوعية بالماء والحماية الإنشائية.");
+D("i45001","iso","ISO 45001","2018","أنظمة إدارة السلامة والصحة المهنية","Occupational Health and Safety Management Systems","ohs mgmt","i31000","saf02","تحديد المخاطر، المشاركة، الاستعداد للطوارئ، التقييم والتحسين.");
+D("i14001","iso","ISO 14001","2015","أنظمة الإدارة البيئية","Environmental Management Systems","mgmt","","","الجوانب البيئية والامتثال والاستعداد للطوارئ البيئية.");
+D("i31000","iso","ISO 31000","2018","إدارة المخاطر","Risk Management – Guidelines","mgmt","","","مبادئ وإطار وعملية إدارة المخاطر.");
+D("i22301","iso","ISO 22301","2019","استمرارية الأعمال","Business Continuity Management Systems","mgmt","","","تحليل أثر الأعمال وخطط الاستمرارية.");
+D("i7010","iso","ISO 7010","2019","علامات السلامة المسجلة","Graphical Symbols – Registered Safety Signs","lighting","i3864","b067","رموز موحّدة: E للمخارج والإسعاف (أخضر)، F لمعدات الحريق (أحمر)، W تحذير، P منع، M إلزام.");
+D("i3864","iso","ISO 3864","—","ألوان وعلامات السلامة – مبادئ التصميم","Safety Colours and Safety Signs","lighting","","b067","ألوان السلامة وأشكال العلامات وتباينها.");
+D("i23601","iso","ISO 23601","2020","لوحات خطط الهروب والإخلاء","Escape and Evacuation Plan Signs","egress lighting","i7010","","محتوى وتصميم مخططات الإخلاء المعلقة.");
+D("i14520","iso","ISO 14520","—","أنظمة الإطفاء الغازية","Gaseous Fire-Extinguishing Systems","special","","n2001","المقابل الدولي لـ NFPA 2001.");
+D("i13702","iso","ISO 13702","2015","التحكم بالحرائق والانفجارات في المنشآت البحرية","Control and Mitigation of Fires and Explosions on Offshore Installations","plant","","b009","استراتيجية الحماية للمنصات البحرية.");
+D("i7240","iso","ISO 7240","—","أنظمة كشف وإنذار الحريق","Fire Detection and Alarm Systems","alarm","","n72 e_en54","سلسلة متطلبات مكونات أنظمة الإنذار.");
+D("e60079_10","iec","IEC 60079-10-1","2020","تصنيف المناطق – الأجواء الغازية المتفجرة","Classification of Areas – Explosive Gas Atmospheres","hazarea","","a505 b068 n497","تحديد Zone 0/1/2 حسب درجة التسرب والتهوية.");
+D("e60079_14","iec","IEC 60079-14","2024","تصميم واختيار وتركيب التمديدات في الأجواء المتفجرة","Electrical Installations Design, Selection and Erection","hazarea","e60079_10","","اختيار المعدات حسب EPL ومجموعة الغاز ودرجة الحرارة.");
+D("e60079_17","iec","IEC 60079-17","2023","فحص وصيانة التمديدات في الأجواء المتفجرة","Electrical Installations Inspection and Maintenance","hazarea itm","e60079_14","","الفحص الأولي والدوري ودرجاته (بصري، قريب، تفصيلي).");
+D("e60079_29","iec","IEC 60079-29-2","2015","اختيار وتركيب وصيانة كواشف الغاز القابل للاشتعال","Gas Detectors – Selection, Installation, Use and Maintenance","alarm plant","e60079_10","","مواقع الكواشف ومعايرتها وصيانتها.");
+D("e61508","iec","IEC 61508","2010","السلامة الوظيفية للأنظمة الكهربائية والإلكترونية","Functional Safety of E/E/PE Safety-related Systems","sis","","","المعيار الأم لمستويات SIL.");
+D("e61511","iec","IEC 61511","2016","أنظمة السلامة المجهزة للصناعات التحويلية","Functional Safety – SIS for the Process Industry","sis plant","e61508","b058","دورة حياة SIS: تحديد SIL، التصميم، اختبار الإثبات الدوري.");
+D("e62443","iec","IEC 62443","—","الأمن السيبراني لأنظمة الأتمتة الصناعية","Industrial Automation and Control Systems Security","cyber","","otcc","المناطق والقنوات ومستويات الأمان SL1–4.");
+D("e62305","iec","IEC 62305","2024","الحماية من الصواعق","Protection Against Lightning","hazarea","","a2003","تقييم المخاطر ومستويات الحماية LPL I–IV.");
+D("e60331","iec","IEC 60331","—","سلامة الدائرة للكابلات تحت الحريق","Tests for Electric Cables under Fire Conditions – Circuit Integrity","alarm construction","","","كابلات مقاومة للحريق لدوائر الإنذار والطوارئ.");
+D("e60332","iec","IEC 60332","—","اختبار انتشار اللهب في الكابلات","Tests on Electric and Optical Fibre Cables under Fire Conditions","construction","","","كابلات مثبطة للهب.");
+D("e60364","iec","IEC 60364","—","التمديدات الكهربائية منخفضة الجهد","Low-voltage Electrical Installations","hazarea","","n70 sbc401","القواعد العامة للتمديدات منخفضة الجهد.");
+D("o36","osha","29 CFR 1910.36","—","تصميم وإنشاء مسارات الخروج","Design and Construction Requirements for Exit Routes","egress","","n101","عدد المخارج وأبعادها وفصلها.");
+D("o37","osha","29 CFR 1910.37","—","صيانة وحماية مسارات الخروج","Maintenance, Safeguards, and Operational Features for Exit Routes","egress lighting","","n101","إبقاء المخارج خالية ومضاءة ومعلّمة.");
+D("o38","osha","29 CFR 1910.38","—","خطط الطوارئ","Emergency Action Plans","mgmt egress","","cd1","محتوى خطة الطوارئ والإخلاء والتدريب.");
+D("o39","osha","29 CFR 1910.39","—","خطط منع الحريق","Fire Prevention Plans","mgmt","","","مخاطر الحريق الرئيسية والتحكم بمصادر الاشتعال.");
+D("o156","osha","29 CFR 1910.156","—","فرق الإطفاء","Fire Brigades","mgmt","","n600","تنظيم وتدريب وتجهيز فرق الإطفاء.");
+D("o157","osha","29 CFR 1910.157","—","الطفايات اليدوية","Portable Fire Extinguishers","ext itm","n10","n10","التوزيع والفحص والتدريب.");
+D("o159","osha","29 CFR 1910.159","—","أنظمة الرشاشات الآلية","Automatic Sprinkler Systems","sprinkler","n13","n13","المتطلبات العامة للرشاشات في أماكن العمل.");
+D("o164","osha","29 CFR 1910.164","—","أنظمة كشف الحريق","Fire Detection Systems","alarm","n72","","تركيب وصيانة أجهزة الكشف.");
+D("o165","osha","29 CFR 1910.165","—","أنظمة إنذار العاملين","Employee Alarm Systems","alarm","","n72","وضوح الإنذار لكل العاملين.");
+D("o119","osha","29 CFR 1910.119","—","إدارة سلامة العمليات للكيماويات شديدة الخطورة","Process Safety Management (PSM)","mgmt plant","","a754","عناصر PSM: تحليل المخاطر، إدارة التغيير، التدقيق.");
+D("o120","osha","29 CFR 1910.120","—","عمليات النفايات الخطرة والاستجابة للطوارئ","HAZWOPER","mgmt ohs","","","التدريب والاستجابة لحوادث المواد الخطرة.");
+D("o146","osha","29 CFR 1910.146","—","الأماكن المحصورة التي تتطلب تصريحاً","Permit-Required Confined Spaces","ohs","","gi2100","التصريح، قياس الأجواء، المراقب، الإنقاذ.");
+D("o147","osha","29 CFR 1910.147","—","عزل مصادر الطاقة (LOTO)","Control of Hazardous Energy (Lockout/Tagout)","ohs","","gi2100 n70e","إجراءات القفل والوسم.");
+D("o252","osha","29 CFR 1910.252","—","الأعمال الساخنة واللحام","Welding, Cutting and Brazing – General Requirements","ohs","","gi2100","الوقاية من الحريق أثناء الأعمال الساخنة.");
+D("o269","osha","29 CFR 1910.269","—","توليد ونقل وتوزيع الكهرباء","Electric Power Generation, Transmission, and Distribution","hv ohs","","ieeec2","ممارسات العمل الآمن على الشبكات: مسافات الاقتراب الدنيا، التأريض المؤقت، التدريب، الإنقاذ.");
+D("o333","osha","29 CFR 1910.333","—","اختيار واستخدام ممارسات العمل الكهربائي","Selection and Use of Work Practices (Electrical)","hv ohs","","n70e","العمل على أجزاء مكهربة، مسافات الاقتراب من الخطوط الهوائية، عزل الطاقة.");
+D("o137","osha","29 CFR 1910.137","—","معدات الحماية الكهربائية","Electrical Protective Equipment","hv ohs","","","القفازات والأكمام العازلة واختبارها الدوري.");
+D("o1926","osha","29 CFR 1926.150","—","الحماية من الحريق في الإنشاءات","Construction – Fire Protection and Prevention (Subpart F)","ohs ext","","csm","الطفايات والوقاية من الحريق في مواقع البناء.");
+D("c155","ilo","ILO C155","1981","اتفاقية السلامة والصحة المهنيتين","Occupational Safety and Health Convention","ohs mgmt","","","سياسة وطنية للسلامة وواجبات أصحاب العمل والعمال.");
+D("c174","ilo","ILO C174","1993","اتفاقية منع الحوادث الصناعية الكبرى","Prevention of Major Industrial Accidents Convention","plant mgmt","","o119","تحديد المنشآت الخطرة وتقارير السلامة وخطط الطوارئ.");
+D("c187","ilo","ILO C187","2006","الإطار الترويجي للسلامة والصحة المهنيتين","Promotional Framework for OSH Convention","ohs mgmt","c155","","نظام وطني وبرنامج وطني للسلامة.");
+D("iloosh","ilo","ILO-OSH 2001","2001","إرشادات أنظمة إدارة السلامة والصحة المهنية","Guidelines on OSH Management Systems","ohs mgmt","","i45001","نموذج نظام إدارة السلامة على مستوى المنشأة.");
+D("lab","mhrsd","نظام العمل السعودي","2024","نظام العمل – الوقاية من مخاطر العمل","Saudi Labor Law – Occupational Hazards","ohs egress","ncosh","c155","واجبات صاحب العمل في السلامة والوقاية من الحريق والإسعاف (المواد 121 وما بعدها)، مع تعديلات 2024.");
+D("ncosh","mhrsd","لوائح السلامة المهنية","—","اللوائح والقرارات الوزارية للسلامة والصحة المهنية","OSH Regulations (MHRSD / NCOSH)","ohs mgmt","lab","","القرارات المنفذة لنظام العمل: مسؤول/لجنة السلامة، الإبلاغ عن الإصابات، الاشتراطات حسب النشاط.");
+D("ecc","nca","NCA ECC","—","الضوابط الأساسية للأمن السيبراني","Essential Cybersecurity Controls","cyber","","","الحد الأدنى من ضوابط الأمن السيبراني للجهات الوطنية.");
+D("otcc","nca","NCA OTCC-1:2022","2022","ضوابط الأمن السيبراني للأنظمة التشغيلية","Operational Technology Cybersecurity Controls","cyber sis alarm","ecc","e62443","أنظمة التحكم الصناعي في المنشآت الحساسة، ومنها أنظمة F&G وESD وشبكات الإنذار المتصلة.");
+D("ieee979","other","IEEE 979","—","دليل الحماية من الحريق في المحطات الفرعية","Guide for Substation Fire Protection","hv special","n15 n72","n850","تقييم مخاطر الحريق في المحطات، فصل المحولات، الجدران الفاصلة، الكشف والإطفاء في غرف التحكم والكابلات.");
+D("ieee1584","other","IEEE 1584","2018","حساب مخاطر القوس الكهربائي","Guide for Performing Arc-Flash Hazard Calculations","hv","","","طريقة حساب الطاقة الساقطة وحد القوس الكهربائي.");
+D("ieeec2","other","IEEE C2 (NESC)","2023","كود السلامة الكهربائية الوطني الأمريكي","National Electrical Safety Code","hv","","o269","خلوصات الخطوط الهوائية والمحطات وقواعد العمل لشبكات المرافق.");
+D("e61936","iec","IEC 61936-1","2021","منشآت القوى فوق 1 kV تيار متردد","Power Installations Exceeding 1 kV AC – Common Rules","hv construction","e60364","ieeec2 n850","الخلوصات والحواجز والوصول وحماية المحولات الزيتية من الحريق (مسافات وجدران فاصلة وأحواض زيت).");
+D("sec","other","SEC Distribution Standards","—","مواصفات الشركة السعودية للكهرباء للتوزيع","Saudi Electricity Company – Distribution Construction Standards","hv","","","غرف المحولات ومحطات التوزيع وفق جهود الشبكة (13.8 و33 kV) ومتطلبات الربط (تحقق من الإصدار المعتمد).");
+D("ul300","other","UL 300","—","اختبار أنظمة إطفاء مناطق الطهي","Fire Testing of Fire Extinguishing Systems for Protection of Commercial Cooking Equipment","special","","n17a","معيار اعتماد أنظمة إطفاء المطابخ.");
+D("ul1709","other","UL 1709","—","اختبار الحريق الهيدروكربوني السريع للحماية الإنشائية","Rapid Rise Fire Tests of Protection Materials for Structural Steel","construction","","","منحنى حريق هيدروكربوني لاختبار مواد الحماية.");
+D("z358","other","ANSI/ISEA Z358.1","2014","معدات غسل العيون والدش الطارئ","Emergency Eyewash and Shower Equipment","ohs","","b069","زمن الوصول والتدفق ودرجة حرارة الماء.");
+D("e_en54","other","EN 54","—","أنظمة كشف وإنذار الحريق (أوروبي)","Fire Detection and Fire Alarm Systems","alarm","","n72 i7240","متطلبات مكونات أنظمة الإنذار.");
+D("e_bs5839","other","BS 5839-1","2017","أنظمة الإنذار في المباني غير السكنية (بريطاني)","Fire Detection and Fire Alarm Systems for Buildings","alarm","e_en54","n72","فئات الأنظمة L وP وM وقواعد التصميم.");
+D("e_bs5266","other","BS 5266-1","2016","إنارة الطوارئ (بريطاني)","Emergency Lighting – Code of Practice","lighting","","n101","تصميم إنارة الطوارئ ومدة التشغيل والاختبار.");
+D("fmds","other","FM Global Data Sheets","—","صحائف بيانات FM Global","FM Global Property Loss Prevention Data Sheets","sprinkler special plant","","","معايير تأمينية لحماية الممتلكات، خصوصاً التخزين.");
+Object.values(DOCS).forEach(d=>{d.refs=d.refs.filter(r=>DOCS[r]);d.eq=d.eq.filter(r=>DOCS[r]);d.by=[]});
+Object.values(DOCS).forEach(d=>{d.refs.forEach(r=>DOCS[r].by.push(d.id));d.eq.forEach(r=>{if(!DOCS[r].eq.includes(d.id))DOCS[r].eq.push(d.id)})});
+
+const KB=[];
+function K(doc,c,t,ti,x,val,k,v){KB.push({doc,c,t,ti,x,val,k,v:v||"ok"})}
+K("n10","6.2","ext","أقصى مسافة انتقال لطفايات الفئة A","لا تتجاوز مسافة الوصول إلى طفاية Class A مسافة 75 قدماً، وتُحسب الكمية حسب خطورة المكان والمساحة لكل وحدة تصنيف.","≤ 22.9 m (75 ft)","extinguisher travel distance class A portable");
+K("n10","6.3","ext","مسافة الانتقال لطفايات الفئة B","30 أو 50 قدماً حسب تصنيف الطفاية ودرجة الخطورة.","9.1 m / 15.25 m","extinguisher class B flammable liquid travel");
+K("n10","6.6","ext","طفايات الفئة K للمطابخ التجارية","طفاية Class K في المطابخ التي تستخدم الزيوت والدهون، بمسافة انتقال لا تتجاوز 30 قدماً.","≤ 9.1 m (30 ft)","class K kitchen extinguisher cooking oil");
+K("n10","6.1.3.8","ext","ارتفاع تركيب الطفايات","حتى 40 رطلاً: أعلاها ≤ 5 أقدام. أثقل: ≤ 3.5 أقدام. الخلوص من الأرض ≥ 4 بوصات.","≤1.53 m / ≤1.07 m · ≥102 mm","extinguisher mounting height installation");
+K("n10","7.2 / 7.3","itm","فحص وصيانة الطفايات","فحص شهري، صيانة سنوية، صيانة داخلية كل 6 سنوات للبودرة المضغوطة، اختبار هيدروستاتيكي 5 سنوات (CO2 والماء) و12 سنة (البودرة).","شهري · سنوي · 6 · 5/12 سنة","extinguisher inspection monthly maintenance annual hydrostatic");
+K("n13","4.3","sprinkler","تصنيف خطورة الإشغال للرشاشات","خفيفة (مكاتب، مساجد، فنادق)، عادية 1 (مواقف، مخابز، غرف ميكانيكية)، عادية 2 (ورش، مستودعات صغيرة)، إضافية 1 و2 (سوائل قابلة للاشتعال، رغوة بلاستيكية).","LH · OH1 · OH2 · EH1 · EH2","occupancy hazard classification light ordinary extra");
+K("n13","19.3.3.1","sprinkler","منحنى الكثافة/المساحة","LH ‏0.10 gpm/ft² على 1500 ft²، OH1 ‏0.15، OH2 ‏0.20 على 1500 ft²، EH1 ‏0.30 وEH2 ‏0.40 على 2500 ft².","LH 4.1 · OH1 6.1 · OH2 8.1 mm/min @139 m² · EH1 12.2 · EH2 16.3 @232 m²","density area curve hydraulic design gpm");
+K("n13","19.2.3.1.2","sprinkler","تصريف الخراطيم ومدة الإمداد","LH ‏100 gpm لـ 30 دقيقة، OH ‏250 gpm لـ 60–90 دقيقة، EH ‏500 gpm لـ 90–120 دقيقة.","LH 380 L/min·30 · OH 950·60–90 · EH 1900·90–120","hose stream allowance water supply duration");
+K("n13","10.2.4","sprinkler","المساحة القصوى لكل رشاش Standard Spray","LH حتى 225 ft²، OH ‏130 ft²، EH ‏100 ft² بالحساب الهيدروليكي.","LH 20.9 · OH 12.1 · EH 9.3 m²","sprinkler coverage area protection standard spray");
+K("n13","10.2.5","sprinkler","المسافات بين الرشاشات وعن الجدران","أقصى تباعد 15 قدماً (LH/OH) و12 قدماً (EH)، أدنى 6 أقدام بين رشاشين، وعن الجدار ≤ نصف التباعد و≥ 4 بوصات.","≤4.6 m · ≤3.7 m · ≥1.8 m · جدار ≥102 mm","sprinkler spacing distance wall minimum maximum");
+K("n13","10.2.6","sprinkler","بعد العاكس عن السقف","في الإنشاء غير المعوّق بين 1 و12 بوصة تحت السقف.","25–305 mm","deflector ceiling distance");
+K("n13","4.4","sprinkler","المساحة القصوى لكل صاعد","52,000 ft² لكل طابق للخطورة الخفيفة والعادية، و40,000 ft² للإضافية والتخزين.","4831 m² · 3716 m²","system area limitation riser");
+K("n13","16.2.7","sprinkler","الرشاشات الاحتياطية","6 لأقل من 300 رشاش، 12 من 300 إلى 1000، 24 لأكثر من 1000، مع مفتاح خاص.","6 · 12 · 24","spare sprinklers cabinet wrench");
+K("n13","16.12","sprinkler","وصلة الدفاع المدني وإنذار التدفق","FDC في موقع ظاهر وسهل الوصول، مع جهاز إنذار تدفق وصمامات تحكم مراقَبة.","FDC · Waterflow","fire department connection FDC waterflow alarm valve supervised");
+K("n13","29.2","itm","الاختبار الهيدروستاتيكي للرشاشات","200 psi لمدة ساعتين، أو 50 psi فوق أقصى ضغط تشغيل إذا تجاوز 150 psi.","13.8 bar · 2 h","hydrostatic test acceptance 200 psi");
+K("n14","3.3 / 5.3","standpipe","فئات الصواعد","Class I وصلات 2½ بوصة للدفاع المدني، Class II خراطيم 1½ بوصة للشاغلين، Class III يجمعهما.","65 mm · 40 mm","standpipe class hose connection");
+K("n14","7.8","standpipe","الضغط المتبقي عند أبعد مخرج","100 psi عند أبعد وصلة 2½ بوصة و65 psi عند أبعد وصلة 1½ بوصة.","6.9 bar · 4.5 bar","standpipe residual pressure hydraulically remote");
+K("n14","7.10","standpipe","معدل تدفق الصواعد","500 gpm لأبعد صاعد و250 gpm لكل صاعد إضافي، بحد أعلى 1250 gpm (1000 gpm في المباني المرشوشة بالكامل).","1893 + 946 L/min","standpipe flow rate demand");
+K("n14","7.3","standpipe","مواقع وصلات الخراطيم","في كل بسطة طابق داخل الأدراج المحمية، وتُضاف إذا تجاوزت مسافة الانتقال 200 قدم (مرشوش) أو 130 قدماً (غير مرشوش).","61 m · 39.7 m","hose connection location stair landing travel");
+K("n14","7.2","standpipe","حدود الضغط وصمامات التنظيم","لا يتجاوز 350 psi، وتُركّب صمامات تنظيم حيث يتجاوز الضغط عند الوصلة 175 psi (100 psi لخراطيم 1½ بوصة).","24 · 12 · 6.9 bar","pressure regulating device maximum pressure");
+K("n20","6.2","pump","أداء المضخة الطاردة المركزية","150% من السعة المقننة عند ≥ 65% من الضغط المقنن، وضغط الإغلاق ≤ 140% للمضخات الأفقية.","150% Q @ ≥65% P · Churn ≤140%","fire pump performance curve rated capacity churn");
+K("n20","11.4","pump","خزان وقود مضخة الديزل","1 جالون لكل حصان + 5% للتمدد + 5% للترسبات.","≈ 5.07 L/kW + 10%","diesel fuel tank capacity engine");
+K("n20","4.14","pump","حماية غرفة المضخات","فصل ساعتين في المباني الشاهقة أو غير المرشوشة وساعة في المرشوشة، وحرارة ≥ 4°م (21°م للديزل ما لم يُسخَّن المحرك).","2 h / 1 h · ≥4°C","pump room separation protection temperature");
+K("n20","14.2","itm","اختبار القبول الميداني للمضخة","عند صفر تدفق و100% و150% مع تسجيل الضغط والسرعة والتيار.","0 · 100 · 150 %","pump acceptance test field");
+K("n20","4.27","pump","مضخة الضغط Jockey","تحافظ على ضغط الشبكة ولا تُعد مصدراً لمياه الحريق، وتعمل قبل المضخة الرئيسية.","","jockey pump pressure maintenance");
+K("n22","4","water","سعة خزان مياه الحريق","السعة = الطلب الكلي (رشاشات + خراطيم) × مدة الإمداد، مع الحماية من التآكل وفحص دوري.","السعة = الطلب × المدة","water storage tank capacity");
+K("n24","10.10","itm","اختبار الشبكات الأرضية","غسل الشبكة قبل التوصيل، واختبار 200 psi لساعتين أو 50 psi فوق أقصى ضغط ساكن.","13.8 bar · 2 h","underground main flushing hydrostatic");
+K("n24","10.1","water","قطر الخط المغذي للحنفية","لا يقل عن 6 بوصات.","≥ 150 mm","hydrant lateral main size","verify");
+K("n25","Table 5.1.1.2","itm","فحص واختبار الرشاشات","صمامات مراقبة شهرياً، تصريف رئيسي سنوياً، إنذار التدفق نصف سنوي (ريشي) أو ربع سنوي (ميكانيكي)، تقييم داخلي للأنابيب كل 5 سنوات.","شهري · ربع/نصف سنوي · سنوي · 5 سنوات","sprinkler inspection testing maintenance main drain","verify");
+K("n25","5.3.1","itm","اختبار عينات الرشاشات","القياسية عند 50 سنة ثم كل 10 سنوات، وسريعة الاستجابة عند 20 سنة ثم كل 10.","50 / 20 سنة","sprinkler sample testing replacement");
+K("n25","8.3","itm","اختبار المضخات الدوري","تشغيل بلا تدفق أسبوعياً للديزل (30 دقيقة) وأسبوعياً أو شهرياً للكهربائية (10 دقائق)، واختبار تدفق سنوي.","أسبوعي/شهري · سنوي","fire pump weekly churn annual flow test");
+K("n25","6.3","itm","اختبار الصواعد","اختبار تدفق كل 5 سنوات للآلية، وهيدروستاتيكي كل 5 سنوات للجافة اليدوية.","5 سنوات","standpipe flow test hydrostatic five year");
+K("n70","110.34(A)","hv","مسافات العمل أمام المعدات فوق 1000 فولت","عمق مساحة العمل يعتمد على الجهد وحالة الطرف المقابل (الحالة 1، 2، 3). مثال: 1001–2500 V: ‏0.9 / 1.2 / 1.5 م، 2501 V–9 kV: ‏1.2 / 1.5 / 1.8 م، 9–25 kV: ‏1.5 / 1.8 / 2.8 م.","Table 110.34(A)","working space clearance high voltage medium voltage switchgear","verify");
+K("n70","110.31 / 110.34(C)","hv","تسوير وإغلاق تمديدات الجهد العالي","توضع داخل غرف مقفلة أو أسوار بارتفاع لا يقل عن 2.1 م، ولا يدخلها إلا المؤهلون، مع لوحات تحذير «خطر – جهد عالٍ – ممنوع الاقتراب».","سور ≥ 2.1 m","high voltage enclosure fence locked room warning sign danger","verify");
+K("n70","110.33","hv","مداخل غرف الجهد العالي","مدخل واحد على الأقل بعرض ≥ 610 مم وارتفاع ≥ 2 م، ومدخلان عند طرفي اللوحات العريضة، وأبواب تفتح للخارج بمقابض ذعر.","≥ 610 mm × 2.0 m","entrance working space switchgear door panic hardware","verify");
+K("n70","450.21(B)","hv","المحولات الجافة داخل المباني","المحولات الجافة فوق 112.5 kVA توضع في غرفة مقاومة للحريق ساعة على الأقل، وما فوق 35 kV في خزنة (vault).","> 112.5 kVA: غرفة 1 h","dry-type transformer indoor room fire resistance","ok");
+K("n70","450.26","hv","المحولات الزيتية داخل المباني","المحولات المعزولة بالزيت داخل المباني توضع في خزنة محولات (vault) مع استثناءات محدودة.","Vault","oil-insulated transformer indoor vault","ok");
+K("n70","450.42 / 450.43","hv","خزنة المحولات (Transformer Vault)","الجدران والسقف والأرضية مقاومة للحريق 3 ساعات (مثل خرسانة مسلحة 150 مم)، وتنخفض إلى ساعة إذا كانت محمية بالرشاشات أو رش المياه أو CO2. الباب مقاوم 3 ساعات مع عتبة ≥ 100 مم لاحتواء الزيت.","3 h · 1 h مرشوش · عتبة 100 mm","transformer vault 3 hour fire rating door sill","ok");
+K("n70","450.27","hv","المحولات الزيتية خارج المباني","حماية المباني والمواد القابلة للاحتراق والأبواب والنوافذ من حريق المحول بالفصل أو الحواجز أو الرشاشات أو رش المياه.","","outdoor oil-insulated transformer separation building","ok");
+K("n70","Art. 235/245/305/315/495","hv","تنظيم مواد الجهد فوق 1000 V","في إصدار 2023 جُمعت متطلبات ما فوق 1000 V ac / 1500 V dc في مواد مستقلة (الدوائر والتغذية، الحماية من التيار الزائد، طرق التمديد، كابلات الجهد المتوسط، المعدات) بدلاً من المادة 490 سابقاً.","NEC 2023","over 1000 volts medium voltage articles reorganization","verify");
+K("n70e","130.4(E)","hv","حدود الاقتراب من الأجزاء المكهربة","751 V–15 kV: حد الاقتراب المحدود 3.05 م (موصل متحرك) و1.53 م (جزء ثابت)، والحد المقيّد 0.66 م. 15.1–36 kV: ‏3.05 م و1.83 م، والمقيّد 0.79 م.","LAB 1.53 m · RAB 0.66 m (≤15 kV)","shock approach boundary limited restricted high voltage","ok");
+K("n70e","130.5","hv","تقييم مخاطر القوس الكهربائي","تقييم يحدد حد القوس الكهربائي (عند 1.2 cal/cm²) والطاقة الساقطة أو فئة معدات الوقاية، ويُراجع كل 5 سنوات كحد أقصى، مع ملصقات على المعدات تبيّن الجهد وحد القوس والطاقة أو الفئة.","1.2 cal/cm² · ≤ 5 سنوات","arc flash risk assessment boundary incident energy label","ok");
+K("n70e","130.7","hv","فئات معدات الوقاية من القوس","الفئات 1 إلى 4 بتصنيف أدنى 4 و8 و25 و40 cal/cm².","4 · 8 · 25 · 40 cal/cm²","arc flash PPE category rating","ok");
+K("n70e","120.5","hv","تحقيق حالة العمل الآمن كهربائياً","تحديد المصادر، الفصل، التحقق البصري من الفتح، تفريغ الطاقة المخزنة، القفل والوسم، اختبار انعدام الجهد، والتأريض المؤقت عند احتمال الجهد المستحث.","LOTO · اختبار انعدام الجهد","electrically safe work condition lockout test absence of voltage grounding","verify");
+K("n70e","130.2","hv","تصريح العمل على أجزاء مكهربة","العمل داخل الحد المقيّد أو حد القوس الكهربائي على معدات مكهربة يتطلب مبرراً وتصريح عمل مكهرب موثقاً.","Energized Work Permit","energized electrical work permit justification","ok");
+K("n70e","110.6","hv","تدريب العاملين المؤهلين","تدريب على المخاطر والإجراءات وإعادة التدريب بفترات لا تتجاوز 3 سنوات، وتدريب الإنقاذ والإسعاف سنوياً.","≤ 3 سنوات","electrical safety training qualified person retraining","verify");
+K("n70b","—","hv","برنامج صيانة المعدات الكهربائية","برنامج مكتوب يحدد فترات الفحص حسب حالة المعدات وأهميتها، ويشمل التصوير الحراري واختبارات العزل وفحص المفاتيح والمحولات.","EMP","electrical maintenance program thermography insulation test","verify");
+K("n850","5.1.4","hv","فصل المحولات الزيتية الخارجية","500–5000 جالون: ‏7.6 م، أكثر من 5000 جالون: ‏15 م، وإلا يُبنى جدار فاصل يمتد فوق المحول وجانبيه، مع احتواء للزيت وتصريف بعيد عن المباني.","7.6 m · 15 m","transformer separation firewall oil containment outdoor","verify");
+K("e61936","8","hv","حماية المحولات الزيتية من الحريق","مسافات فصل بين المحولات وعن المباني تعتمد على حجم الزيت، أو جدران فاصلة مقاومة للحريق، وأحواض لاحتواء كامل الزيت.","","transformer fire separation liquid volume wall pit","verify");
+K("e61936","7","hv","الخلوصات والحواجز في منشآت الجهد العالي","خلوصات دنيا من الأجزاء المكهربة حسب الجهد، وحواجز وأسوار، وممرات تشغيل وصيانة ومخارج هروب من غرف المفاتيح.","","clearance barrier switchgear room escape","verify");
+K("ieee979","—","hv","الحماية من الحريق في المحطات الفرعية","كشف وإطفاء في غرف التحكم وأقبية الكابلات، فصل المحولات بالمسافة أو الجدران، وأحواض الزيت.","","substation fire protection control house cable vault","ok");
+K("ieee1584","—","hv","حساب القوس الكهربائي","حساب الطاقة الساقطة وحد القوس من تيار القصر وزمن الفصل وتشكيل الأقطاب ومسافة العمل.","cal/cm²","arc flash calculation incident energy","ok");
+K("o333","1910.333(c)(3)","hv","الاقتراب من الخطوط الهوائية لغير المؤهلين","مسافة لا تقل عن 3.05 م للجهد حتى 50 kV، تُزاد 10 سم لكل 10 kV فوق ذلك.","≥ 3.05 m (≤ 50 kV)","overhead power line clearance unqualified 10 feet","ok");
+K("o269","1910.269(l)","hv","مسافات الاقتراب الدنيا للعاملين المؤهلين","جداول مسافات اقتراب دنيا حسب الجهد، مع التأريض المؤقت وحماية العاملين على الخطوط.","MAD","minimum approach distance qualified line worker","ok");
+K("o137","1910.137","hv","فحص القفازات العازلة","اختبار كهربائي قبل أول استخدام ثم كل 6 أشهر للقفازات، وكل 12 شهراً للأكمام.","6 أشهر · 12 شهراً","rubber insulating gloves test interval","ok");
+K("sbc401","—","hv","تمديدات الجهد المتوسط في الكود السعودي","يتبع الكود متطلبات مماثلة لـ NEC للتمديدات فوق 1000 V، وجهود التوزيع في الشبكة السعودية 13.8 و33 kV.","13.8 / 33 kV","medium voltage Saudi electrical code distribution","verify");
+K("p119","Scope","hv","المحطات الفرعية في أرامكو","تخطيط المحطات الفرعية، المسافات، فصل المحولات، وحماية مباني المفاتيح من الحريق.","","substation layout transformer separation aramco","verify");
+K("n72","17.7.3","alarm","تباعد كواشف الدخان","على الأسقف الملساء تباعد اسمي 30 قدماً، ولا تبعد أي نقطة أكثر من 0.7 من التباعد عن كاشف.","9.1 m · 0.7S","smoke detector spacing ceiling spot");
+K("n72","17.14","alarm","نقاط الإنذار اليدوية","≤ 5 أقدام من كل باب مخرج، مسافة انتقال ≤ 200 قدم، ارتفاع المقبض 42–48 بوصة.","≤1.5 m · ≤61 m · 1.07–1.22 m","manual pull station location height");
+K("n72","18.4.4","alarm","مستوى صوت التنبيه","+15 dBA فوق متوسط الضوضاء أو +5 dBA فوق أعلى صوت يدوم 60 ثانية، بحد 110 dBA. النوم: 75 dBA عند الوسادة وتردد 520 Hz.","+15 dBA · ≤110 · 75 dBA/520 Hz","audible notification sound level dBA sleeping");
+K("n72","18.5.5","alarm","ارتفاع أجهزة التنبيه الضوئية","العدسة بالكامل بين 80 و96 بوصة فوق الأرض.","2.03–2.44 m","visible strobe mounting height");
+K("n72","10.6.7","alarm","سعة البطاريات الاحتياطية","24 ساعة استعداد ثم 5 دقائق إنذار، أو 15 دقيقة لأنظمة الإخلاء الصوتي.","24 h + 5 / 15 min","secondary power battery standby calculation");
+K("n72","Table 14.4.3.2","itm","اختبار نظام الإنذار","اختبار وظيفي سنوي لأغلب الأجهزة، واختبار حساسية كواشف الدخان بعد سنة ثم كل سنتين.","سنوي · كل سنتين","fire alarm testing annual sensitivity");
+K("n72","Ch.11","cyber","الأمن السيبراني لأنظمة الإنذار","أُضيف في إصدار 2022 فصل للأمن السيبراني: حيث تتطلب القوانين أو الأكواد أو سياسات الجهة ذلك، يُطبَّق مستوى من ضوابط الأمن السيبراني على نظام الإنذار. الفصل قصير وتفاصيله الإرشادية في الملحق J.","Ch.11 · Annex J","cybersecurity cyber security fire alarm network IT","verify");
+K("n72","Annex J","cyber","إرشادات الأمن السيبراني لأنظمة الإنذار","إرشادات غير إلزامية لتقييم مخاطر الاتصال الشبكي للوحات الإنذار، وتقسيم الشبكة، والتحكم بالوصول، وإدارة التحديثات، مع إحالة لأطر مثل IEC 62443.","Annex J","cybersecurity guidelines network segmentation access control","verify");
+K("n72","Remote access","cyber","الوصول عن بُعد لنظام الإنذار","الوصول عن بُعد يجب ألا يؤثر على تشغيل نظام الإنذار أو استجابته، ويُقيَّد استخدامه في إعادة الضبط أو إسكات الإنذار أو تشغيل وظائف التحكم الطارئ.","","remote access reset silence cybersecurity","verify");
+K("n72","24.4","alarm","الإخلاء الصوتي","وضوح الكلام في مناطق الإخلاء الصوتي وتقسيم المبنى إلى مناطق.","STI ≥ 0.45 (مرجعي)","voice evacuation EVACS intelligibility","verify");
+K("n101","Table 7.3.1.2","egress","معاملات حمل الإشغال","تجمع غير مكثف 15 ft² صافي، مكثف 7 صافي، أعمال 150 إجمالي، تجاري 60 إجمالي، فصول 20 صافي، صناعي 100 إجمالي، سكني 200 إجمالي.","1.4 · 0.65 · 14 · 5.6 · 1.9 · 9.3 · 18.6 m²","occupant load factor area per person");
+K("n101","7.3.3","egress","سعة مكونات المخارج","الأدراج 0.3 بوصة لكل شخص، والمكونات المستوية 0.2 بوصة.","7.6 mm · 5 mm","egress capacity width per person stair level");
+K("n101","7.4.1","egress","عدد المخارج","2 على الأقل، و3 لحمل 501–1000، و4 لأكثر من 1000.","2 · 3 · 4","number of exits occupant load");
+K("n101","7.2.1.2","egress","العرض الصافي للأبواب","≥ 32 بوصة.","≥ 810 mm","door clear width egress");
+K("n101","7.2.2.2","egress","أبعاد الأدراج الجديدة","عرض ≥ 44 بوصة (36 لأقل من 50)، قائمة 4–7 بوصات، نائمة ≥ 11 بوصة، ارتفاع حر 6 أقدام و8 بوصات.","≥1120 mm · ≤180 · ≥280 mm","stair width riser tread headroom");
+K("n101","Ch.12–42","egress","مسافة الانتقال حسب الإشغال","أعمال 200/300 قدم، تجمع 200/250، تجاري 150/250، صناعي 200/250، تخزين 200/400 (غير مرشوش/مرشوش).","B 61/91 · A 61/76 · M 46/76 m","travel distance limit occupancy sprinklered office business مكاتب");
+K("n101","7.9.2","lighting","أداء إنارة الطوارئ","1.5 ساعة، متوسط أولي 1 قدم-شمعة وأدنى 0.1، يُسمح بانخفاضها إلى 0.6 و0.06، ونسبة ≤ 40:1.","90 min · 10.8 lux · 1.08 lux · 40:1","emergency lighting illumination duration lux");
+K("n101","7.9.3","itm","اختبار إنارة الطوارئ","شهري 30 ثانية، وسنوي 1.5 ساعة للوحدات بالبطاريات، مع سجلات.","30 s · 90 min","emergency lighting test monthly annual");
+K("n101","7.10","lighting","لوحات المخارج","حيث لا يكون المخرج ظاهراً، ولا تبعد أي نقطة في الممر أكثر من 100 قدم عن لوحة ظاهرة.","≤ 30 m","exit sign marking illumination viewing distance");
+K("n101","7.5.1","egress","تباعد المخارج","≥ نصف القطر الأطول للمساحة، أو الثلث في المباني المرشوشة.","½ · ⅓","exit remoteness separation diagonal");
+K("n30","4.3","tanks","تصنيف السوائل","IA وميض <73°F وغليان <100°F، IB وميض <73°F وغليان ≥100°F، IC ‏73–100°F، II ‏100–140°F، IIIA ‏140–200°F، IIIB ≥200°F.","IA/IB <22.8°C · IC –37.8 · II –60 · IIIA –93 · IIIB ≥93","flammable combustible liquid classification flash point");
+K("n30","22.11.2","tanks","سعة حوض الاحتواء","≥ حجم أكبر خزان بافتراض امتلائه، بعد طرح إزاحة الخزانات الأخرى.","≥ 100%","dike containment capacity tank");
+K("n30","22.4","tanks","المسافات بين الخزانات","نسبة من مجموع أقطار الخزانات المتجاورة (مثل 1/6 للسقف العائم) بحد أدنى 3 أقدام.","1/6–1/3 ΣD · ≥0.9 m","tank spacing shell to shell","verify");
+K("n11","5.2","special","رغوة الخزانات ذات السقف الثابت","مصبّات ثابتة بمعدل ≥ 0.10 gpm/ft² ومدة حسب نوع السائل (مثلاً 55 دقيقة لـ IB).","4.1 L/min/m²","foam application rate fixed roof tank");
+K("n11","5.3","special","رغوة حلقة الختم للسقف العائم","0.30 gpm/ft² على مساحة الحلقة لمدة 20 دقيقة مع حاجز رغوة.","12.2 L/min/m² · 20 min","floating roof seal foam dam rim");
+K("n15","7.4","special","رش المياه للأوعية والمحولات","الأوعية 0.25 gpm/ft²، المحولات 0.25 على السطح و0.15 على الأرض غير الماصة.","10.2 · 6.1 L/min/m²","water spray deluge vessel transformer exposure");
+K("n2001","5.4 / 5.7","special","أنظمة الغازات النظيفة","تركيز التصميم ×1.2 (A) و×1.3 (B)، تفريغ 10 ثوانٍ للهالوكربونات و60–120 للخاملة، احتجاز 10 دقائق، واختبار إحكام.","×1.2/×1.3 · 10 s / 60–120 s · 10 min","clean agent FM-200 Novec inert design concentration discharge");
+K("n96","Table 11.4","itm","تنظيف مداخن المطابخ","وقود صلب شهرياً، عالية الحجم كل 3 أشهر، متوسطة كل 6، منخفضة سنوياً.","1 · 3 · 6 · 12 شهر","kitchen hood grease duct cleaning frequency");
+K("n96","10.1","special","إطفاء الشفاطات","نظام آلي معتمد UL 300 مع قطع الوقود والكهرباء وزر يدوي على مسار الخروج.","UL 300","kitchen hood wet chemical suppression");
+K("n92","4.4","smoke","التحكم بالدخان","فروق ضغط دنيا عبر الحواجز وقوة فتح أبواب ≤ 30 رطلاً.","≥12.5 Pa مرشوش · ≤133 N","smoke control stair pressurization door force");
+K("n80","5.2","itm","فحص الأبواب المقاومة للحريق","فحص واختبار سنوي من شخص مؤهل مع سجلات.","سنوي","fire door inspection annual");
+K("n1","18.2.3","access","طرق وصول الإطفاء","عرض ≥ 20 قدماً وارتفاع حر 13 قدماً و6 بوصات، وضمن 150 قدماً من الجدران الخارجية، مع دوران للطرق المسدودة > 150 قدماً.","6.1 · 4.1 · 46 m","fire department access road width clearance turnaround");
+K("n4","4","itm","الاختبار المتكامل","اختبار يثبت أن تشغيل نظام يطلق الوظائف المرتبطة به في الأنظمة الأخرى (مصفوفة السبب والنتيجة).","Cause & Effect","integrated systems testing cause effect matrix");
+K("n110","4","lighting","تصنيف أنظمة الطاقة الطارئة","Type 10 تعني استعادة الطاقة خلال 10 ثوانٍ، وClass تعني مدة التشغيل بالساعات (مثل Class 2 أو 48).","Type 10 · Class X h","emergency generator type class transfer time");
+K("n652","7","plant","تحليل مخاطر الغبار","يُجرى تحليل مخاطر الغبار القابل للاحتراق (DHA) للعمليات القائمة والجديدة.","DHA","combustible dust hazard analysis");
+K("sbc801","503.2.1","access","أبعاد طرق الوصول","عرض ≥ 6096 مم وارتفاع حر ≥ 4115 مم.","6.1 · 4.1 m","fire apparatus access road dimensions");
+K("sbc801","503.1.1","access","امتداد طرق الوصول","ضمن 46 م من كل أجزاء الجدار الخارجي للطابق الأول.","≤ 46 m","access road exterior walls distance");
+K("sbc801","903.2.1","sprinkler","الرشاشات في التجمع","A-1/A-3/A-4: منطقة حريق > 1115 م² أو حمل ≥ 300. A-2: > 464 م² أو ≥ 100، أو طابق غير مستوى المخرج.","1115 m²/300 · 464 m²/100","automatic sprinkler required assembly");
+K("sbc801","903.2.3–903.2.9","sprinkler","الرشاشات في E وF-1 وM وS-1","منطقة حريق > 1115 م²، أو أكثر من 3 طوابق، أو مجموع > 2230 م².","> 1115 m² · > 3 طوابق · > 2230 m²","sprinkler required educational factory mercantile storage");
+K("sbc801","903.2.5 / .6 / .8","sprinkler","الرشاشات في H وI وR","مطلوبة في كل مباني هذه الإشغالات (مع استثناءات محدودة في السكني).","كل المساحات","sprinkler hazardous institutional residential hotel");
+K("sbc801","903.2.11.3","sprinkler","المباني ذات الطوابق المرتفعة","رش كامل إذا كان طابق مشغول على 16.8 م أو أكثر فوق أدنى منسوب وصول.","≥ 16.8 m","sprinkler buildings 55 feet");
+K("sbc801","905.3.1","standpipe","متى تلزم الصواعد","Class III إذا تجاوزت أرضية أعلى طابق 9 م فوق أدنى منسوب وصول أو تحته بأكثر من 9 م، وClass I مقبولة في المرشوشة.","> 9.1 m","standpipe required height");
+K("sbc801","907.2","alarm","متى يلزم الإنذار","A حمل ≥ 300، B ‏≥ 500 أو > 100 خارج مستوى المخرج، E > 50، M ‏≥ 500، R-1 كلها، R-2 > 3 طوابق أو > 16 وحدة، H وI كلها.","A 300 · B 500 · E 50 · M 500","fire alarm required occupancy");
+K("sbc801","907.2.13 / 403","alarm","متطلبات المباني الشاهقة","فوق 23 م: رشاشات كاملة، صواعد، إنذار بكواشف دخان، إخلاء صوتي، مركز قيادة، طاقة طوارئ، أدراج مقاومة للدخان.","> 23 m","high-rise requirements voice fire command");
+K("sbc801","508.1","alarm","مركز قيادة الحريق","مساحة ≥ 9.3 م² وأصغر بُعد ≥ 3 م، مفصول بساعة على الأقل.","≥ 9.3 m² · ≥ 3 m","fire command center room");
+K("sbc801","510","alarm","تغطية راديو المستجيبين","تغطية لاسلكية مقبولة داخل المبنى، وإلا يلزم نظام تقوية ERRCS/BDA.","","emergency responder radio coverage BDA");
+K("sbc801","906.1","ext","أين تلزم الطفايات","في A وB وE وF وH وI وM وR-1 وR-2 وS، وفي المطابخ التجارية والمناطق الخطرة.","","portable extinguisher required where");
+K("sbc801","913","pump","مضخات الحريق","وفق NFPA 20 في غرف مفصولة مع إشراف على التشغيل والطاقة.","→ NFPA 20","fire pump room");
+K("sbc801","App. B / C","water","تدفق الإطفاء وتوزيع الحنفيات","الملحق B يحدد التدفق حسب نوع الإنشاء والمساحة (مع تخفيض للمرشوش)، والملحق C عدد الحنفيات وتباعدها.","متوسط ≈ 152 m للتدفقات المنخفضة","fire flow hydrant spacing appendix","verify");
+K("sbc801","Ch.4","mgmt","خطط الطوارئ والتدريب","خطط إخلاء وسلامة من الحريق، وتمارين إخلاء دورية حسب الإشغال.","","emergency plan evacuation drill");
+K("sbc201","Table 1017.2","egress","مسافة الانتقال","A وE وF-1 وM وR وS-1: ‏61 م / 76 م مرشوش. B: ‏61 / 91 م. F-2 وS-2: ‏91 / 122 م.","A/M 61/76 · B 61/91 m","exit access travel distance office business مكاتب");
+K("sbc201","1006.3.2","egress","عدد المخارج للطابق","1–500: مخرجان، 501–1000: ثلاثة، أكثر من 1000: أربعة.","2 · 3 · 4","number of exits story");
+K("sbc201","1005.3","egress","عرض وسائل الهروب","الأدراج: الحمل × 7.6 مم. باقي المكونات: × 5.1 مم.","7.6 · 5.1 mm","egress width capacity factor");
+K("sbc201","1020.4","egress","الممرات المسدودة","≤ 6.1 م، و15.2 م في B وE وF وI-1 وM وR-1 وR-2 وS وU المرشوشة.","6.1 · 15.2 m","dead end corridor");
+K("sbc201","1007.1.1","egress","تباعد المخارج","≥ نصف القطر الأطول أو الثلث في المرشوش.","½ · ⅓","exit separation diagonal");
+K("sbc201","1008.3","lighting","إنارة الطوارئ","90 دقيقة، متوسط 11 لوكس وأدنى 1 لوكس، ويُسمح بـ 6 و0.6 لوكس في نهاية المدة.","90 min · 11 · 1 lux","means of egress illumination emergency");
+K("sbc201","1013.1","lighting","لوحات المخارج","حيث يلزم مخرجان أو أكثر، ولا تبعد أي نقطة أكثر من 30 م عن لوحة ظاهرة.","≤ 30 m","exit signs location");
+K("sbc201","1011.2","egress","عرض الأدراج","≥ 1118 مم، أو 914 مم لحمل أقل من 50.","≥ 1118 mm","stairway width");
+K("sbc201","1010.1.1","egress","عرض الأبواب","العرض الصافي ≥ 813 مم والدرفة ≤ 1219 مم.","≥ 813 mm","door clear width");
+K("sbc201","1023.11 / 909.20","smoke","الأدراج المقاومة للدخان","أعلى طابق > 23 م أو أدنى طابق > 9 م تحت المخرج: أدراج مقاومة للدخان (دهليز أو تضغيط).","> 23 m","smokeproof enclosure stair pressurization");
+K("sbc201","404 / 909","smoke","الأتريوم","رشاشات وتحكم بالدخان وفصل ساعة عن الفراغات المحيطة.","","atrium smoke control");
+K("sbc201","Table 601","construction","مقاومة العناصر الإنشائية","درجة المقاومة بالساعات للإطار والجدران والأسقف حسب نوع الإنشاء IA–VB.","IA 3 h · IB 2 h","fire resistance rating construction type");
+K("sbc201","713","construction","فصل الأدراج والآبار","تربط 4 طوابق فأكثر: ساعتان، أقل: ساعة.","2 h · 1 h","shaft enclosure stair rating");
+K("sbc401","Ch. 50–51","hazarea","المناطق الخطرة في الكود الكهربائي","فصول خاصة بالتمديدات في الأماكن المصنفة وفق نظام Class/Division أو Zone.","","hazardous classified locations electrical","verify");
+K("cd1","عام","itm","اعتماد المخططات وشهادة السلامة","اعتماد مخططات الحماية قبل الترخيص، وشهادة سلامة بعد التنفيذ، وعقد صيانة ساري مع مقاول معتمد.","","civil defense approval safety certificate salamah maintenance contract","verify");
+K("cd1","عام","itm","سجل الصيانة","سجل فحص وصيانة لأنظمة الإنذار والإطفاء والطفايات وإنارة الطوارئ.","","maintenance log record","verify");
+K("cd1","عام","mgmt","خطة الإخلاء ومسؤول السلامة","خطة إخلاء وطوارئ وتمارين دورية ومسؤول سلامة مدرّب حسب حجم المنشأة.","","evacuation plan drill safety officer","verify");
+K("cd2","عام","mgmt","صلاحيات الدفاع المدني","الإطار النظامي للتفتيش وإيقاع الجزاءات على المنشآت المخالفة لاشتراطات السلامة.","","civil defense law penalties inspection","verify");
+K("b017","Scope","water","تصميم نظام مياه الحريق","الطلب على أساس أكبر حادث متوقع، المضخات ومصادر المياه، الشبكة الحلقية والصمامات العازلة، الحنفيات والمدافع، والضغوط المتبقية.","","fire water design hydrant monitor ring main","verify");
+K("b019","Scope","ext","معدات الإطفاء","الطفايات اليدوية والعجلات وبكرات الخراطيم وأنظمة الإطفاء الخاصة.","","portable mobile special fixed equipment","verify");
+K("b014","Scope","construction","مباني المصانع","الحماية ووسائل الهروب لغرف التحكم والورش والمستودعات، بإحالة إلى NFPA 101 والكود السعودي.","","plant buildings operations support life safety","verify");
+K("b005","Scope","tanks","مسافات وأحواض الخزانات","المسافات بين الخزانات وحتى الحدود والمرافق، ومتطلبات الأحواض.","","tank spacing diking","verify");
+K("b006","Scope","construction","الحماية الإنشائية","متى تلزم الحماية للهياكل والدعامات وتنانير الأوعية داخل منطقة تعرض الحريق.","","fireproofing structural steel","verify");
+K("b008","Scope","plant","الحفر والخنادق","تقييد الحفر والأقبية في مناطق المعالجة لتجنب تجمع الأبخرة.","","cellars pits trenches","verify");
+K("b009","Scope","plant","المنشآت البحرية","الحماية من الحريق لمنصات الإنتاج البحرية.","","offshore production","verify");
+K("b018","Scope","special","رغوة الخزانات","الرغوة الهوائية للخزانات بإحالة إلى NFPA 11 مع متطلبات إضافية.","→ NFPA 11","air foam storage tanks","verify");
+K("b055","Scope","plant","تخطيط المصانع","المسافات الدنيا بين الوحدات والمباني والمعدات ومصادر الاشتعال.","","plant layout spacing","verify");
+K("b054","Scope","egress","الوصول والمخارج في المصانع","السلالم والممرات ومخارج الهروب من المنصات والمعدات المرتفعة.","","access egress platforms ladders","verify");
+K("b058","Scope","sis","الإيقاف الطارئ وتخفيف الضغط","أنظمة ESD وصمامات العزل الطارئ وتخفيف الضغط.","","emergency shutdown isolation depressuring ESD","verify");
+K("b062","Scope","plant","مواقع الآبار","المسافات والحماية في مواقع الآبار البرية.","","wellsite safety","verify");
+K("b064","Scope","plant","خطوط الأنابيب","تصنيف مواقع خطوط الأنابيب ومسافات الأمان حولها.","","pipeline safety location class","verify");
+K("b067","Scope","lighting","ألوان السلامة","ألوان السلامة وعلامات التعريف للمعدات والأنابيب والمخاطر.","","safety colors identification","verify");
+K("b068","Scope","hazarea","تصنيف المناطق الكهربائية","تحديد المناطق الخطرة حول مصادر التسرب لاختيار المعدات.","","electrical area classification","verify");
+K("b069","Scope","ohs","غسالات العيون والدشات","مواقع ومواصفات غسالات العيون ودشات الطوارئ حيث توجد مواد كيميائية خطرة.","","eyewash emergency shower");
+K("b070","Scope","tanks","محطات التعبئة ووقود الطيران","حماية محطات التوزيع ومرافق وقود الطائرات وتحميل الكبريت.","","bulk plant air fueling sulfur","verify");
+K("gi2100","Scope","ohs","تصاريح العمل","تصاريح العمل الساخن والبارد ودخول الأماكن المحصورة، واختبار الغاز قبل العمل.","","work permit hot work confined space gas test","verify");
+K("b1781","Scope","itm","صيانة معدات الحماية","مسؤوليات وجداول الفحص والاختبار لأنظمة الحماية في مرافق أرامكو.","","inspection testing maintenance fire protection","verify");
+K("csm","Scope","ohs","سلامة الإنشاءات","متطلبات السلامة في مواقع الإنشاء: السقالات، الحفريات، الأعمال الساخنة، الحماية من الحريق.","","construction safety manual","verify");
+K("saf01","1","plant","نطاق توجيهات السلامة","تطبيق التوجيهات SAF-02 إلى SAF-09 على المنشآت الخاضعة للهيئة، والهيئة صاحبة السلطة النهائية في تفسيرها وإدارتها.","SAF-02 … SAF-09","HCIS general requirements applicability directives");
+K("saf02","—","mgmt","إدارة EHS","نظام إدارة للبيئة والصحة والسلامة لكل المنشآت الخاضعة: المخاطر، التدريب، الطوارئ، التدقيق.","","EHS management system HCIS","verify");
+K("saf03","—","construction","مباني المنشآت","مواقع وتصميم مباني التحكم والورش والمكاتب داخل المنشأة وحمايتها.","","plant buildings control room siting","verify");
+K("saf04","—","water","أنظمة ومعدات الحماية","شبكات مياه الحريق والمضخات والرشاشات ورش المياه والرغوة والغازات والكشف والإنذار.","","fire protection systems equipment HCIS","verify");
+K("saf04","—","alarm","كشف الغاز واللهب","كواشف الغاز (HC وH2S) واللهب حسب دراسة التغطية وربطها بالإنذار والإيقاف الطارئ.","","gas detection flame H2S mapping ESD","verify");
+K("saf05","—","plant","الصرف الصناعي","صرف زيتي مغلق بأختام ومنع انتشار السوائل المشتعلة بين المناطق.","","industrial drainage oily water seal","verify");
+K("saf06","—","plant","تخطيط المنشأة والوصول","المسافات بين الوحدات وطرق الوصول للطوارئ.","","plant layout spacing access","verify");
+K("saf07","—","plant","مواقع الآبار","متطلبات سلامة مواقع الآبار البرية والقريبة من الشاطئ.","","wellsite safety","verify");
+K("saf08","—","tanks","الخزانات والأوعية","المسافات والأحواض وأنظمة الحماية للخزانات وأوعية التخزين.","","storage tanks vessels spacing dike foam","verify");
+K("saf09","—","construction","الحماية الإنشائية","منطقة تعرض الحريق ودرجة الحماية للهياكل والدعامات.","","fireproofing plants","verify");
+K("a2001","—","plant","الحماية في المصافي","تحليل مخاطر الحريق، إمداد المياه، الحنفيات والمدافع، التخطيط، وتنظيم الاستجابة.","","refinery fire protection","verify");
+K("a2030","—","special","معدلات رش المياه","الأوعية 0.25 gpm/ft²، ومعدلات أعلى للمضخات والضواغط (عادة 0.50 gpm/ft²).","10.2 · 20.4 L/min/m²","water spray rates pumps vessels","verify");
+K("a2218","—","construction","منطقة سيناريو الحريق","تُحدد حول مصادر التسرب المحتملة (عادة 6–12 م أفقياً و9–12 م رأسياً) وتُحمى الهياكل داخلها.","≈ 6–12 m","fireproofing fire scenario envelope","verify");
+K("a2021","—","tanks","حرائق الخزانات","الاستعداد المسبق وكميات الرغوة والمدافع للحرائق الكاملة وحرائق حلقة الختم.","","tank fire management foam monitor","verify");
+K("a2000","—","tanks","تنفيس الخزانات","حساب التنفيس العادي (الحرارة والتعبئة) والطارئ (التعرض للحريق).","","tank venting emergency normal");
+K("a650","Appendix","tanks","وصلة السقف القابلة للانفصال","تصميم الوصلة بين السقف والجدار لتنفصل عند الضغط الزائد بدلاً من القاع.","frangible roof","frangible roof joint tank","verify");
+K("a500","—","hazarea","نظام Division","Class I Division 1 حيث توجد الأبخرة في التشغيل العادي، وDivision 2 في الظروف غير الطبيعية.","Div 1 · Div 2","area classification division");
+K("a505","—","hazarea","نظام Zone","Zone 0 مستمر، Zone 1 محتمل في التشغيل العادي، Zone 2 غير محتمل وقصير.","Zone 0 · 1 · 2","area classification zone");
+K("a752","—","plant","مواقع المباني الدائمة","تقييم مخاطر الانفجار والحريق والتسرب السام على المباني المأهولة واختيار موقعها أو تحصينها.","","building siting blast occupied");
+K("a753","—","plant","المباني المتنقلة","تقليل وجود المباني المتنقلة المأهولة في مناطق الخطر العالي.","","portable buildings siting trailers");
+K("a521","—","sis","تخفيف الضغط الطارئ","توجيه شائع: خفض الضغط إلى 50% من ضغط التصميم أو 690 kPa(g) خلال 15 دقيقة للأوعية المعرضة للحريق.","50% / 690 kPa · 15 min","depressuring blowdown fire case","verify");
+K("a2350","—","tanks","منع الامتلاء الزائد","مستويات تشغيل وتحذير وإيقاف محددة ونظام مستقل للحماية من الامتلاء.","","overfill prevention levels");
+K("a2003","—","hazarea","الكهرباء الساكنة","الربط والتأريض أثناء نقل السوائل وتقليل السرعات لمنع تراكم الشحنات.","","static bonding grounding");
+K("a754","—","mgmt","مؤشرات سلامة العمليات","Tier 1 وTier 2 لأحداث فقدان الاحتواء حسب الكمية والعواقب، وTier 3–4 مؤشرات استباقية.","Tier 1–4","process safety event indicators");
+K("a2510a","—","tanks","حماية أوعية الغاز المسال","تبريد الأوعية بالماء والحماية الإنشائية لمنع BLEVE.","","LPG vessel cooling BLEVE","verify");
+K("i45001","6.1.2","ohs","تحديد المخاطر وتقييمها","عملية مستمرة لتحديد المخاطر وتقييم المخاطر والفرص.","","hazard identification risk assessment");
+K("i45001","8.2","mgmt","الاستعداد والاستجابة للطوارئ","التخطيط للاستجابة، التدريب، الاختبار الدوري، والتقييم بعد التمارين.","","emergency preparedness response");
+K("i45001","8.1.2","ohs","تسلسل الضوابط","الإزالة، الاستبدال، الضوابط الهندسية، الإدارية، ثم معدات الوقاية الشخصية.","","hierarchy of controls PPE");
+K("i14001","8.2","mgmt","الطوارئ البيئية","الاستعداد للحالات البيئية الطارئة مثل الانسكابات والحرائق.","","environmental emergency spill");
+K("i7010","—","lighting","رموز السلامة","E001/E002 مخرج الطوارئ، F001 طفاية، F002 خرطوم حريق، F005 إنذار حريق.","E (أخضر) · F (أحمر)","safety signs symbols exit extinguisher");
+K("i23601","—","egress","مخطط الإخلاء","موقعك الحالي، مسارات الهروب، المخارج، معدات الحريق، نقطة التجمع، ومتجه حسب اتجاه الناظر.","","evacuation plan sign you are here");
+K("i31000","6","mgmt","عملية إدارة المخاطر","التحديد، التحليل، التقييم، المعالجة، المراقبة والمراجعة.","","risk management process");
+K("e60079_10","—","hazarea","Zone 0/1/2 للغاز","تُحدد حسب درجة مصدر التسرب (مستمر، أولي، ثانوي) وتوافر التهوية وفعاليتها.","Zone 0 · 1 · 2","area classification zones release grade ventilation");
+K("e60079_14","—","hazarea","اختيار المعدات","EPL: Ga لـ Zone 0، Gb لـ Zone 1، Gc لـ Zone 2، مع مجموعة الغاز (IIA/IIB/IIC) وفئة الحرارة (T1–T6).","Ga/Gb/Gc · IIA–IIC · T1–T6","equipment protection level gas group temperature class");
+K("e60079_17","—","itm","فحص المعدات المضادة للانفجار","فحص أولي قبل التشغيل وفحوص دورية بدرجات (بصري، قريب، تفصيلي)، والفترة عادة لا تتجاوز 3 سنوات.","≤ 3 سنوات","Ex inspection periodic visual close detailed","verify");
+K("e60079_29","—","alarm","كواشف الغاز","اختيار الموقع حسب كثافة الغاز ومصادر التسرب والتهوية، والمعايرة والاختبار الدوري.","","gas detector location calibration bump test");
+K("e61511","—","sis","دورة حياة SIS","تحليل المخاطر وتحديد SIL (مثل LOPA)، مواصفات متطلبات السلامة، التصميم، اختبار الإثبات الدوري، وإدارة التغيير.","SIL 1–3","safety instrumented system SIL LOPA proof test");
+K("e61508","—","sis","مستويات SIL","أربعة مستويات SIL 1–4 مرتبطة باحتمال الفشل عند الطلب PFD.","SIL 1–4","safety integrity level PFD");
+K("e62443","3-3","cyber","مستويات الأمان","تقسيم الشبكة إلى مناطق وقنوات، ومستويات أمان SL1–SL4 حسب قدرة المهاجم.","SL 1–4","zones conduits security levels");
+K("e62305","2","hazarea","تقييم مخاطر الصواعق","تقييم المخاطر لتحديد الحاجة للحماية ومستواها LPL I–IV.","LPL I–IV","lightning risk assessment protection level");
+K("e60331","—","alarm","كابلات مقاومة للحريق","تحافظ على سلامة الدائرة لفترة محددة تحت الحريق، وتُستخدم لدوائر الإنذار والطوارئ.","مثلاً 90–120 min","fire resistant cable circuit integrity","verify");
+K("o36","1910.36(g)","egress","أبعاد مسار الخروج","ارتفاع السقف ≥ 7 أقدام و6 بوصات، والعرض ≥ 28 بوصة.","≥ 2.29 m · ≥ 711 mm","exit route height width");
+K("o36","1910.36(b)","egress","عدد مسارات الخروج","مساران على الأقل عادة، وأكثر حسب عدد العاملين وحجم المبنى وترتيبه.","≥ 2","number of exit routes");
+K("o37","1910.37(b)","lighting","تعليم المخارج","المخارج معلّمة بلوحة «EXIT» بحروف ارتفاعها ≥ 6 بوصات وسماكة الخط ≥ ¾ بوصة، ومسارات مضاءة.","≥ 152 mm · ≥ 19 mm","exit sign letters lighting");
+K("o38","1910.38(b)","mgmt","خطة الطوارئ المكتوبة","مكتوبة إذا تجاوز العاملون 10، ويجوز شفهياً لـ 10 أو أقل.","> 10 عاملين","emergency action plan written");
+K("o39","1910.39","mgmt","خطة منع الحريق","مخاطر الحريق الرئيسية، ضبط مصادر الاشتعال، المسؤولين، والتدبير المنزلي.","> 10 عاملين","fire prevention plan");
+K("o157","1910.157","ext","طفايات أماكن العمل","Class A ضمن 75 قدماً وClass B ضمن 50 قدماً، فحص شهري وصيانة سنوية، وتدريب عند التعيين وسنوياً.","22.9 · 15.2 m","extinguisher travel training annual");
+K("o159","1910.159(c)(10)","sprinkler","خلوص التخزين تحت الرشاشات","خلوص ≥ 18 بوصة بين الرشاشات وأعلى المواد المخزنة.","≥ 457 mm","sprinkler clearance storage 18 inches");
+K("o119","1910.119","mgmt","عناصر PSM","تحليل مخاطر العمليات (يُراجع كل 5 سنوات)، إجراءات التشغيل، التدريب، سلامة المعدات، إدارة التغيير، مراجعة ما قبل التشغيل، تدقيق الامتثال كل 3 سنوات.","PHA 5 سنوات · تدقيق 3","process safety management PHA MOC audit");
+K("o120","1910.120(e)","ohs","تدريب HAZWOPER","40 ساعة للعاملين المنتظمين في المواقع، و24 ساعة للعرضيين، مع تحديث سنوي 8 ساعات.","40 h · 24 h · 8 h","hazwoper training hours");
+K("o146","1910.146","ohs","الأماكن المحصورة","تصريح دخول، قياس الأجواء (أكسجين ثم قابلية الاشتعال ثم السمية)، الأكسجين 19.5–23.5%، والقابلية للاشتعال < 10% LFL، مع مراقب وخطة إنقاذ.","O2 19.5–23.5% · < 10% LFL","confined space permit atmosphere testing oxygen LFL");
+K("o147","1910.147","ohs","عزل الطاقة","إجراءات مكتوبة للقفل والوسم، وتدريب، وفحص دوري سنوي للإجراءات.","سنوي","lockout tagout energy isolation");
+K("o252","1910.252(a)","ohs","الأعمال الساخنة","إبعاد المواد القابلة للاحتراق 35 قدماً أو حجبها، ومراقب حريق يبقى 30 دقيقة على الأقل بعد انتهاء العمل.","10.7 m · 30 min","hot work fire watch welding");
+K("o1926","1926.150(c)","ext","طفايات مواقع البناء","طفاية 2A لكل 3000 قدم² بمسافة انتقال ≤ 100 قدم، وطفاية مناسبة ضمن 50 قدماً حيث توجد سوائل قابلة للاشتعال.","2A/279 m² · 30.5 m · 15.2 m","construction site extinguisher");
+K("o165","1910.165","alarm","إنذار العاملين","إنذار مسموع أو مرئي لكل العاملين يعلو على الضوضاء، مع صيانة واختبار.","","employee alarm audible");
+K("c155","Art. 16","ohs","واجبات صاحب العمل","ضمان أن أماكن العمل والآلات والعمليات آمنة قدر الإمكان، وتوفير معدات الحماية.","","employer duties workplace safe");
+K("c155","Art. 18","mgmt","الطوارئ والإسعافات","توفير ترتيبات للتعامل مع الطوارئ والحوادث، بما فيها الإسعافات الأولية.","","emergencies first aid");
+K("c174","Art. 9–10","plant","المنشآت الخطرة الكبرى","نظام موثق للسيطرة على المخاطر وتقرير سلامة وخطط طوارئ داخلية.","","major hazard installation safety report");
+K("iloosh","3","mgmt","نظام إدارة السلامة","السياسة، التنظيم، التخطيط والتنفيذ، التقييم، والتحسين.","","OSH management system");
+K("lab","م 121","ohs","النظافة والسلامة العامة في المنشأة","الحفاظ على نظافة المنشأة وصحتها وتوفير الإضاءة والماء والالتزام بقواعد السلامة الصادرة بقرارات وزارية، وتوفير معدات الوقاية والتدريب عليها.","","labor law article 121 hygiene PPE","verify");
+K("lab","م 122","ohs","الاحتياطات من المخاطر","اتخاذ الاحتياطات اللازمة لحماية العمال من المخاطر والأمراض المهنية والآلات المستخدمة.","","labor law article 122 precautions hazards","verify");
+K("lab","م 125","egress","الوقاية من الحريق في المنشأة","اتخاذ الاحتياطات ضد الحريق وتوفير الوسائل الفنية لمكافحته، وإبقاء منافذ الهروب صالحة دائماً، وتعليق تعليمات الوقاية في مكان ظاهر.","","labor law article 125 fire precautions exits instructions","verify");
+K("ncosh","—","ohs","تنظيم السلامة في المنشأة","تعيين مسؤول أو لجنة سلامة حسب عدد العمال ونوع النشاط، والإبلاغ عن الإصابات والحوادث.","","safety officer committee injury reporting","verify");
+K("otcc","—","cyber","نطاق ضوابط OTCC","أنظمة التحكم الصناعي في المنشآت الحساسة، كامتداد لـ ECC: 4 مكونات رئيسية و23 مكوناً فرعياً و47 ضابطاً رئيسياً و122 ضابطاً فرعياً.","4 · 23 · 47 · 122","OT cybersecurity controls ICS scope");
+K("otcc","—","sis","أنظمة السلامة المتصلة","أنظمة F&G وESD ولوحات الإنذار المتصلة بالشبكة تدخل ضمن نطاق حماية الأنظمة التشغيلية: تقسيم الشبكة، التحكم بالوصول، النسخ الاحتياطي.","","fire and gas ESD network segmentation","verify");
+K("ecc","—","cyber","الضوابط الأساسية","الحوكمة، التعزيز، الصمود، الأطراف الخارجية والحوسبة السحابية، وأنظمة التحكم الصناعي.","","essential cybersecurity controls");
+K("z358","4–5","ohs","غسالات العيون والدشات","الوصول خلال 10 ثوانٍ، تدفق لمدة 15 دقيقة، وماء فاتر.","10 s · 15 min","eyewash shower 10 seconds 15 minutes tepid");
+K("ul1709","—","construction","حريق هيدروكربوني","منحنى حريق سريع الارتفاع (يصل نحو 1100°م خلال 5 دقائق) لاختبار مواد الحماية الإنشائية.","≈ 1093°C · 5 min","hydrocarbon fire curve rapid rise");
+K("e_bs5839","5","alarm","فئات أنظمة الإنذار","L لحماية الأرواح (L1–L5)، P لحماية الممتلكات (P1–P2)، M يدوي.","L1–L5 · P1–P2 · M","BS 5839 categories");
+K("e_bs5266","—","lighting","مدة إنارة الطوارئ","عادة 3 ساعات للأماكن التي قد تُشغل مباشرة بعد الإخلاء أو للنوم، وساعة كحد أدنى في غيرها.","3 h / 1 h","emergency lighting duration","verify");
+KB.forEach((e,i)=>{e.id="k"+i;e.a=DOCS[e.doc].a});
+
+/* ===== text processing ===== */
+function norm(s){return String(s||"").toLowerCase().replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d))
+  .replace(/[ً-ْـ]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/ؤ/g,"و").replace(/ئ/g,"ي");}
+const AR_PRE=["وبال","وال","بال","كال","فال","لل","ال"];
+const AR_SUF=["يات","ات","ون","ين","ان","يه","ها","ه","ي"];
+function stem(w){
+  if(/^[\d.]+$/.test(w))return w;
+  if(/[؀-ۿ]/.test(w)){
+    for(const p of AR_PRE){if(w.startsWith(p)&&w.length-p.length>=3){w=w.slice(p.length);break}}
+    if(w.length>4&&w[0]==="و")w=w.slice(1);
+    for(const s of AR_SUF){if(w.endsWith(s)&&w.length-s.length>=3){w=w.slice(0,-s.length);break}}
+    return w;
+  }
+  if(w.length>4){if(w.endsWith("ies"))return w.slice(0,-3)+"y";if(w.endsWith("ing"))return w.slice(0,-3);if(w.endsWith("ed"))return w.slice(0,-2);if(w.endsWith("es")&&!w.endsWith("ses"))return w.slice(0,-2);if(w.endsWith("s")&&!w.endsWith("ss"))return w.slice(0,-1)}
+  return w;
+}
+const STOP=new Set(["في","من","على","الي","عن","او","و","ما","هو","هي","كم","هل","متي","مع","ذلك","هذا","هذه","التي","الذي","كل","اي","بين","عند","the","of","a","an","for","to","in","on","and","or","is","what","be","by","with","shall","are","at","as","not","this","that","from","it"]);
+const WORD=/[\p{L}\p{N}]+(?:\.[\p{N}]+)*/gu;
+const COMP=new Set(["cybersecurity","firefight","fireproof","smokeproof","standpipe","waterflow"]);
+function toks(s,idx){const a=(norm(s).match(WORD)||[]).filter(w=>!STOP.has(w)&&(w.length>1||/\d/.test(w))).map(stem);const out=[];
+  for(let i=0;i<a.length;i++){const j=a[i]+(a[i+1]||"");if(i+1<a.length&&COMP.has(j)){out.push(j);if(idx){out.push(a[i])}else{i++;continue}}else out.push(a[i])}
+  return out}
+const SYN=[
+ "رشاش رشاشات مرشات sprinkler","صاعد صواعد standpipe","خرطوم خراطيم hose","مضخه مضخات pump","جوكي jockey","حنفيه حنفيات هيدرانت hydrant",
+ "خزان خزانات tank","انذار alarm notification","كاشف كواشف detector detection","دخان smoke","حراره heat","غاز gas","لهب flame",
+ "طفايه طفايات extinguisher","مخرج مخارج exit","هروب egress","مسافه distance","انتقال travel","اشغال occupancy","حمل load occupant",
+ "انارة اناره اضاءه lighting illumination","لوكس lux","لوحه لوحات sign signage","درج ادراج سلم stair stairway","باب ابواب door",
+ "عرض width","ارتفاع height mounting","رغوه foam","مطبخ مطابخ kitchen hood","فحص inspection","اختبار test testing","صيانه maintenance",
+ "ضغط pressure psi","تدفق flow gpm","كثافه density","تباعد spacing","مساحه area coverage","شاهق شاهقه برج high-rise","طريق road","وصول access",
+ "سوائل liquid","احتواء دايك dike containment","بطاريه بطاريات battery","تضغيط pressurization","مقاومه resistance rating","ممر corridor",
+ "ديزل diesel","محول محولات transformer","انشائيه fireproofing","تنفيس venting vent","مولد generator","مسدود dead",
+ "خطره hazardous","انفجار explosion explosive","كهرباء كهربائي electrical","صاعقه صواعق lightning","ساكنه static",
+ "تصريح permit","محصور محصوره confined","لحام welding","ساخن hot","عزل isolation lockout","طوارئ emergency","اخلاء evacuation",
+ "تدريب training","مخاطر خطر hazard risk","تقييم assessment","سلامه safety","مهنيه occupational","عمال عامل worker employee",
+ "سيبراني cybersecurity cyber","شبكه network","ايقاف shutdown esd","وظيفيه functional sil","تخطيط layout",
+ "مبني مباني building","تحكم control","غسل غساله eyewash","دش shower","ابار بئر well wellsite","انابيب pipeline","صرف drainage",
+ "نظيف clean","رذاذ mist","غبار dust","تخزين storage","مستودع warehouse","مكاتب office business",
+ "مستشفي hospital","فندق hotel","مدرسه school educational","مسجد mosque assembly","مصنع factory plant","مصفاه refinery",
+ "جهد فولت فولتج voltage volt","عالي هاي high","متوسط medium","قوس arc","محطه فرعيه substation","كابل كيبل cable","تاريض grounding earthing","مفاتيح switchgear","محولات transformer","تقويه errcs bda radio","قياده command","تصنيف classification","مناطق zone"
+];
+const synMap=new Map();
+SYN.forEach(line=>{const g=[...new Set(line.split(" ").map(w=>stem(norm(w))))];g.forEach(w=>{const s=synMap.get(w)||new Set();g.forEach(x=>s.add(x));synMap.set(w,s)})});
+
+/* ===== index (BM25) ===== */
+let UNITS=[],POST=new Map(),AVG=1,LIB=[],PRJ=[];
+function buildUnits(){
+  const u=[];
+  Object.values(DOCS).forEach(d=>u.push({kind:"doc",a:d.a,doc:d.id,sec:"",title:d.ar,code:d.code,body:d.scope,kw:d.en+" "+d.topics.map(t=>TOPICS[t]).join(" ")}));
+  KB.forEach(e=>u.push({kind:"kb",a:e.a,doc:e.doc,sec:e.c,title:e.ti,code:DOCS[e.doc].code+" "+e.c,body:e.x+" "+(e.val||""),kw:e.k+" "+TOPICS[e.t],e}));
+  LIB.forEach(f=>f.chunks.forEach((c,ci)=>u.push({kind:"up",a:f.doc?DOCS[f.doc].a:"up",doc:f.doc||null,file:f,ci,sec:c.sec,title:c.head||"",code:(f.doc?DOCS[f.doc].code:"")+" "+c.sec,body:c.text,kw:""})));
+  return u;
+}
+function reindex(){
+  UNITS=buildUnits();POST=new Map();let tot=0;
+  UNITS.forEach((u,i)=>{const tf=new Map();let len=0;
+    const add=(s,w)=>toks(s,true).forEach(t=>{tf.set(t,(tf.get(t)||0)+w);len+=w});
+    add(u.title,3);add(u.code,3);add(u.kw,2);add(u.body,1);
+    u.len=len||1;tot+=u.len;u.secN=norm(u.sec).replace(/[^\d.a-z]/g,"");u.bodyN=(norm(u.title+" "+u.body).match(WORD)||[]).join(" ");
+    tf.forEach((v,t)=>{let p=POST.get(t);if(!p){p=[];POST.set(t,p)}p.push([i,v])});
+  });
+  AVG=tot/Math.max(1,UNITS.length);
+}
+const CODE_KEYS=Object.values(DOCS).map(d=>({id:d.id,key:norm(d.code).replace(/^29 cfr /,"").replace(/\(nec\)/,"").replace(/[^a-z\d.]/g,"")})).filter(x=>x.key.length>=3&&/[a-z]|\./.test(x.key));
+[["otcc","otcc"],["hazwoper","o120"],["lockout","o147"],["psm","o119"],["ecc","ecc"]].forEach(([key,id])=>CODE_KEYS.push({id,key,loose:true}));
+CODE_KEYS.sort((a,b)=>b.key.length-a.key.length);
+function detectCodes(q){
+  let comp=norm(q).replace(/[^a-z\d.]/g,"");const hit=new Set();
+  for(const k of CODE_KEYS){const i=comp.indexOf(k.key);if(i<0)continue;const nxt=comp[i+k.key.length];if(!k.loose&&nxt&&/\d/.test(nxt))continue;hit.add(k.id);comp=comp.slice(0,i)+"#".repeat(k.key.length)+comp.slice(i+k.key.length)}
+  return hit;
+}
+const CODE_RE=/\b(nfpa|api|iso|iec|saes|saf|sbc|ul|en|bs|gi|ansi|isea|ilo|osha|nca|otcc|ecc|cfr|std|rp|publ)\b[\s\-:]*(?:[a-z][\s\-]*)?(?:\d+[a-z]?(?:[\-:]\d+)*)?/gi;
+function parseQuery(q){
+  const codes=detectCodes(q);
+  let rest=norm(q).replace(/29\s*cfr/g," ");
+  const clauses=[];
+  rest=rest.replace(/\b(19(?:10|26)\.\d+)\b/g,m=>{clauses.push(m);return " "});
+  rest=rest.replace(CODE_RE," ");
+  rest=rest.replace(/§/g," ").replace(/\b\d+(?:\.\d+)+\b/g,m=>{clauses.push(m);return " "});
+  const terms=toks(rest).filter(t=>!/^\d+$/.test(t)||t.length>=3);
+  return {codes,clauses,terms,phrase:(rest.match(WORD)||[]).filter(w=>!STOP.has(w)).join(" ")};
+}
+function editDist1(a,b){if(a.length===b.length){const d=[];for(let i=0;i<a.length;i++)if(a[i]!==b[i])d.push(i);if(d.length===2&&d[1]===d[0]+1&&a[d[0]]===b[d[1]]&&a[d[1]]===b[d[0]])return true}if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,e=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue}if(++e>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}return e+(a.length-i)+(b.length-j)<=1}
+function expandTerm(t){
+  const out=new Map([[t,1]]);(synMap.get(t)||[]).forEach(s=>{if(!out.has(s))out.set(s,.8)});let fuzzy=null;
+  if(![...out.keys()].some(k=>POST.has(k))&&t.length>=4){for(const k of POST.keys()){if(k.startsWith(t)||(k.length>=4&&editDist1(t,k))){out.set(k,.6);fuzzy=fuzzy||k}}}
+  return {terms:out,fuzzy};
+}
+function search(q,{auth=null,topic=null,doc=null,limit=60}={}){
+  const P=parseQuery(q);const groups=P.terms.map(expandTerm);const fuzzy=groups.map(g=>g.fuzzy).filter(Boolean);
+  const N=UNITS.length,k1=1.2,b=.75,score=new Map(),cover=new Map();
+  groups.forEach(g=>{const best=new Map();
+    g.terms.forEach((w,t)=>{const p=POST.get(t);if(!p)return;const idf=Math.log(1+(N-p.length+.5)/(p.length+.5));
+      for(const [i,tf] of p){const u=UNITS[i];const s=w*idf*(tf*(k1+1))/(tf+k1*(1-b+b*u.len/AVG));if(s>(best.get(i)||0))best.set(i,s)}});
+    best.forEach((s,i)=>{score.set(i,(score.get(i)||0)+s);cover.set(i,(cover.get(i)||0)+1)})});
+  const res=[],G=groups.length;
+  const iter=G?[...score.keys()]:[...UNITS.keys()];
+  for(const i of iter){const u=UNITS[i];
+    if(auth&&auth.size&&!auth.has(u.a))continue;
+    if(doc&&u.doc!==doc)continue;
+    if(topic){if(u.kind==="kb"&&u.e.t!==topic)continue;if(u.kind==="doc"&&!DOCS[u.doc].topics.includes(topic))continue;if(u.kind==="up"&&!G)continue}
+    let s=G?(score.get(i)||0)*Math.pow((cover.get(i)||0)/G,2):0;
+    if(P.clauses.length){const hit=u.secN&&P.clauses.some(c=>u.secN===c||u.secN.startsWith(c)||u.secN.includes(c));if(hit)s+=G?6:10;else if(!G&&!P.codes.size)continue}
+    if(P.codes.size){if(P.codes.has(u.doc))s=(s||0.5)*3+(u.kind==="doc"?3:0);else if(!G)continue;else s*=.25}
+    if(!G&&!P.clauses.length&&!P.codes.size){if(!topic&&!doc&&!(auth&&auth.size))continue;s=u.kind==="doc"?2:1}
+    if(P.phrase.includes(" ")&&u.bodyN.includes(P.phrase))s*=1.4;
+    if(s>0)res.push({u,s});
+  }
+  res.sort((a,b)=>b.s-a.s);
+  const facets={};res.forEach(r=>facets[r.u.a]=(facets[r.u.a]||0)+1);
+  const stems=new Set();groups.forEach(g=>g.terms.forEach((w,t)=>stems.add(t)));
+  return {res:res.slice(0,limit),total:res.length,facets,stems,P,fuzzy};
+}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function markup(text,stems){
+  if(!stems||!stems.size)return esc(text);
+  let out="",last=0;const re=new RegExp(WORD.source,"gu");let m;
+  while((m=re.exec(text))){const w=m[0];const n=norm(w);out+=esc(text.slice(last,m.index));out+=(!STOP.has(n)&&stems.has(stem(n)))?`<mark>${esc(w)}</mark>`:esc(w);last=m.index+w.length}
+  return out+esc(text.slice(last));
+}
+function snippet(text,stems,len=340){
+  const re=new RegExp(WORD.source,"gu");let m,best=-1,bc=0;const hits=[];
+  while((m=re.exec(text))){if(stems.has(stem(norm(m[0]))))hits.push(m.index)}
+  for(let i=0;i<hits.length;i++){let c=0;for(let j=i;j<hits.length&&hits[j]-hits[i]<len;j++)c++;if(c>bc){bc=c;best=hits[i]}}
+  const pos=best>=0?Math.max(0,best-60):0;
+  return (pos?"…":"")+text.slice(pos,pos+len).replace(/\s+/g," ")+(pos+len<text.length?"…":"");
+}
+
+/* ===== storage ===== */
+const DBN="firecode-lib-v2",ST="files";
+function idb(){return new Promise((res,rej)=>{try{const r=indexedDB.open(DBN,1);r.onupgradeneeded=()=>r.result.createObjectStore(ST,{keyPath:"id"});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)}catch(e){rej(e)}})}
+async function dbAll(){try{const d=await idb();return await new Promise((res,rej)=>{const q=d.transaction(ST).objectStore(ST).getAll();q.onsuccess=()=>res(q.result||[]);q.onerror=()=>rej(q.error)})}catch(e){return []}}
+async function dbPut(o){try{const d=await idb();await new Promise((res,rej)=>{const t=d.transaction(ST,"readwrite");t.objectStore(ST).put(o);t.oncomplete=res;t.onerror=()=>rej(t.error)});return true}catch(e){return false}}
+async function dbDel(id){try{const d=await idb();await new Promise(res=>{const t=d.transaction(ST,"readwrite");t.objectStore(ST).delete(id);t.oncomplete=res;t.onerror=res})}catch(e){}}
+
+/* ===== extraction & section chunking ===== */
+async function extractPages(file,onProg){
+  const name=file.name.toLowerCase();
+  if(name.endsWith(".pdf")){
+    if(!window.pdfjsLib)throw new Error("قارئ PDF لم يُحمّل. أعد تحميل الصفحة.");
+    const pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer(),isEvalSupported:false}).promise;const pages=[];
+    for(let i=1;i<=pdf.numPages;i++){const p=await pdf.getPage(i);const tc=await p.getTextContent();let line="",out=[],lastY=null;
+      for(const it of tc.items){const y=it.transform?Math.round(it.transform[5]):null;if(lastY!==null&&y!==null&&Math.abs(y-lastY)>3){out.push(line);line=""}line+=it.str+(it.hasEOL?"\n":" ");lastY=y}
+      out.push(line);pages.push(out.join("\n").replace(/([A-Za-z])-\n([a-z])/g,"$1$2").replace(/[ \t]+/g," ").trim());onProg&&onProg(i/pdf.numPages)}
+    return pages;
+  }
+  let t;
+  if(name.endsWith(".docx")){if(!window.mammoth)throw new Error("قارئ Word لم يُحمّل.");t=(await mammoth.extractRawText({arrayBuffer:await file.arrayBuffer()})).value}
+  else t=await file.text();
+  onProg&&onProg(1);const pages=[];for(let i=0;i<t.length;i+=4000)pages.push(t.slice(i,i+4000));return pages.length?pages:[""];
+}
+const HEAD_RE=/^\s*((?:[A-Z]\.)?\d{1,4}(?:\.\d{1,3}){1,6}|(?:Article|Section|Clause)\s*\(?\d+[A-Z]?\)?|المادة\s*\(?[\d٠-٩]+\)?|(?:Chapter|الفصل|الباب)\s+[\d٠-٩A-Z]+)(?=[\s:.\-–)]|$)(.*)$/;
+function chunkSections(pages){
+  const chunks=[];let cur=null;const push=()=>{if(cur&&cur.text.trim().length>20)chunks.push(cur);cur=null};
+  pages.forEach((p,pi)=>p.split("\n").forEach(line=>{
+    const L=line.trim();if(!L)return;const m=L.match(HEAD_RE);
+    if(m&&L.length<400){push();cur={sec:m[1].trim(),head:(m[2]||"").replace(/^[\s:.\-–)]+/,"").trim().slice(0,140),page:pi,text:L+"\n"}}
+    else{if(!cur)cur={sec:"",head:"",page:pi,text:""};cur.text+=L+"\n";if(cur.text.length>1800){const s=cur.sec,h=cur.head;push();cur={sec:s,head:h,page:pi,text:""}}}
+  }));
+  push();
+  if(chunks.filter(c=>c.sec).length<pages.length*0.3)return pages.map((p,i)=>({sec:"",head:"",page:i,text:p})).filter(c=>c.text.trim());
+  return chunks;
+}
+function guessDoc(name){const h=detectCodes(name.replace(/[_]/g," "));if(h.size)return [...h][0];if(/نظام.?العمل|labou?r/i.test(name))return "lab";return null}
+
+/* ===== routing ===== */
+const $=s=>document.querySelector(s);
+const st={auth:new Set(),topic:"",doc:null,libAuth:"all"};
+const VIEWS=["home","search","library","map","review"];
+function go(v,noScroll){if(!VIEWS.includes(v))v="home";VIEWS.forEach(x=>$("#v-"+x).hidden=x!==v);
+  document.querySelectorAll("nav.tabs button").forEach(b=>{if(b.dataset.go===v)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  if(location.hash.slice(1)!==v){try{history.replaceState(null,"","#"+v)}catch(e){}}
+  if(!noScroll)window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",()=>go(location.hash.slice(1)));
+document.querySelectorAll("dialog [data-close]").forEach(b=>b.onclick=()=>b.closest("dialog").close());
+document.querySelectorAll("dialog").forEach(d=>d.addEventListener("click",e=>{if(e.target===d)d.close()}));
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-go]");if(g){e.preventDefault();go(g.dataset.go);if(g.dataset.go==="search")$("#q").focus({preventScroll:true});return}
+  const a=e.target.closest("[data-lib]");if(a){st.libAuth=a.dataset.lib;go("library");renderLibrary();return}
+  const t=e.target.closest("[data-topic]");if(t){st.topic=t.dataset.topic;st.doc=null;$("#q").value="";$("#docDlg").open&&$("#docDlg").close();go("search");runSearch();return}
+  const w=e.target.closest("[data-within]");if(w){st.doc=w.dataset.within;$("#q").value="";$("#docDlg").open&&$("#docDlg").close();go("search");runSearch();$("#q").focus({preventScroll:true});return}
+  const rm=e.target.closest("[data-rel]");if(rm){$("#mapSel").value=rm.dataset.rel;renderRel();return}
+  const d=e.target.closest("[data-doc]");if(d){e.preventDefault();openDoc(d.dataset.doc);return}
+  const tr=e.target.closest("[data-try]");if(tr){e.preventDefault();$("#q").value=tr.dataset.try;runSearch();return}
+  const pg=e.target.closest("[data-page]");if(pg){const f=[...LIB,...PRJ].find(x=>x.id===pg.dataset.file);if(f){const c=f.chunks[+pg.dataset.page];$("#pageDlgTitle").textContent=`${f.name} — ${c.sec?"§ "+c.sec+" · ":""}ص ${c.page+1}`;$("#pageDlgBody").textContent=f.pages[c.page];$("#pageDlg").showModal()}}
+});
+
+/* ===== home ===== */
+const authCount=a=>Object.values(DOCS).filter(d=>d.a===a).length;
+function renderHome(){
+  $("#stats").innerHTML=`<span><b>${Object.keys(AUTH).length-1}</b>جهة</span><span><b>${Object.keys(DOCS).length}</b>معياراً ونظاماً</span><span><b>${KB.length}</b>متطلباً ملخّصاً</span><span><b>${Object.values(DOCS).reduce((n,d)=>n+d.refs.length,0)}</b>ارتباطاً</span><span><b>${LIB.length}</b>ملفاً مرفوعاً</span>`;
+  $("#homeAuth").innerHTML=Object.entries(AUTH).filter(([k])=>k!=="up").map(([k,v])=>`<button class="auth" style="--c:${AC(k)}" data-lib="${k}"><span><b>${esc(v.n)}</b><small>${esc(v.ar)} · ${authCount(k)}</small></span></button>`).join("");
+  $("#homeTopics").innerHTML=Object.entries(TOPICS).map(([k,v])=>`<button class="chip" data-topic="${k}">${esc(v)}</button>`).join("");
+}
+$("#homeForm").onsubmit=e=>{e.preventDefault();$("#q").value=$("#homeQ").value;st.topic="";st.doc=null;go("search");runSearch()};
+
+/* ===== search view ===== */
+function renderTopicSel(){$("#topicSel").innerHTML=`<option value="">كل المواضيع</option>`+Object.entries(TOPICS).map(([k,v])=>`<option value="${k}" ${st.topic===k?"selected":""}>${esc(v)}</option>`).join("")}
+$("#topicSel").onchange=e=>{st.topic=e.target.value;runSearch()};
+let tmr;$("#q").addEventListener("input",()=>{clearTimeout(tmr);tmr=setTimeout(runSearch,150)});
+$("#searchForm").onsubmit=e=>{e.preventDefault();runSearch()};
+function runSearch(){
+  const q=$("#q").value.trim();renderTopicSel();
+  $("#scopePill").innerHTML=st.doc?`<span class="scope">داخل ${esc(DOCS[st.doc].code)} <button aria-label="إزالة" id="clrDoc">×</button></span>`:"";
+  if(st.doc)$("#clrDoc").onclick=()=>{st.doc=null;runSearch()};
+  const R=search(q,{auth:st.auth,topic:st.topic||null,doc:st.doc});
+  const all=st.auth.size?search(q,{topic:st.topic||null,doc:st.doc}):R;
+  $("#authFacets").innerHTML=Object.entries(AUTH).filter(([k])=>all.facets[k]||st.auth.has(k)).map(([k,v])=>`<button class="chip" aria-pressed="${st.auth.has(k)}" data-af="${k}"><span class="dot" style="--c:${AC(k)}"></span>${esc(v.n)} <span class="n">${all.facets[k]||0}</span></button>`).join("");
+  document.querySelectorAll("[data-af]").forEach(b=>b.onclick=()=>{const k=b.dataset.af;st.auth.has(k)?st.auth.delete(k):st.auth.add(k);runSearch()});
+  const parts=[];if(R.P.codes.size)parts.push("المعيار: "+[...R.P.codes].map(c=>DOCS[c].code).join("، "));if(R.P.clauses.length)parts.push("البند: "+R.P.clauses.join("، "));
+  $("#resMeta").textContent=(q||st.topic||st.doc)?`${R.total} نتيجة${parts.length?" · "+parts.join(" · "):""}${R.fuzzy.length?" · نتائج قريبة من «"+R.fuzzy.join("، ")+"»":""}`:"";
+  const box=$("#results");
+  if(!q&&!st.topic&&!st.doc){box.innerHTML=`<div class="empty">اكتب كلمة أو رقم بند أو رمز معيار، أو اختر موضوعاً.</div>`;return}
+  if(!R.res.length){box.innerHTML=`<div class="empty">لا نتائج. جرّب مرادفاً بالإنجليزية، أو أزل تصفية الجهة والموضوع، أو ارفع نسخة المعيار في المكتبة.</div>`;return}
+  box.innerHTML=R.res.map(({u})=>card(u,R.stems)).join("");
+}
+function crumbs(u,extra){const d=u.doc?DOCS[u.doc]:null;
+  return `<div class="crumbs"><span class="dot" style="--c:${AC(u.a)}"></span><span>${esc(AUTH[u.a].n)}</span>${d?`<span class="sep">›</span><button data-doc="${d.id}" class="code" style="--c:${AC(u.a)}">${esc(d.code)}</button>`:""}${extra||""}</div>`}
+const hasFile=id=>LIB.some(f=>f.doc===id);
+function card(u,stems){
+  if(u.kind==="kb"){const e=u.e;
+    return `<article class="card res" style="--c:${AC(u.a)}">${crumbs(u,`<span class="sep">›</span><span class="sec">§ ${esc(e.c)}</span><span>${esc(TOPICS[e.t])}</span>${e.v==="verify"?'<span class="flag">تحقق</span>':''}`)}<h3>${markup(e.ti,stems)}</h3><p>${markup(e.x,stems)}</p>${e.val?`<span class="val">${esc(e.val)}</span>`:""}</article>`}
+  if(u.kind==="doc"){const d=DOCS[u.doc];
+    return `<article class="card res" style="--c:${AC(u.a)}">${crumbs(u,`<span class="sep">›</span><span>معيار</span>${hasFile(d.id)?'<span class="flag up">نسختك مرفوعة</span>':''}`)}<h3>${markup(d.ar,stems)}</h3><p class="meta" style="direction:ltr;text-align:start;margin:0">${esc(d.en)}</p><p>${markup(d.scope,stems)}</p><div class="acts"><button class="btn sm" data-doc="${d.id}">التفاصيل والارتباطات</button><button class="btn sm ghost" data-within="${d.id}">ابحث داخله</button></div></article>`}
+  const f=u.file,c=f.chunks[u.ci];
+  return `<article class="card res" style="--c:${AC(u.a)}">${crumbs(u,`<span class="sep">›</span>${c.sec?`<span class="sec">§ ${esc(c.sec)}</span>`:""}<span>ص ${c.page+1}</span><span class="flag up">${esc(f.name)}</span>`)}${c.head?`<h3>${markup(c.head,stems)}</h3>`:""}<p class="snip">${markup(snippet(c.text,stems),stems)}</p><div class="acts"><button class="btn sm" data-file="${f.id}" data-page="${u.ci}">عرض الصفحة</button></div></article>`;
+}
+
+/* ===== doc detail ===== */
+function relChip(id,attr){const d=DOCS[id];return `<button class="relchip" style="--c:${AC(d.a)}" ${attr||"data-doc"}="${id}"><span class="code" style="--c:${AC(d.a)}">${esc(d.code)}</span><span>${esc(d.ar)}</span></button>`}
+function openDoc(id){
+  const d=DOCS[id];if(!d)return;const items=KB.filter(e=>e.doc===id);const files=LIB.filter(f=>f.doc===id);
+  $("#docDlgHead").innerHTML=`<div class="crumbs"><span class="dot" style="--c:${AC(d.a)}"></span>${esc(AUTH[d.a].n)} · ${esc(AUTH[d.a].ar)}</div><h2 style="margin-top:4px"><span class="code" style="--c:${AC(d.a)};font-size:18px">${esc(d.code)}</span>${d.ed&&d.ed!=="—"?` <span class="meta">إصدار ${esc(d.ed)}</span>`:""}</h2><div style="font-weight:600">${esc(d.ar)}</div><div class="meta" style="direction:ltr;text-align:start">${esc(d.en)}</div>`;
+  const sec=(t,h)=>h?`<div><h3 style="font-size:14px;margin-bottom:8px">${t}</h3>${h}</div>`:"";
+  $("#docDlgBody").innerHTML=`<p style="margin:0">${esc(d.scope)}</p>
+   <div class="row">${d.topics.map(t=>`<button class="chip" data-topic="${t}">${esc(TOPICS[t])}</button>`).join("")}</div>
+   <div class="row"><button class="btn sm primary" data-within="${id}">ابحث داخل هذا المعيار</button><button class="btn sm" id="dlgMap">افتح في خريطة الارتباطات</button></div>
+   ${files.length?`<div class="notice" style="background:var(--info-soft)">نسختك المرفوعة: ${files.map(f=>`<b style="color:var(--info)">${esc(f.name)}</b> (${f.chunks.length} مقطع)`).join("، ")}</div>`:`<div class="notice">لم تُرفع نسخة من هذا المعيار. ارفعها في المكتبة ليصبح نصه الكامل قابلاً للبحث.</div>`}
+   ${sec(`يحيل إلى (${d.refs.length})`,d.refs.length?`<div class="row">${d.refs.map(r=>relChip(r)).join("")}</div>`:"")}
+   ${sec(`يُحال إليه من (${d.by.length})`,d.by.length?`<div class="row">${d.by.map(r=>relChip(r)).join("")}</div>`:"")}
+   ${sec(`المقابل عند جهات أخرى (${d.eq.length})`,d.eq.length?`<div class="row">${d.eq.map(r=>relChip(r)).join("")}</div>`:"")}
+   ${sec(`بنود ملخّصة (${items.length})`,items.map(e=>`<div class="kbitem"><div class="crumbs"><span class="sec">§ ${esc(e.c)}</span>${e.v==="verify"?'<span class="flag">تحقق</span>':''}</div><b>${esc(e.ti)}</b><p style="margin:2px 0">${esc(e.x)}</p>${e.val?`<span class="val">${esc(e.val)}</span>`:""}</div>`).join(""))}`;
+  $("#dlgMap").onclick=()=>{$("#docDlg").close();$("#mapSel").value=id;go("map");renderRel()};
+  if(!$("#docDlg").open)$("#docDlg").showModal();$("#docDlgBody").scrollTop=0;
+}
+
+/* ===== library ===== */
+function renderLibrary(){
+  const counts={};Object.values(DOCS).forEach(d=>counts[d.a]=(counts[d.a]||0)+1);
+  $("#authList").innerHTML=`<button data-la="all" aria-pressed="${st.libAuth==="all"}">الكل <span class="n">${Object.keys(DOCS).length}</span></button>`+
+    Object.entries(AUTH).filter(([k])=>counts[k]).map(([k,v])=>`<button data-la="${k}" aria-pressed="${st.libAuth===k}"><span class="dot" style="--c:${AC(k)}"></span>${esc(v.n)} <span class="n">${counts[k]}</span></button>`).join("");
+  document.querySelectorAll("[data-la]").forEach(b=>b.onclick=()=>{st.libAuth=b.dataset.la;renderLibrary()});
+  const f=norm($("#libFilter").value.trim());
+  const list=Object.values(DOCS).filter(d=>(st.libAuth==="all"||d.a===st.libAuth)&&(!f||norm(d.code+" "+d.ar+" "+d.en+" "+d.scope).includes(f)));
+  $("#docGrid").innerHTML=list.length?list.map(d=>{const n=KB.filter(e=>e.doc===d.id).length;
+    return `<button class="card doc" style="--c:${AC(d.a)}" data-doc="${d.id}"><span class="code" style="--c:${AC(d.a)}">${esc(d.code)}${d.ed&&d.ed!=="—"?` <span class="meta" style="font-weight:400">${esc(d.ed)}</span>`:""}</span><span class="t">${esc(d.ar)}</span><span class="badges">${n?`<span class="meta">${n} بند</span>`:""}${d.refs.length+d.by.length?`<span class="meta">· ${d.refs.length+d.by.length} ارتباط</span>`:""}${hasFile(d.id)?' <span class="flag up">نسختك</span>':''}</span></button>`}).join(""):`<div class="empty">لا معايير مطابقة.</div>`;
+  renderUploads();
+}
+$("#libFilter").addEventListener("input",renderLibrary);
+function docOptions(sel){let h=`<option value="">غير مرتبط بمعيار</option>`;Object.entries(AUTH).forEach(([k,v])=>{const ds=Object.values(DOCS).filter(d=>d.a===k);if(!ds.length)return;h+=`<optgroup label="${esc(v.n)}">`+ds.map(d=>`<option value="${d.id}" ${sel===d.id?"selected":""}>${esc(d.code)}</option>`).join("")+`</optgroup>`});return h}
+function renderUploads(){
+  $("#upCount").textContent=LIB.length?`(${LIB.length})`:"";
+  const box=$("#libList");box.querySelectorAll(".saved").forEach(x=>x.remove());
+  if(!LIB.length){const p=document.createElement("p");p.className="meta saved";p.style.margin="0";p.textContent="لا توجد ملفات بعد. البحث يعمل الآن على المرجع المدمج.";box.append(p)}
+  LIB.forEach(f=>{const r=document.createElement("div");r.className="card uprow saved";const secs=f.chunks.filter(c=>c.sec).length;
+    r.innerHTML=`<span class="dot" style="--c:${AC(f.doc?DOCS[f.doc].a:"up")}"></span><span class="name">${esc(f.name)}</span><span class="meta">${f.pages.length} صفحة · ${f.chunks.length} مقطع${secs?` · ${secs} بنداً مفهرساً`:""}</span><select aria-label="المعيار المرتبط">${docOptions(f.doc)}</select><button class="btn sm">حذف</button>`;
+    r.querySelector("select").onchange=async ev=>{f.doc=ev.target.value||null;await dbPut(strip(f));reindex();renderLibrary()};
+    r.querySelector("button").onclick=async()=>{await dbDel(f.id);LIB=LIB.filter(x=>x!==f);reindex();renderLibrary();renderHome()};
+    box.append(r)});
+}
+const strip=f=>({id:f.id,name:f.name,doc:f.doc,pages:f.pages,chunks:f.chunks,added:f.added});
+async function ingest(files,target,listEl,persist){
+  for(const file of files){
+    const row=document.createElement("div");row.className="card uprow";row.innerHTML=`<span class="name">${esc(file.name)}</span><span class="meta">جارِ الاستخراج والفهرسة…</span><div class="progress"><i></i></div>`;listEl.prepend(row);
+    try{const pages=await extractPages(file,p=>row.querySelector("i").style.width=(p*100).toFixed(0)+"%");
+      const f={id:"f"+Date.now()+Math.random().toString(36).slice(2,6),name:file.name,doc:guessDoc(file.name),pages,chunks:chunkSections(pages),added:Date.now()};
+      target.push(f);if(persist)await dbPut(strip(f));row.remove();
+      if(pages.join("").trim().length<50){const w=document.createElement("div");w.className="notice";w.innerHTML=`<b>${esc(file.name)}:</b> لا يحوي نصاً قابلاً للقراءة. يبدو ممسوحاً ضوئياً ويحتاج OCR قبل رفعه.`;listEl.prepend(w)}
+    }catch(err){row.querySelector(".meta").textContent="تعذّر قراءة الملف: "+(err.message||err);row.querySelector(".progress")?.remove()}
+  }
+}
+function wireDrop(dz,inp,handler){
+  inp.onchange=()=>{handler([...inp.files]);inp.value=""};
+  ["dragenter","dragover"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add("over")}));
+  ["dragleave","drop"].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove("over")}));
+  dz.addEventListener("drop",e=>handler([...e.dataTransfer.files]));
+}
+wireDrop($("#libDrop"),$("#libFile"),async fs=>{$("#upBox").open=true;await ingest(fs,LIB,$("#libList"),true);reindex();renderLibrary();renderHome()});
+
+/* ===== map ===== */
+function renderMapSel(){let h="";Object.entries(AUTH).forEach(([k,v])=>{const ds=Object.values(DOCS).filter(d=>d.a===k);if(!ds.length)return;h+=`<optgroup label="${esc(v.n)}">`+ds.map(d=>`<option value="${d.id}">${esc(d.code)} — ${esc(d.ar)}</option>`).join("")+`</optgroup>`});$("#mapSel").innerHTML=h;$("#mapSel").value="sbc801"}
+$("#mapSel").onchange=renderRel;
+function renderRel(){
+  const d=DOCS[$("#mapSel").value];if(!d)return;
+  const col=(t,ids,empty)=>`<div class="col"><h3>${t} (${ids.length})</h3>${ids.length?ids.map(id=>relChip(id,"data-rel")).join(""):`<p class="meta">${empty}</p>`}</div>`;
+  $("#relView").innerHTML=col("يُحال إليه من",d.by,"لا توجد إحالات مسجلة إليه.")+
+   `<div class="col"><div class="card center" style="--c:${AC(d.a)}"><span class="crumbs"><span class="dot" style="--c:${AC(d.a)}"></span>${esc(AUTH[d.a].n)}</span><span class="code" style="--c:${AC(d.a)};font-size:17px">${esc(d.code)}</span><b>${esc(d.ar)}</b><span class="meta">${esc(d.scope)}</span><button class="btn sm" data-doc="${d.id}">التفاصيل والبنود</button></div>${d.eq.length?`<h3 style="margin-top:10px">المقابل عند جهات أخرى (${d.eq.length})</h3>${d.eq.map(r=>relChip(r,"data-rel")).join("")}`:""}</div>`+
+   col("يحيل إلى",d.refs,"لا توجد إحالات مسجلة منه.");
+}
+function renderMatrix(){
+  const groups=[["nfpa","NFPA"],["sbc cd","SBC · الدفاع المدني"],["aramco","أرامكو"],["hcis","HCIS"],["api","API"],["iso iec","ISO · IEC"],["osha ilo mhrsd","OSHA · ILO · نظام العمل"],["nca other","NCA · IEEE · أخرى"]];
+  let h=`<thead><tr><th>الموضوع</th>${groups.map(g=>`<th>${g[1]}</th>`).join("")}</tr></thead><tbody>`;
+  Object.entries(TOPICS).forEach(([t,tn])=>{h+=`<tr><td>${esc(tn)}</td>`+groups.map(([as])=>{const ds=Object.values(DOCS).filter(d=>as.split(" ").includes(d.a)&&d.topics.includes(t));return `<td>${ds.map(d=>`<button class="mlink" style="--c:${AC(d.a)}" data-doc="${d.id}">${esc(d.code.replace("29 CFR ",""))}</button>`).join(" ")||'<span class="meta">—</span>'}</td>`}).join("")+`</tr>`});
+  $("#matrix").innerHTML=h+"</tbody>";
+}
+
+/* ===== review ===== */
+const FEATURES=[{id:"atrium",l:"أتريوم / فراغ مفتوح بين الطوابق"},{id:"kitchen",l:"مطبخ تجاري"},{id:"flam",l:"تخزين سوائل قابلة للاشتعال"},{id:"tankfarm",l:"خزانات تخزين جوية"},{id:"itroom",l:"غرف بيانات / كهرباء حرجة"},{id:"nomuni",l:"لا يوجد مصدر مياه بلدي موثوق"},{id:"process",l:"وحدات معالجة هيدروكربونية"},{id:"ot",l:"أنظمة تحكم/سلامة متصلة بالشبكة"},{id:"workers",l:"عمال في الموقع (نظام العمل)"},{id:"hv",l:"معدات جهد متوسط أو عالي (> 1000 V)"},{id:"oilin",l:"محول زيتي داخل المبنى"},{id:"oilout",l:"محولات زيتية خارجية / محطة فرعية"}];
+const SYSTEMS=[
+ {id:"spr",l:"رشاشات آلية",re:/sprinkler|رشاش|مرش/i},{id:"sp",l:"صواعد وخراطيم",re:/standpipe|hose (reel|cabinet|valve|connection)|صاعد|صواعد|خرطوم|خراطيم/i},
+ {id:"fa",l:"إنذار وكشف حريق",re:/fire alarm|facp|smoke detector|heat detector|انذار|إنذار|كاشف|كواشف/i},{id:"ve",l:"إخلاء صوتي (EVACS)",re:/voice evac|evacs|public address|إخلاء صوتي|اخلاء صوتي/i},
+ {id:"el",l:"إنارة طوارئ",re:/emergency light|إنارة طوارئ|انارة طوارئ|إضاءة الطوارئ|اضاءة الطوارئ/i},{id:"es",l:"لوحات مخارج",re:/exit sign|لوحات? ?(ال)?مخارج|لوحة خروج/i},
+ {id:"ext",l:"طفايات",re:/extinguisher|طفاي/i},{id:"fp",l:"مضخة حريق",re:/fire pump|مضخة (ال)?حريق|مضخات الحريق/i},
+ {id:"tank",l:"خزان مياه حريق",re:/fire water (tank|storage)|خزان (مياه )?(ال)?حريق/i},{id:"fdc",l:"وصلة الدفاع المدني FDC",re:/fire department connection|\bfdc\b|siamese|وصلة الدفاع/i},
+ {id:"hyd",l:"حنفيات خارجية",re:/hydrant|حنفي|هيدرانت/i},{id:"ks",l:"إطفاء شفاطات المطبخ",re:/kitchen (hood )?suppression|wet chemical|ansul|ul ?300|إطفاء المطبخ|شفاط/i},
+ {id:"ca",l:"غاز نظيف",re:/clean agent|fm-?200|novec|inergen|غاز نظيف|الغاز النظيف/i},{id:"sc",l:"تحكم بالدخان / تضغيط",re:/smoke (control|exhaust|management)|pressuri[sz]ation|تضغيط|شفط الدخان|التحكم بالدخان/i},
+ {id:"fcc",l:"مركز قيادة حريق",re:/fire command (center|centre)|مركز قيادة/i},{id:"rr",l:"تقوية راديو المستجيبين",re:/errcs|\bbda\b|bi-?directional amplifier|responder radio/i},
+ {id:"lane",l:"طريق وصول الدفاع المدني",re:/fire (lane|access road|apparatus)|طريق (وصول|الدفاع)/i},{id:"foam",l:"نظام رغوة",re:/foam|رغوة|رغوه/i},
+ {id:"gd",l:"كشف غاز ولهب",re:/gas detect|flame detect|h2s|كاشف غاز|كواشف الغاز|كشف الغاز/i},{id:"fw",l:"شبكة مياه حريق حلقية",re:/ring main|fire water (main|network|loop)|شبكة مياه الحريق/i},
+ {id:"fpf",l:"حماية إنشائية",re:/fireproofing|intumescent|حماية إنشائية/i},{id:"hac",l:"تصنيف المناطق الخطرة",re:/area classification|hazardous area|zone [012]|class i,? div|تصنيف المناطق/i},
+ {id:"sis",l:"ESD / SIS",re:/\besd\b|emergency shutdown|safety instrumented|\bsis\b|\bsil\b|إيقاف طارئ/i},{id:"drain",l:"صرف صناعي بأختام",re:/oily water|industrial drain|drain seal|صرف صناعي|الصرف الزيتي/i},
+ {id:"erp",l:"خطة طوارئ وإخلاء",re:/emergency (response |action )?plan|evacuation plan|خطة (ال)?(طوارئ|إخلاء|اخلاء)/i},{id:"permit",l:"نظام تصاريح العمل",re:/work permit|hot work|تصريح عمل|تصاريح العمل/i},
+ {id:"cyber",l:"ضوابط أمن سيبراني للأنظمة التشغيلية",re:/otcc|62443|cyber|سيبراني/i},{id:"cnc",l:"مصفوفة السبب والنتيجة",re:/cause (and|&) effect|سبب والنتيجة/i},
+ {id:"arc",l:"دراسة القوس الكهربائي وملصقاتها",re:/arc[ -]?flash|incident energy|قوس كهربائي/i},{id:"vault",l:"غرفة/خزنة محولات مقاومة للحريق",re:/transformer (vault|room)|غرفة (ال)?محول/i},
+ {id:"oilc",l:"احتواء زيت المحولات",re:/oil (containment|pit|sump)|bund|احتواء (ال)?زيت/i},{id:"esafe",l:"برنامج سلامة كهربائية وتصاريح العمل المكهرب",re:/energi[sz]ed (electrical )?work permit|electrical safety program|lockout|\bloto\b/i},
+ {id:"emp",l:"برنامج صيانة كهربائية (EMP)",re:/maintenance program|70b|thermograph|infrared (scan|survey)/i}
+];
+const autoHits={};
+function renderChecks(){
+  $("#featureChecks").innerHTML=FEATURES.map(f=>`<label><input type="checkbox" id="f-${f.id}" ${f.id==="workers"?"checked":""}> ${esc(f.l)}</label>`).join("");
+  const def=new Set(["spr","fa","el","es","ext","fp","tank","fdc","sp"]);
+  $("#sysChecks").innerHTML=SYSTEMS.map(s=>`<label><input type="checkbox" id="s-${s.id}" ${def.has(s.id)?"checked":""}> ${esc(s.l)} <span class="auto" id="a-${s.id}" hidden>من المستند</span></label>`).join("");
+}
+const OLF={"A-1":0.65,"A-2":1.4,"A-3":1.4,B:9.3,E:1.9,"F-1":9.3,H:9.3,"I-2":22.3,M:5.6,"R-1":18.6,"R-2":18.6,"S-1":27.9,PLANT:9.3};
+const TRAVEL={"A-1":[61,76],"A-2":[61,76],"A-3":[61,76],B:[61,91],E:[61,76],"F-1":[61,76],H:[null,23],"I-2":[null,61],M:[61,76],"R-1":[61,76],"R-2":[61,76],"S-1":[61,76],PLANT:[61,76]};
+const HAZ={LH:{d:4.1,a:139,h:380,t:30},OH1:{d:6.1,a:139,h:950,t:60},OH2:{d:8.1,a:139,h:950,t:90},EH1:{d:12.2,a:232,h:1900,t:90},EH2:{d:16.3,a:232,h:1900,t:120}};
+const val=id=>{const v=$(id).value;return v===""?null:+v};
+const chk=id=>$(id)?.checked||false;
+function updateOL(){const f=OLF[$("#p-occ").value];const a=val("#p-area");$("#olHint").textContent=a&&f?`تقديري: ${Math.ceil(a/f)} شخص (${f} م²/شخص)`:""}
+["#p-occ","#p-area"].forEach(s=>$(s).addEventListener("input",updateOL));
+function detectSystems(){const text=PRJ.map(d=>d.pages.join("\n")).join("\n");SYSTEMS.forEach(s=>{const hit=!!text&&s.re.test(text);autoHits[s.id]=hit;$("#a-"+s.id).hidden=!hit;if(hit)$("#s-"+s.id).checked=true})}
+wireDrop($("#prjDrop"),$("#prjFile"),async fs=>{await ingest(fs,PRJ,$("#prjList"),false);renderPrj();detectSystems()});
+function renderPrj(){const box=$("#prjList");box.querySelectorAll(".prj").forEach(x=>x.remove());
+  PRJ.forEach(d=>{const r=document.createElement("div");r.className="card uprow prj";r.innerHTML=`<span class="name">${esc(d.name)}</span><span class="meta">${d.pages.length} صفحة</span><button class="btn sm">إزالة</button>`;
+    r.querySelector("button").onclick=()=>{PRJ=PRJ.filter(x=>x!==d);renderPrj();detectSystems()};box.append(r)})}
+function evaluate(){
+  const P={name:$("#p-name").value,juris:$("#p-juris").value,occ:$("#p-occ").value,haz:$("#p-hazard").value,floors:val("#p-floors")||1,base:val("#p-basements")||0,h:val("#p-height")||0,area:val("#p-area")||0,farea:val("#p-farea")||val("#p-area")||0,exits:val("#p-exits"),travel:val("#p-travel"),stairw:val("#p-stairw"),doorw:val("#p-doorw")};
+  P.ol=val("#p-ol")||Math.ceil(P.area/(OLF[P.occ]||9.3));
+  const F={},S={};FEATURES.forEach(f=>F[f.id]=chk("#f-"+f.id));SYSTEMS.forEach(s=>S[s.id]=chk("#s-"+s.id));
+  const totalOL=P.ol*(P.floors+P.base),highRise=P.h>23,o=P.occ;
+  const ind=o==="PLANT"||P.juris==="hcis"||(P.juris==="aramco"&&(F.process||F.tankfarm));
+  const AR=P.juris==="aramco",HC=P.juris==="hcis";
+  const R=[];const add=(req,ok,item,why,refs,sev="bad")=>R.push({item,why,refs,req,status:req?(ok?"ok":sev):"na"});
+  let sprReq=false,w=[];
+  if(["H","I-2","R-1","R-2"].includes(o)){sprReq=true;w.push(`الإشغال ${o} يتطلب رشاشات في كل المبنى`)}
+  if(["A-1","A-3"].includes(o)&&(P.farea>1115||P.ol>=300)){sprReq=true;w.push("منطقة حريق > 1115 م² أو حمل ≥ 300")}
+  if(o==="A-2"&&(P.farea>464||P.ol>=100)){sprReq=true;w.push("A-2: > 464 م² أو حمل ≥ 100")}
+  if(["E","F-1","M","S-1"].includes(o)&&(P.farea>1115||P.floors>3||P.farea*P.floors>2230)){sprReq=true;w.push("> 1115 م² أو > 3 طوابق أو مجموع > 2230 م²")}
+  if(P.h>=16.8){sprReq=true;w.push(`طابق مشغول على ${P.h} م (≥ 16.8 م)`)}
+  if(highRise){sprReq=true;w.push("مبنى شاهق > 23 م")}
+  if(F.atrium){sprReq=true;w.push("أتريوم")}
+  add(sprReq,S.spr,"نظام رشاشات آلية",w.join(" · ")||"غير مطلوب حسب المدخلات","SBC 801 §903.2 · NFPA 13"+(AR?" · SAES-B-014":HC?" · SAF-04":""));
+  if(sprReq&&S.spr){add(true,S.fdc,"وصلة الدفاع المدني (FDC)","مطلوبة لكل نظام رشاشات أو صواعد","NFPA 13 §16.12 · SBC 801 §912");add(true,true,"رشاشات احتياطية","6 / 12 / 24 حسب عدد الرشاشات، تأكد من ذكرها في المواصفات","NFPA 13 §16.2.7","warn")}
+  const spReq=P.h>9.1||P.base*3.5>9.1||highRise;
+  add(spReq,S.sp,"صواعد وخراطيم",spReq?`أعلى طابق ${P.h} م > 9.1 م: Class III (أو Class I إذا المبنى مرشوش بالكامل)`:"غير مطلوبة","SBC 801 §905.3.1 · NFPA 14");
+  let fa=false,fw="";
+  if(o.startsWith("A")&&P.ol>=300){fa=true;fw="A: حمل ≥ 300"}
+  if(o==="B"&&totalOL>=500){fa=true;fw=`B: الحمل الكلي ${totalOL} ≥ 500`}
+  if(o==="E"&&P.ol>50){fa=true;fw="E: > 50"}
+  if(o==="M"&&totalOL>=500){fa=true;fw="M: ≥ 500"}
+  if(["R-1","H","I-2"].includes(o)){fa=true;fw=`${o}: كل المباني`}
+  if(o==="R-2"&&P.floors>3){fa=true;fw="R-2: > 3 طوابق"}
+  if(o==="F-1"&&P.floors>=2&&totalOL>=500){fa=true;fw="F-1: طابقان و ≥ 500"}
+  if(highRise){fa=true;fw+=(fw?" · ":"")+"مبنى شاهق"}
+  if(ind){fa=true;fw+=(fw?" · ":"")+"منشأة صناعية"}
+  add(fa,S.fa,"إنذار وكشف حريق",fw||"غير إلزامي حسب المدخلات","SBC 801 §907.2 · NFPA 72");
+  const ve=highRise||(o.startsWith("A")&&P.ol>=1000);
+  add(ve,S.ve,"إخلاء صوتي (EVACS)",highRise?"مطلوب للمباني الشاهقة":"تجمع ≥ 1000","SBC 801 §907.2.13 · NFPA 72 Ch.24");
+  if(S.fa&&(highRise||sprReq))add(true,S.cnc,"مصفوفة السبب والنتيجة واختبار متكامل","توثيق ترابط الإنذار مع الرشاشات والمصاعد والتحكم بالدخان والأبواب","NFPA 4 · NFPA 72","warn");
+  const exReq=P.ol>1000?4:P.ol>500?3:2;
+  if(P.exits!=null)add(true,P.exits>=exReq,`عدد المخارج (${P.exits} من ${exReq})`,`حمل الإشغال ${P.ol} يتطلب ${exReq} مخارج على الأقل`,"SBC 201 §1006.3 · NFPA 101 §7.4");
+  const tl=TRAVEL[o]||[61,76],tlim=S.spr?tl[1]:tl[0];
+  if(P.travel!=null)add(true,tlim!=null&&P.travel<=tlim,`مسافة الانتقال (${P.travel} م)`,tlim==null?"هذا الإشغال يتطلب رشاشات لتطبيق الحد":`الحد ${tlim} م ${S.spr?"(مرشوش)":"(غير مرشوش)"}`,"SBC 201 Table 1017.2 · NFPA 101");
+  const stReq=Math.max(P.ol<50?914:1118,Math.ceil(P.ol*7.6/Math.max(1,P.exits||2)));
+  if(P.stairw!=null)add(true,P.stairw>=stReq,`عرض الدرج (${P.stairw} مم)`,`المطلوب لكل درج ≥ ${stReq} مم`,"SBC 201 §1005.3 · §1011.2");
+  const drReq=Math.max(813,Math.ceil(P.ol*5.1));
+  if(P.doorw!=null)add(true,P.doorw>=drReq,`عرض الأبواب الكلي (${P.doorw} مم)`,`المطلوب ≥ ${drReq} مم (${P.ol} × 5.1)`,"SBC 201 §1005.3.2");
+  add(true,S.el,"إنارة طوارئ","90 دقيقة · متوسط 11 لوكس · أدنى 1 لوكس","SBC 201 §1008 · NFPA 101 §7.9");
+  add(exReq>=2,S.es,"لوحات المخارج","لا تبعد أي نقطة أكثر من 30 م عن لوحة · رموز ISO 7010","SBC 201 §1013 · NFPA 101 §7.10 · ISO 7010");
+  add(true,S.ext,"طفايات يدوية","Class A ≤ 22.9 م، وClass K للمطابخ","SBC 801 §906 · NFPA 10"+(AR?" · SAES-B-019":""));
+  const hz=HAZ[P.haz],sprFlow=hz.d*hz.a*1.2,tot=sprFlow+hz.h,vol=tot*hz.t/1000;
+  add(sprReq&&(F.nomuni||P.juris!=="sbc"||highRise),S.tank,"خزان مياه حريق مخصص",`تقديري ≈ ${vol.toFixed(0)} م³ (${Math.round(tot)} L/min × ${hz.t} دقيقة)`,"NFPA 13 §19.2.3 · NFPA 22"+(AR?" · SAES-B-017":""),"warn");
+  add(sprReq&&(highRise||P.juris!=="sbc"||F.nomuni),S.fp,"مضخة حريق",highRise?"المباني الشاهقة تحتاج غالباً مضخة لتحقيق 6.9 bar عند أعلى صاعد":"مطلوبة إن لم يحقق المصدر الضغط والتدفق","NFPA 20 · SBC 801 §913","warn");
+  add(highRise,S.fcc,"مركز قيادة حريق","≥ 9.3 م² وبُعد أدنى 3 م","SBC 801 §508");
+  add(highRise||P.base>1,S.rr,"تغطية راديو المستجيبين","قياس التغطية؛ عند ضعفها نظام تقوية","SBC 801 §510","warn");
+  add(highRise||F.atrium||P.base*3.5>9,S.sc,"تحكم بالدخان / تضغيط",highRise?"أدراج مقاومة للدخان > 23 م":F.atrium?"أتريوم":"قبو عميق","SBC 201 §1023.11 · §909 · NFPA 92");
+  add(true,S.lane,"طريق وصول الدفاع المدني","عرض ≥ 6.1 م · ارتفاع ≥ 4.1 م · ضمن 46 م من الواجهات","SBC 801 §503 · NFPA 1"+(ind?" · SAF-06":""));
+  add(P.juris==="sbc"||ind,S.hyd,"حنفيات خارجية","حسب تدفق الإطفاء وتباعد الملحق C",AR?"SAES-B-017":HC?"SAF-04":"SBC 801 App. B/C","warn");
+  add(F.kitchen,S.ks,"إطفاء شفاطات المطبخ","UL 300 مع قطع الوقود والكهرباء","NFPA 96 · NFPA 17A · UL 300");
+  add(F.itroom,S.ca,"غاز نظيف لغرف البيانات","توصية مع اختبار إحكام الغرفة","NFPA 2001 · NFPA 75","info");
+  add(F.flam,true,"تخزين السوائل القابلة للاشتعال","تحقق من التصنيف والكميات القصوى وغرف/خزائن التخزين والتهوية","NFPA 30 · SBC 801 Ch.57","warn");
+  add(F.tankfarm,S.foam,"رغوة للخزانات","مصبّات ثابتة أو حلقة الختم حسب نوع السقف",AR?"SAES-B-018 · NFPA 11":HC?"SAF-08 · NFPA 11":"NFPA 11 · API 2021");
+  add(F.tankfarm,true,"مسافات الخزانات والأحواض","سعة الحوض ≥ أكبر خزان، والمسافات حسب الأقطار",AR?"SAES-B-005 · NFPA 30":HC?"SAF-08 · NFPA 30":"NFPA 30 §22","warn");
+  add(ind||F.process,S.fw,"شبكة مياه حريق حلقية","حسب أكبر حادث متوقع مع حنفيات ومدافع",AR?"SAES-B-017":"SAF-04 · NFPA 24 · API 2001");
+  add(F.process,S.gd,"كشف الغاز واللهب","حسب دراسة التغطية وربطه بالإيقاف الطارئ",(HC?"SAF-04 · ":"")+"IEC 60079-29-2");
+  add(F.process,S.fpf,"حماية إنشائية","للهياكل داخل منطقة سيناريو الحريق",AR?"SAES-B-006 · API 2218":HC?"SAF-09 · API 2218":"API 2218 · UL 1709");
+  add(F.process||(F.flam&&ind),S.hac,"تصنيف المناطق الخطرة","مخطط Zone/Division واختيار معدات Ex",AR?"SAES-B-068 · API RP 505":"IEC 60079-10-1 · API RP 505 · NFPA 497");
+  add(F.process,S.sis,"ESD / SIS","تحديد SIL واختبار الإثبات الدوري",AR?"SAES-B-058 · IEC 61511":"IEC 61511 · API 521");
+  add(F.process||F.tankfarm,S.drain,"صرف صناعي بأختام","منع انتشار السوائل المشتعلة عبر الصرف","SAF-05","warn");
+  add(ind&&F.process,true,"مواقع المباني المأهولة","تقييم مخاطر الانفجار والحريق على غرف التحكم والمكاتب",AR?"SAES-B-014 · API RP 752":"SAF-03 · API RP 752/753","warn");
+  add(F.ot||(ind&&(S.sis||S.gd)),S.cyber,"الأمن السيبراني لأنظمة F&G وESD","تقسيم الشبكة وضبط الوصول للأنظمة التشغيلية في المنشآت الحساسة","NCA OTCC-1:2022 · IEC 62443","info");
+  add(true,S.erp,"خطة طوارئ وإخلاء","مطلوبة من الدفاع المدني"+(ind?" وHCIS":""),(ind?"SAF-02 · ":"")+"SBC 801 Ch.4 · ISO 45001 §8.2","warn");
+  add(F.workers,true,"التزامات نظام العمل","احتياطات الحريق، منافذ هروب صالحة دائماً، تعليمات وقاية معلّقة، معدات وقاية وتدريب","نظام العمل م 121–125","warn");
+  add(ind||F.process||F.tankfarm,S.permit,"نظام تصاريح العمل","أعمال ساخنة، أماكن محصورة، عزل الطاقة",AR?"GI 2.100":"OSHA 1910.146 / .147 / .252");
+  add(F.hv,S.arc,"دراسة القوس الكهربائي وملصقات المعدات","تحديد حد القوس والطاقة الساقطة وفئة معدات الوقاية، وتُراجع كل 5 سنوات","NFPA 70E §130.5 · IEEE 1584");
+  add(F.hv,S.esafe,"سلامة العمل الكهربائي","حالة عمل آمنة (LOTO واختبار انعدام الجهد)، تصريح للعمل المكهرب، حدود الاقتراب، تدريب كل 3 سنوات","NFPA 70E · OSHA 1910.333 / .269"+(AR?" · GI 2.100":""));
+  add(F.hv,true,"مساحات العمل وإغلاق غرف الجهد العالي","عمق مساحة العمل حسب الجهد، غرف مقفلة أو سور ≥ 2.1 م، لوحات تحذير، مدخلان للوحات العريضة","NEC §110.31–110.34 · IEC 61936-1","warn");
+  add(F.hv,S.emp,"برنامج صيانة المعدات الكهربائية","فحص حراري واختبارات عزل ودورات صيانة حسب حالة المعدات","NFPA 70B","warn");
+  add(F.oilin,S.vault,"خزنة المحول الزيتي داخل المبنى","جدران وسقف وأرضية 3 ساعات (ساعة إذا محمية بالرشاشات)، باب 3 ساعات، عتبة ≥ 100 مم","NEC §450.26 · §450.42–43");
+  add(F.oilout,true,"فصل المحولات الزيتية الخارجية","7.6 م (500–5000 جالون) أو 15 م (أكثر)، أو جدار فاصل يمتد فوق المحول وجانبيه",AR?"SAES-P-119 · NFPA 850":"NFPA 850 · IEC 61936-1 · IEEE 979","warn");
+  add(F.oilout||F.oilin,S.oilc,"احتواء زيت المحولات","حوض أو عتبة لاحتواء كامل الزيت مع تصريف آمن بعيداً عن المباني","NEC §450.43(B) · NFPA 850 · IEC 61936-1");
+  add(F.oilout,S.sc||S.spr,"حماية المحولات الكبيرة من الحريق","رش مياه للمحولات المهمة أو القريبة من المباني بمعدل 10.2 L/min/m²","NFPA 15 · NFPA 850","info");
+  return {P,F,S,R,calc:{sprFlow,tot,vol,hz,highRise,totalOL}};
+}
+let LAST=null;const ST_L={bad:"ناقص",warn:"يحتاج تحقق",info:"توصية",ok:"مستوفى"};
+function runReview(){
+  LAST=evaluate();const {R,calc,P}=LAST;const req=R.filter(r=>r.req);
+  const cnt={bad:0,warn:0,info:0,ok:0};req.forEach(r=>cnt[r.status]++);
+  const ord={bad:0,warn:1,info:2,ok:3};req.sort((a,b)=>ord[a.status]-ord[b.status]);
+  $("#reviewOut").innerHTML=`<div class="card" style="display:grid;gap:14px">
+   <div><h3>${esc(P.name||"المشروع")}: نتيجة المراجعة</h3><p class="meta" style="margin:2px 0 0">إشغال ${esc(P.occ)} · ${P.floors} طوابق + ${P.base} قبو · أعلى طابق ${P.h} م${calc.highRise?" · <b>مبنى شاهق</b>":""} · حمل الإشغال ${P.ol} للطابق (${calc.totalOL} إجمالي)</p></div>
+   <div class="summary"><div class="tile bad"><b>${cnt.bad}</b>نواقص</div><div class="tile warn"><b>${cnt.warn}</b>يحتاج تحقق</div><div class="tile info"><b>${cnt.info}</b>توصيات</div><div class="tile ok"><b>${cnt.ok}</b>مستوفى</div></div>
+   <div class="tablewrap"><table class="rtable"><thead><tr><th>الحالة</th><th>البند</th><th>السبب / المطلوب</th><th>المرجع</th></tr></thead><tbody>
+   ${req.map(r=>`<tr><td><span class="pill ${r.status}">${ST_L[r.status]}</span></td><td><b>${esc(r.item)}</b></td><td>${esc(r.why)}</td><td><span class="refs">${esc(r.refs)}</span></td></tr>`).join("")}</tbody></table></div>
+   <div><h3 style="margin-bottom:8px">تقدير مياه الرشاشات (${esc(P.haz)})</h3><div class="calc">
+    <div>الكثافة × المساحة<b>${calc.hz.d} mm/min × ${calc.hz.a} m²</b></div><div>الرشاشات (+20%)<b>${Math.round(calc.sprFlow)} L/min</b></div><div>الخراطيم<b>${calc.hz.h} L/min</b></div><div>الإجمالي × المدة<b>${Math.round(calc.tot)} × ${calc.hz.t} min</b></div><div>حجم الخزان<b>≈ ${calc.vol.toFixed(0)} m³</b></div></div>
+   <p class="meta">تقدير أولي بطريقة الكثافة/المساحة؛ التصميم النهائي بالحساب الهيدروليكي.</p></div>
+   <p class="meta" style="margin:0">${PRJ.length?"الأنظمة المكتشفة في المستندات: "+(SYSTEMS.filter(s=>autoHits[s.id]).map(s=>esc(s.l)).join("، ")||"لا شيء"):"لم تُرفع مستندات؛ المراجعة مبنية على المدخلات فقط."}</p></div>`;
+}
+$("#runReview").onclick=()=>{runReview();$("#reviewOut").scrollIntoView({behavior:"smooth",block:"start"})};
+
+/* ===== Claude (user's own API key, stored only in this browser) ===== */
+const Anthropic=window.AnthropicSDK&&window.AnthropicSDK.default;
+const MODELS=[["claude-opus-5-5","Claude Opus 5.5 (الأدق)"],["claude-sonnet-5-5","Claude Sonnet 5.5 (أسرع وأرخص)"],["claude-haiku-5-5","Claude Haiku 5.5 (الأرخص)"]];
+const store={get(k){try{return localStorage.getItem(k)||""}catch(e){return ""}},set(k,v){try{v?localStorage.setItem(k,v):localStorage.removeItem(k)}catch(e){}}};
+let AI=null;
+const getKey=()=>store.get("fc.apiKey");
+const getModel=()=>store.get("fc.model")||MODELS[0][0];
+function aiReady(){return !!(Anthropic&&getKey())}
+function openSettings(note){
+  $("#setKey").value=getKey();$("#setModel").innerHTML=MODELS.map(([v,l])=>`<option value="${v}" ${v===getModel()?"selected":""}>${esc(l)}</option>`).join("");
+  $("#setNote").textContent=note||"";$("#setDlg").showModal();
+}
+$("#setSave").onclick=()=>{store.set("fc.apiKey",$("#setKey").value.trim());store.set("fc.model",$("#setModel").value);$("#setNote").textContent=getKey()?"تم الحفظ على هذا الجهاز.":"تم حذف المفتاح.";updateAiBadge()};
+$("#setClear").onclick=()=>{store.set("fc.apiKey","");$("#setKey").value="";$("#setNote").textContent="تم حذف المفتاح من هذا الجهاز.";updateAiBadge()};
+document.querySelectorAll("[data-settings]").forEach(b=>b.onclick=()=>openSettings());
+function updateAiBadge(){const on=aiReady();document.querySelectorAll(".ai-state").forEach(e=>{e.textContent=on?"Claude مفعّل":"Claude غير مفعّل";e.className="ai-state flag"+(on?" up":"")})}
+
+function aiErrorText(e){
+  if(e&&e.name==="AbortError")return "أُوقف.";
+  if(!Anthropic)return "مكتبة Claude لم تُحمّل.";
+  if(e instanceof Anthropic.APIUserAbortError)return "أُوقف.";
+  if(e instanceof Anthropic.AuthenticationError)return "مفتاح API غير صحيح. صحّحه من الإعدادات.";
+  if(e instanceof Anthropic.PermissionDeniedError)return "المفتاح لا يملك صلاحية لهذا النموذج. جرّب نموذجاً آخر من الإعدادات.";
+  if(e instanceof Anthropic.RateLimitError)return "تجاوزت حد الطلبات أو الرصيد. انتظر قليلاً أو راجع حسابك في Anthropic Console.";
+  if(e instanceof Anthropic.BadRequestError)return "الطلب مرفوض: "+(e.message||"")+" — إن كان المستند كبيراً جداً فارفع جزءاً منه.";
+  if(e instanceof Anthropic.APIConnectionError)return "تعذّر الاتصال بخادم Anthropic. تحقق من الإنترنت.";
+  if(e instanceof Anthropic.APIError)return `خطأ من الخادم (${e.status}). جرّب مرة أخرى.`;
+  return e&&e.message?e.message:"حدث خطأ غير متوقع.";
+}
+
+/* Manual tool-use loop with streaming. tools: [{name,description,inputSchema,execute(input)}] */
+async function runClaude({prompt,tools=[],effort="medium",signal,onText,onStatus}){
+  if(!Anthropic)throw new Error("مكتبة Claude لم تُحمّل.");
+  const client=new Anthropic({apiKey:getKey(),dangerouslyAllowBrowser:true});
+  const model=getModel();
+  const toolDefs=tools.map(t=>({name:t.name,description:t.description,input_schema:t.inputSchema,eager_input_streaming:true}));
+  const byName=Object.fromEntries(tools.map(t=>[t.name,t]));
+  const messages=[{role:"user",content:prompt}];
+  const params={model,max_tokens:64000,thinking:{type:"adaptive"},output_config:{effort},tools:toolDefs};
+  const betas=[];
+  if(model!=="claude-haiku-5-5"){params.fallbacks="default";betas.push("server-side-fallback-2026-07-01")}
+  let text="";
+  for(let round=0;round<16;round++){
+    const stream=client.beta.messages.stream({...params,betas,messages},{signal});
+    let turnText="";
+    stream.on("text",d=>{turnText+=d;onText&&onText(text+turnText)});
+    const msg=await stream.finalMessage();
+    if(msg.stop_reason==="refusal")throw new Error("رفض النموذج الطلب. أعد صياغة السؤال.");
+    text+=turnText;
+    messages.push({role:"assistant",content:msg.content});
+    if(msg.stop_reason==="pause_turn")continue;
+    if(msg.stop_reason!=="tool_use")return {text,last:turnText};
+    const results=[];
+    for(const b of msg.content){
+      if(b.type!=="tool_use")continue;
+      const tool=byName[b.name];
+      let input=b.input;
+      if(typeof input==="string"){try{input=JSON.parse(input)}catch(e){input=null}}
+      if(!tool||!input||typeof input!=="object"){results.push({type:"tool_result",tool_use_id:b.id,is_error:true,content:"INVALID_JSON: resend the tool call with a valid JSON object."});continue}
+      try{const out=await tool.execute(input);results.push({type:"tool_result",tool_use_id:b.id,content:typeof out==="string"?out:JSON.stringify(out)})}
+      catch(err){results.push({type:"tool_result",tool_use_id:b.id,is_error:true,content:"Error: "+(err.message||err)})}
+    }
+    messages.push({role:"user",content:results});
+    onStatus&&onStatus();
+  }
+  return {text,last:""};
+}
+function parseJsonAnswer(t){const s=t.indexOf("{"),e=t.lastIndexOf("}");if(s<0||e<=s)throw new Error("تعذّر قراءة الرد كجدول. جرّب مرة أخرى.");return JSON.parse(t.slice(s,e+1))}
+
+function toolResults(q,limit=8){return search(q,{limit}).res.map(({u})=>u.kind==="kb"?{source:DOCS[u.doc].code,section:u.e.c,title:u.e.ti,text:u.e.x,value:u.e.val,needs_verification:u.e.v==="verify"}:u.kind==="doc"?{standard:DOCS[u.doc].code,title:DOCS[u.doc].en,scope:DOCS[u.doc].scope,references:DOCS[u.doc].refs.map(r=>DOCS[r].code),referenced_by:DOCS[u.doc].by.map(r=>DOCS[r].code),counterparts:DOCS[u.doc].eq.map(r=>DOCS[r].code)}:{source:u.file.name+" (user's licensed copy)",section:u.file.chunks[u.ci].sec,page:u.file.chunks[u.ci].page+1,text:u.file.chunks[u.ci].text.slice(0,1200)})}
+const mkSearchTool=onq=>({name:"search_codes",description:"Searches the fire & safety reference: paraphrased requirements from NFPA, SBC 201/801, Civil Defense, Saudi Aramco SAES/GI, HCIS SAF, API, ISO, IEC, IEEE, OSHA, ILO, Saudi Labor Law, NCA; standards metadata with cross-references; and section-level full text of code files the user uploaded. Use Arabic or English keywords, a standard code (e.g. 'NFPA 20') and/or a clause number.",
+  inputSchema:{type:"object",properties:{query:{type:"string"}},required:["query"]},execute(i){const q=String(i.query||"");if(!q)throw new Error("query is required");onq&&onq(q);return toolResults(q)}});
+const prjTool={name:"read_project",description:"Reads the uploaded project documents. {query} returns up to 6 matching passages with file and page; {file_index, page} returns one page in full.",
+  inputSchema:{type:"object",properties:{query:{type:"string"},file_index:{type:"number"},page:{type:"number"}}},
+  execute(i){if(i.file_index!=null){const d=PRJ[+i.file_index];if(!d)throw new Error("no such file");const p=Math.max(1,+i.page||1);setStatus(`يقرأ ${d.name} ص${p}`);return {file:d.name,page:p,text:(d.pages[p-1]||"").slice(0,6000)}}
+    const q=String(i.query||"");setStatus("يبحث في مستندات المشروع: "+q);const P=parseQuery(q);const groups=P.terms.map(t=>new Set([t,...(synMap.get(t)||[])]));const all=new Set(groups.flatMap(g=>[...g]));const out=[];
+    PRJ.forEach((d,fi)=>d.pages.forEach((p,pi)=>{const ts=new Set(toks(p));let s=0;groups.forEach(g=>{for(const t of g)if(ts.has(t)){s++;break}});if(s)out.push({s,file_index:fi,file:d.name,page:pi+1,text:snippet(p,all,900)})}));
+    out.sort((a,b)=>b.s-a.s);return out.slice(0,6).map(({s,...r})=>r)}};
+const setStatus=t=>$("#reviewStatus").textContent=t;
+let aiCtl=null;
+$("#aiReview").onclick=async()=>{
+  if(!aiReady()){openSettings("أضف مفتاح API لتفعيل المراجعة المعمّقة.");return}
+  if(!LAST)runReview();if(aiCtl){aiCtl.abort();return}
+  aiCtl=new AbortController();const btn=$("#aiReview");btn.textContent="إيقاف";setStatus("Claude يقرأ المشروع…");
+  const {P,F,S,R}=LAST;
+  const files=PRJ.map((d,i)=>`[${i}] ${d.name} — ${d.pages.length} pages`).join("\n")||"(no project documents uploaded)";
+  const lead=PRJ.map(d=>d.pages.slice(0,3).join("\n")).join("\n---\n").slice(0,12000);
+  const prompt=`You are a senior fire protection and process safety engineer reviewing a project in Saudi Arabia for code compliance and gaps.
+Governing framework: ${P.juris} (sbc = SBC 201/801 + Civil Defense; aramco = Saudi Aramco SAES/GI; hcis = HCIS SAF directives; nfpa = NFPA only). NFPA, API, IEC, IEEE, ISO, OSHA and Saudi Labor Law obligations may also apply.
+Project profile: ${JSON.stringify(P)}
+Features: ${JSON.stringify(F)}
+Systems marked as provided: ${JSON.stringify(S)}
+Rule-engine findings: ${JSON.stringify(R.filter(r=>r.req).map(r=>({item:r.item,status:r.status,why:r.why,refs:r.refs})))}
+Project documents:\n${files}
+Opening text:\n${lead}
+
+Use read_project to find what the documents actually specify (hazard class, design densities, pump and tank data, alarm devices, egress, emergency lighting, fire ratings, special systems, high-voltage rooms and transformers, area classification, SIS, ITM, emergency plans). Use search_codes to check each important value against the codes and to follow cross-references between standards. Look for missing systems, values that fall short, missing deliverables (hydraulic calcs, battery calcs, cause & effect matrix, fire strategy, arc flash study, area classification drawings, SIL study), and contradictions between documents. Never invent clause numbers; flag requirements that come from summaries marked needs_verification. All text fields in Arabic; keep code names and clause numbers in English.
+Your final message must be ONLY JSON: {"summary": string, "findings":[{"severity":"critical"|"major"|"minor"|"info","item":string,"finding":string,"evidence":string,"reference":string,"recommendation":string}]} with 8–25 findings, most severe first.`;
+  try{const r=await runClaude({prompt,tools:[mkSearchTool(q=>setStatus("يبحث في المرجع: "+q)),prjTool],effort:"high",signal:aiCtl.signal});
+    AI=parseJsonAnswer(r.last||r.text);renderAi(AI);setStatus("اكتملت المراجعة المعمّقة.")}
+  catch(e){setStatus(aiErrorText(e))}
+  finally{aiCtl=null;btn.textContent="مراجعة معمّقة بـ Claude"}
+};
+const SEV={critical:["bad","حرج"],major:["bad","رئيسي"],minor:["warn","ثانوي"],info:["info","ملاحظة"]};
+function renderAi(r){const f=Array.isArray(r?.findings)?r.findings:[];
+  $("#aiOut").innerHTML=`<div class="card" style="display:grid;gap:12px"><h3>مراجعة Claude المعمّقة</h3><p style="margin:0">${esc(r?.summary||"")}</p>
+  <div class="tablewrap"><table class="rtable"><thead><tr><th>الخطورة</th><th>البند</th><th>الملاحظة</th><th>الدليل</th><th>المرجع</th><th>التوصية</th></tr></thead><tbody>
+  ${f.map(x=>{const s=SEV[x.severity]||SEV.info;return `<tr><td><span class="pill ${s[0]}">${s[1]}</span></td><td><b>${esc(x.item)}</b></td><td>${esc(x.finding)}</td><td class="meta">${esc(x.evidence)}</td><td><span class="refs">${esc(x.reference)}</span></td><td>${esc(x.recommendation)}</td></tr>`}).join("")}
+  </tbody></table></div><p class="meta" style="margin:0">نتائج مساعدة تحتاج تأكيداً من مهندس الحماية من الحريق.</p></div>`}
+let askCtl=null;
+$("#askBtn").onclick=async()=>{
+  if(!aiReady()){openSettings("أضف مفتاح API لتفعيل «اسأل Claude».");return}
+  const q=$("#q").value.trim();if(!q)return;if(askCtl){askCtl.abort();return}
+  askCtl=new AbortController();const btn=$("#askBtn");btn.textContent="إيقاف";
+  const box=$("#aiAnswer");box.hidden=false;
+  box.innerHTML=`<h3>إجابة Claude</h3><div class="answer" id="ansText">يفكّر…</div><p class="status" id="ansStatus"></p>`;
+  try{await runClaude({prompt:`You answer fire-protection, electrical/high-voltage safety and industrial/occupational safety code questions for an engineer in Saudi Arabia. Question: "${q}"
+Use search_codes several times (Arabic and English, and standard codes) to find the relevant requirements and follow cross-references between standards. Answer in Arabic, concise, with exact values and units (metric first, imperial in brackets). Cite each requirement as [code §section] or [file §section p.N]. When authorities differ (SBC vs NFPA vs Aramco vs HCIS vs OSHA), say which governs in which context. If a value comes from a summary marked needs_verification, say it must be confirmed in the code text. If nothing relevant is found, say so instead of guessing.`,
+    tools:[mkSearchTool(q2=>$("#ansStatus").textContent="يبحث: "+q2)],effort:"medium",signal:askCtl.signal,onText:t=>{$("#ansText").textContent=t}});
+    $("#ansStatus").textContent="";
+  }catch(e){$("#ansStatus").textContent=aiErrorText(e)}
+  finally{askCtl=null;btn.textContent="اسأل Claude"}
+};
+$("#saveReport").onclick=()=>{
+  if(!LAST)runReview();const {P,R}=LAST;
+  const rows=R.filter(r=>r.req).map(r=>`<tr><td>${ST_L[r.status]}</td><td>${esc(r.item)}</td><td>${esc(r.why)}</td><td>${esc(r.refs)}</td></tr>`).join("");
+  const ai=AI?.findings?.map(x=>`<tr><td>${esc((SEV[x.severity]||SEV.info)[1])}</td><td>${esc(x.item)}</td><td>${esc(x.finding)}</td><td>${esc(x.evidence)}</td><td>${esc(x.reference)}</td><td>${esc(x.recommendation)}</td></tr>`).join("")||"";
+  const html=`<!doctype html><html dir="rtl" lang="ar"><meta charset="utf-8"><title>تقرير مراجعة — ${esc(P.name)}</title><style>body{font-family:Tahoma,sans-serif;margin:32px;color:#1b1f1d}table{border-collapse:collapse;width:100%;margin:12px 0}td,th{border:1px solid #ccc;padding:6px 8px;text-align:right;vertical-align:top;font-size:13px}th{background:#eee}</style>
+<h1>تقرير مراجعة الحماية من الحريق — ${esc(P.name)}</h1><p>التاريخ: ${new Date().toLocaleDateString("ar-SA")} · الإشغال ${esc(P.occ)} · ${P.floors} طوابق · أعلى طابق ${P.h} م · الجهة: ${esc(P.juris)}</p>
+<h2>المراجعة الآلية</h2><table><tr><th>الحالة</th><th>البند</th><th>السبب</th><th>المرجع</th></tr>${rows}</table>
+${ai?`<h2>المراجعة المعمّقة</h2><p>${esc(AI.summary||"")}</p><table><tr><th>الخطورة</th><th>البند</th><th>الملاحظة</th><th>الدليل</th><th>المرجع</th><th>التوصية</th></tr>${ai}</table>`:""}
+<p style="color:#666;font-size:12px">مرجع أكواد الحريق — تم بواسطة ABDULAZIZ ALYEMN. أداة مساعدة لا تغني عن النص الرسمي واعتماد الجهة المختصة.</p></html>`;
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([html],{type:"text/html"}));a.download=`fire-review-${(P.name||"project").replace(/[^\p{L}\p{N}]+/gu,"-")}.html`;document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);setStatus("تم حفظ التقرير.");
+};
+
+/* ===== splash ===== */
+(function(){const sp=$("#splash");document.body.classList.add("locked");const btn=$("#splashGo");
+  const close=()=>{sp.classList.add("out");document.body.classList.remove("locked");setTimeout(()=>{sp.hidden=true},500)};
+  btn.onclick=close;sp.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key==="Escape")close()});setTimeout(()=>{try{btn.focus({preventScroll:true})}catch(e){}},100)})();
+/* ===== boot ===== */
+(async function boot(){
+  reindex();renderHome();renderTopicSel();renderLibrary();renderMapSel();renderRel();renderMatrix();renderChecks();updateOL();runReview();
+  $("#q").value="مسافة الانتقال للطفايات";runSearch();
+  go(location.hash.slice(1)||"home",true);
+  const saved=await dbAll();if(saved.length){saved.forEach(f=>LIB.push(f));reindex();renderLibrary();renderHome();runSearch()}
+  updateAiBadge();
+  if("serviceWorker" in navigator&&location.protocol.startsWith("http")){navigator.serviceWorker.register("sw.js").catch(()=>{})}
+})();
+</script>
+
+</body>
+</html>

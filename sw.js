@@ -1,5 +1,5 @@
 // Offline cache for the app shell. Bump VERSION when files change.
-const VERSION = "fire-codes-v1";
+const VERSION = "fire-codes-v2";
 const ASSETS = ["./", "index.html", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png",
   "vendor/pdf.min.js", "vendor/pdf.worker.min.js", "vendor/mammoth.browser.min.js", "vendor/anthropic-sdk.js"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())); });
